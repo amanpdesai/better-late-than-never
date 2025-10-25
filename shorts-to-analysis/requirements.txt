@@ -1,0 +1,10 @@
+yt-dlp
+opencv-python
+youtube-transcript-api
+google-generativeai
+pandas
+pillow
+numpy
+python-dotenv
+scipy
+requests

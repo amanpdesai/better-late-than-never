@@ -1,0 +1,20 @@
+{
+  "url": "https://www.youtube.com/watch?v=OIs4CdJ8uE4",
+  "success": true,
+  "error": null,
+  "analysis": {
+    "description": "The video opens with a mirrored image of a woman with long, light brown hair, wearing red ear protection and a black t-shirt, aiming and firing a pistol at an indoor shooting range. The scene transitions to a title card reading \"OTHER PEOPLE SHOOTING\" in yellow text, followed by footage of a child in an orange hat and brown overalls lying prone in a sparse, outdoor landscape, aiming a large scoped rifle. This is succeeded by another clip under the same title, showing a man with dreadlocks, wearing a light blue t-shirt, standing in a green field and firing a shotgun. The video then introduces the text \"THIS GUY...\" in yellow, revealing a man in a black t-shirt and khaki pants, wearing ear protection and sunglasses, standing in a desert-like environment while holding an extremely long and heavy-looking rifle. The words \"NO WAY\" in bright blue, accompanied by a crown and skull emoji, are overlaid on the screen in this final segment, with \"Xurnex2\" visible as a watermark throughout.",
+    "humor": "absurdist comedy",
+    "topic": "shooting sports",
+    "template": "A comparative format that showcases multiple examples before culminating in an exaggerated or unexpected final reveal.",
+    "sound_description": "This audio features lively, excited speech intertwined with a highly repetitive and often rapid-fire \"quack\" sound effect that functions like a rhythmic percussion. Speakers are engaged in enthusiastic banter, at one point discussing \"tactical turkey,\" as the unusual \"quack\" sound becomes increasingly chaotic and distorts into electronic noise."
+  },
+  "transcript": "It was fun. Let's get it baby. So he has tactical turkey dude.\nEverybody ready?\n",
+  "keyframes": [
+    "output/keyframes/OIs4CdJ8uE4_frame_000.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_001.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_002.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_003.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_004.jpg"
+  ]
+}
