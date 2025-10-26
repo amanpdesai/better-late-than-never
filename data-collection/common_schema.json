@@ -1,0 +1,161 @@
+{
+  "description": "Common output schema for all data collection categories",
+  "version": "1.0",
+  "schema": {
+    "country": {
+      "type": "string",
+      "description": "ISO country code or full country name",
+      "examples": ["USA", "United Kingdom", "India"]
+    },
+    "category": {
+      "type": "enum",
+      "values": ["memes", "economics", "politics", "news", "google_trends", "youtube", "sports"],
+      "description": "Data category"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "ISO 8601",
+      "description": "When this data was collected",
+      "example": "2025-10-25T20:00:00Z"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "ISO 8601",
+      "description": "Last time this dataset was updated"
+    },
+    "items": {
+      "type": "array",
+      "description": "Array of content items specific to each category",
+      "schema_varies_by_category": true
+    },
+    "summary": {
+      "type": "object",
+      "description": "Aggregated metrics and insights",
+      "common_fields": {
+        "total_items": "number",
+        "overall_sentiment": "positive|negative|neutral|mixed",
+        "top_topics": "array of strings",
+        "engagement_metrics": "object"
+      }
+    }
+  },
+  "item_schema": {
+    "description": "Common fields that should appear in items across all categories",
+    "common_fields": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the item"
+      },
+      "title": {
+        "type": "string",
+        "description": "Title or headline"
+      },
+      "content": {
+        "type": "string",
+        "description": "Main content/description/excerpt"
+      },
+      "source_platform": {
+        "type": "string",
+        "description": "Where this content came from",
+        "examples": ["reddit", "twitter", "youtube", "news_site"]
+      },
+      "source_url": {
+        "type": "string",
+        "description": "Original URL to the content"
+      },
+      "created_at": {
+        "type": "string",
+        "format": "ISO 8601",
+        "description": "When the content was originally created/published"
+      },
+      "engagement": {
+        "type": "object",
+        "description": "Engagement metrics",
+        "fields": {
+          "likes": "number",
+          "comments": "number",
+          "shares": "number",
+          "views": "number"
+        }
+      },
+      "sentiment": {
+        "type": "enum",
+        "values": ["positive", "negative", "neutral"],
+        "description": "Sentiment analysis result"
+      },
+      "virality_score": {
+        "type": "number",
+        "range": [0, 100],
+        "description": "Calculated virality score based on engagement rate and velocity"
+      },
+      "media": {
+        "type": "object",
+        "description": "Media attachments",
+        "fields": {
+          "thumbnail": "string (URL)",
+          "images": "array of URLs",
+          "videos": "array of URLs"
+        }
+      }
+    }
+  },
+  "supabase_tables": {
+    "description": "Database schema for Supabase",
+    "tables": {
+      "countries": {
+        "id": "uuid PRIMARY KEY",
+        "name": "text",
+        "code": "text (ISO code)",
+        "flag_emoji": "text",
+        "latitude": "numeric",
+        "longitude": "numeric",
+        "created_at": "timestamp"
+      },
+      "category_data": {
+        "id": "uuid PRIMARY KEY",
+        "country_id": "uuid REFERENCES countries",
+        "category": "text",
+        "data": "jsonb",
+        "timestamp": "timestamp",
+        "last_updated": "timestamp",
+        "created_at": "timestamp",
+        "indexes": ["country_id", "category", "timestamp"]
+      },
+      "content_items": {
+        "id": "uuid PRIMARY KEY",
+        "category_data_id": "uuid REFERENCES category_data",
+        "item_id": "text (original ID from source)",
+        "title": "text",
+        "content": "text",
+        "source_platform": "text",
+        "source_url": "text",
+        "engagement_data": "jsonb",
+        "sentiment": "text",
+        "virality_score": "numeric",
+        "created_at": "timestamp"
+      },
+      "mood_metrics": {
+        "id": "uuid PRIMARY KEY",
+        "country_id": "uuid REFERENCES countries",
+        "category": "text",
+        "timestamp": "timestamp",
+        "joy": "numeric",
+        "curiosity": "numeric",
+        "anger": "numeric",
+        "confusion": "numeric",
+        "sadness": "numeric",
+        "overall_sentiment": "text"
+      },
+      "trending_topics": {
+        "id": "uuid PRIMARY KEY",
+        "country_id": "uuid REFERENCES countries",
+        "category": "text",
+        "topic": "text",
+        "volume": "numeric",
+        "sentiment": "text",
+        "trend": "text (rising|falling|stable)",
+        "timestamp": "timestamp"
+      }
+    }
+  }
+}

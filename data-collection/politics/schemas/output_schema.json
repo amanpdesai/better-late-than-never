@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Politics Data Schema",
+  "description": "Schema for scraped political data for a specific country, based on CATEGORY_PLANNING.md.",
+  "type": "object",
+  "properties": {
+    "country": {
+      "type": "string",
+      "description": "The country for which the data was scraped (e.g., 'United States')."
+    },
+    "category": {
+      "type": "string",
+      "const": "politics"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp of when the scraping was performed."
+    },
+    "leadership_and_government": {
+      "type": "object",
+      "description": "Information about the current government leadership and structure.",
+      "properties": {
+        "president": { "type": "string" },
+        "prime_minister": { "type": "string" },
+        "monarch": { "type": "string" },
+        "ruling_party": { "type": "string" },
+        "government_type": { "type": "string" },
+        "legislature": { "type": "string" }
+      }
+    },
+    "recent_and_upcoming": {
+      "type": "object",
+      "description": "Recent policies and upcoming political events.",
+      "properties": {
+        "recent_policies": {
+          "type": "array",
+          "description": "A list of recently passed or debated policies.",
+          "items": { "type": "object" }
+        },
+        "upcoming_elections": {
+          "type": "object",
+          "properties": {
+            "next_election_date": { "type": "string" },
+            "election_type": { "type": "string" }
+          }
+        }
+      }
+    },
+    "political_climate": {
+      "type": "object",
+      "description": "The current political mood and key discussion points.",
+      "properties": {
+        "key_issues": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "approval_rating": { "type": "string" },
+        "controversies": {
+          "type": "array",
+          "items": { "type": "object" }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "overall_sentiment": { "type": "string" },
+        "total_items": { "type": "integer" }
+      }
+    }
+  },
+  "required": [
+    "country",
+    "category",
+    "timestamp",
+    "leadership_and_government"
+  ]
+}

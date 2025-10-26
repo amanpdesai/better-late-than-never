@@ -1,0 +1,20 @@
+{
+  "url": "https://www.youtube.com/watch?v=OIs4CdJ8uE4",
+  "success": true,
+  "error": null,
+  "analysis": {
+    "description": "The video opens with a mirrored image of a woman at an indoor shooting range, wearing ear protection and holding a pistol. This transitions to an outdoor scene where a child, wearing an orange hat and overalls, lies prone and aims a large sniper rifle, accompanied by the text \"OTHER PEOPLE SHOOTING\". The next shot shows a man with dreadlocks and headphones standing in a grassy field, holding and aiming a pump-action shotgun, also with the text \"OTHER PEOPLE SHOOTING\" overlaid. The final scene features a man standing in a rugged, desert-like landscape, holding an extremely large, long-barreled sniper rifle, with text appearing that reads \"THIS GUY...\" and \"NO WAY...\", along with a crowned skull emoji. A \"Xurnex2\" watermark is visible throughout the video.",
+    "humor": "exaggeration, situational irony",
+    "topic": "gun culture, shooting sports",
+    "template": "A comparison format with escalating examples and descriptive text overlays highlighting a progressively extreme scenario.",
+    "sound_description": "This is an energetic electronic track, likely in the trap or hip-hop genre, featuring a driving beat and repetitive vocal samples. It's punctuated by enthusiastic speech (\"Let's get it, baby!\") and frequent, prominent gunshot sound effects, ending with an electronic buzz."
+  },
+  "transcript": "Hey, what's up? Let's get it, baby. Everybody ready? So he was tactical turkey. Do it.",
+  "keyframes": [
+    "output/keyframes/OIs4CdJ8uE4_frame_000.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_001.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_002.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_003.jpg",
+    "output/keyframes/OIs4CdJ8uE4_frame_004.jpg"
+  ]
+}

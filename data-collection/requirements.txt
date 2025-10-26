@@ -1,0 +1,49 @@
+# Core Libraries (100% FREE)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
+
+# Selenium for Web Scraping (FREE)
+selenium>=4.15.0
+webdriver-manager>=4.0.0  # Auto-downloads chromedriver
+
+# Google Trends (FREE - No API Key!)
+pytrends>=4.9.2
+pygooglenews>=0.1.2
+
+# Web Scraping Tools
+lxml>=4.9.0
+html5lib>=1.1
+
+# Database (FREE)
+supabase>=2.0.0
+
+# Data Processing
+numpy>=1.24.0
+jsonlines>=4.0.0
+
+# Scheduling (for automation)
+schedule>=1.2.0
+APScheduler>=3.10.4
+
+# Logging & Monitoring
+loguru>=0.7.2
+
+# Testing
+pytest>=7.4.3
+
+# REMOVED (Paid or Rate-Limited APIs):
+# - newsapi-python (only 100 free req/day, then $449/month)
+# - tweepy (Twitter API is paid now)
+# - praw (Reddit API - not needed)
+# - transformers/torch (too heavy, we'll use simpler sentiment analysis)
+# - instaloader (Instagram - not needed)
+# - feedparser (RSS - can use BeautifulSoup instead)
+# - newspaper3k (can scrape directly with Selenium)
+# - google-api-python-client (YouTube - not using)
+
+# Note: All data collection will be done via:
+# 1. Selenium web scraping (ESPN, Google News, Wikipedia, etc.)
+# 2. Free APIs with no authentication (World Bank, PyTrends)
+# 3. Google Search scraping

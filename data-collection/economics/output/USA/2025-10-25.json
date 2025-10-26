@@ -1,0 +1,146 @@
+{
+  "country": "USA",
+  "category": "economics",
+  "timestamp": "2025-10-26T04:48:38.000529+00:00",
+  "last_updated": "2025-10-26T04:48:38.000531+00:00",
+  "economic_indicators": {
+    "gdp_growth": {
+      "value": 2.8,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "inflation_rate": {
+      "value": 2.95,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "unemployment_rate": {
+      "value": 4.11,
+      "year": "2024",
+      "trend": "up",
+      "unit": "%"
+    },
+    "stock_index": {
+      "name": "S&P 500",
+      "value": 47207.12,
+      "change_pct": 0.0,
+      "trend": "stable"
+    }
+  },
+  "market_data": {
+    "top_gainers": [
+      {
+        "symbol": "IBM",
+        "name": "International Business Machines Corporation",
+        "price": "307.46",
+        "change_pct": 8.39
+      },
+      {
+        "symbol": "AMD",
+        "name": "Advanced Micro Devices, Inc.",
+        "price": "252.92",
+        "change_pct": 5.14
+      },
+      {
+        "symbol": "AMZN",
+        "name": "Amazon.com, Inc.",
+        "price": "224.21",
+        "change_pct": 3.57
+      },
+      {
+        "symbol": "ADBE",
+        "name": "Adobe Inc.",
+        "price": "353.52",
+        "change_pct": 2.95
+      },
+      {
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "price": "283.33",
+        "change_pct": 2.22
+      }
+    ]
+  },
+  "news_headlines": [
+    {
+      "headline": "US economy growing at fastest pace in nearly 2 years \u2014 and the White House has declared it \u2018explosive growth\u2019",
+      "source": "Yahoo Finance",
+      "url": "https://www.google.com/url?q=https://finance.yahoo.com/news/us-economy-growing-fastest-pace-121300327.html&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQICBAC&usg=AOvVaw0vEF0lDFdsrkubZu4XYo8v",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T04:48:37.873829+00:00"
+    },
+    {
+      "headline": "Carney says Canada will aim to double its non-U.S. exports amid economic tensions",
+      "source": "PBS",
+      "url": "https://www.google.com/url?q=https://www.pbs.org/newshour/world/carney-says-canada-will-aim-to-double-its-non-u-s-exports-amid-economic-tensions&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQIBxAC&usg=AOvVaw2WQic2BCne8-1DhfA81dRB",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T04:48:37.892979+00:00"
+    },
+    {
+      "headline": "Most Americans continue to rate the U.S. economy negatively as partisan gap widens",
+      "source": "Pew Research",
+      "url": "https://www.google.com/url?q=https://www.pewresearch.org/short-reads/2025/10/03/most-americans-continue-to-rate-the-us-economy-negatively-as-partisan-gap-widens/&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQIChAC&usg=AOvVaw3ITqslM3DpaMLIMnUcGozK",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T04:48:37.911097+00:00"
+    },
+    {
+      "headline": "What are banks telling us about the U.S. economy",
+      "source": "Investing.com",
+      "url": "https://www.google.com/url?q=https://www.investing.com/news/economy/what-are-banks-telling-us-about-the-us-economy-4297471&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQIBBAC&usg=AOvVaw0FUBhEztkVk-2wknFHpuvM",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T04:48:37.928941+00:00"
+    },
+    {
+      "headline": "For many Venezuelans, economic fears trump concerns of US military action",
+      "source": "CNN",
+      "url": "https://www.google.com/url?q=https://www.cnn.com/2025/10/23/americas/venezuelans-economic-fears-us-military-action-latam-intl&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQIBRAC&usg=AOvVaw1HkjTPtiFgvxncd-2oPR4h",
+      "sentiment": "negative",
+      "timestamp": "2025-10-26T04:48:37.946954+00:00"
+    },
+    {
+      "headline": "US national debt surpasses a record $38 trillion",
+      "source": "Al Jazeera",
+      "url": "https://www.google.com/url?q=https://www.aljazeera.com/economy/2025/10/23/us-national-debt-surpasses-a-record-38-trillion&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQIBhAC&usg=AOvVaw3R_7TuDTnn8DT2HIZAA6N7",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T04:48:37.964887+00:00"
+    },
+    {
+      "headline": "Here's what gold crossing $4,000 is telling us about the U.S. economy",
+      "source": "CBS News",
+      "url": "https://www.google.com/url?q=https://www.cbsnews.com/news/why-is-the-price-of-gold-rising-4000-ounce-economy/&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQICRAC&usg=AOvVaw34mivJIloNQQ3kUTTOCG_9",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T04:48:37.982823+00:00"
+    },
+    {
+      "headline": "Federal shutdowns usually don't do much economic damage. There are reasons to worry about this one",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://apnews.com/article/government-shutdown-economy-impact-workers-5635da22356dd57949ffcd19e6863c28&sa=U&ved=2ahUKEwjTwqH2h8GQAxXunCYFHQ7cMKsQxfQBegQIAxAC&usg=AOvVaw251z-g5KFIeFnyC67s04pa",
+      "sentiment": "negative",
+      "timestamp": "2025-10-26T04:48:38.000505+00:00"
+    }
+  ],
+  "sentiment": {
+    "overall": "neutral",
+    "score": 43,
+    "breakdown": {
+      "positive": 1,
+      "neutral": 5,
+      "negative": 2
+    }
+  },
+  "summary": {
+    "economic_health": "moderate",
+    "key_indicators": {
+      "gdp": 2.8,
+      "inflation": 2.95,
+      "unemployment": 4.11
+    },
+    "data_sources": [
+      "World Bank API",
+      "Google Finance",
+      "Google News"
+    ]
+  }
+}

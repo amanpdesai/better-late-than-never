@@ -1,0 +1,153 @@
+{
+  "country": "India",
+  "category": "economics",
+  "timestamp": "2025-10-26T05:15:19.824161+00:00",
+  "last_updated": "2025-10-26T05:15:19.824163+00:00",
+  "economic_indicators": {
+    "gdp_growth": {
+      "value": 6.48,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "inflation_rate": {
+      "value": 4.95,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "unemployment_rate": {
+      "value": 4.2,
+      "year": "2024",
+      "trend": "up",
+      "unit": "%"
+    },
+    "stock_index": {
+      "name": "NIFTY 50",
+      "value": 47207.12,
+      "change_pct": 0.0,
+      "trend": "stable"
+    }
+  },
+  "market_data": {
+    "top_gainers": [
+      {
+        "symbol": "INFY.NS",
+        "name": "Infosys Limited",
+        "price": "1525.40",
+        "change_pct": 5.85
+      },
+      {
+        "symbol": "TCS.NS",
+        "name": "Tata Consultancy Services Limited",
+        "price": "3063.20",
+        "change_pct": 3.41
+      },
+      {
+        "symbol": "RELIANCE.NS",
+        "name": "Reliance Industries Limited",
+        "price": "1451.60",
+        "change_pct": 2.46
+      },
+      {
+        "symbol": "SBIN.NS",
+        "name": "State Bank of India",
+        "price": "904.50",
+        "change_pct": 1.73
+      },
+      {
+        "symbol": "ITC.NS",
+        "name": "ITC Limited",
+        "price": "416.80",
+        "change_pct": 1.13
+      }
+    ]
+  },
+  "news_headlines": [
+    {
+      "headline": "India\u2019s Economic Momentum Slows in October as US Tariffs Hit",
+      "source": "Bloomberg",
+      "url": "https://www.google.com/url?q=https://www.bloomberg.com/news/articles/2025-10-24/india-s-economic-momentum-slows-in-october-as-us-tariffs-hit&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIBBAC&usg=AOvVaw12dYGttBGqy1yjhZIVU3Yd",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.678675+00:00"
+    },
+    {
+      "headline": "India\u2019s key economic indicators to see major revamp in early 2026",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://m.economictimes.com/news/economy/indicators/indias-key-economic-indicators-including-gdp-and-services-data-to-see-major-revamp-in-early-2026/articleshow/124754910.cms&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIBxAC&usg=AOvVaw0oXwQhhknmeUIHw32P6aez",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.698077+00:00"
+    },
+    {
+      "headline": "Indian economy to grow 6.6% in 2025 despite US tariffs, projects IMF; warns of global \u2018uncertainty\u2019",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.livemint.com/economy/indian-economy-to-grow-6-6-in-2025-despite-us-tariffs-projects-imf-warns-of-global-uncertainty-11761360577873.html&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIChAC&usg=AOvVaw3fnLF6VuWWTLrfu9xdO3PW",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.716329+00:00"
+    },
+    {
+      "headline": "IMF projects Indian economy to grow at 6.6% in 2025-26, outpacing China",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.business-standard.com/economy/news/imf-projects-indian-economy-to-grow-at-6-6-in-2025-26-outpacing-china-125102500042_1.html&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIBhAC&usg=AOvVaw0DsmofIHPIg5yp316KvfUk",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.734477+00:00"
+    },
+    {
+      "headline": "'Key growth engine': IMF hails India's economy; downplays Trump tariff impact",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://timesofindia.indiatimes.com/business/india-business/key-growth-engine-imf-hails-indias-economy-downplays-trump-tariff-impact/articleshow/124390325.cms&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIAxAC&usg=AOvVaw2Pb-3ixPpUJEwgniwc68Pk",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.752579+00:00"
+    },
+    {
+      "headline": "'Tariffs can\u2019t slow India': IMF ups growth forecast to 6.6%, ahead of China\u2019s 4.8%",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.moneycontrol.com/news/business/economy/tariffs-can-t-slow-india-imf-ups-growth-forecast-to-6-6-ahead-of-china-s-4-8-13631749.html&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQICBAC&usg=AOvVaw00wGz3qfGpOhmuwNFvYOtL",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:15:19.770595+00:00"
+    },
+    {
+      "headline": "On the shelf: Must-read titles on India\u2019s economy, caste politics and others",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.financialexpress.com/life/lifestyle/on-the-shelf-must-read-titles-on-indias-economy-caste-politics-and-others/4021591/&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQICRAC&usg=AOvVaw2r1xYaHpk4lWTYazXl9yxf",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.788448+00:00"
+    },
+    {
+      "headline": "IMF projects Indian economy to grow at 6.6% despite dim prospects for global growth",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://theindianeye.com/2025/10/25/imf-projects-indian-economy-to-grow-at-6-6-despite-dim-prospects-for-global-growth/&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIAhAC&usg=AOvVaw3rUZs6ZWZya41loR0-HUoY",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:15:19.806307+00:00"
+    },
+    {
+      "headline": "India To Grow 6.6% In 2025, Outpacing China At 4.8%, Says IMF \u2014 How The Economy Is Defying Global Headwinds",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.timesnownews.com/business-economy/economy/india-to-grow-6-6-in-2025-outpacing-china-at-4-8-says-imf-how-the-economy-is-defying-global-headwinds-article-153049205&sa=U&ved=2ahUKEwjNmoDyjcGQAxU5JEQIHdI0PCgQxfQBegQIBRAC&usg=AOvVaw3n56kdxdcHPk1Xdh0DdHfN",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:19.824136+00:00"
+    }
+  ],
+  "sentiment": {
+    "overall": "optimistic",
+    "score": 61,
+    "breakdown": {
+      "positive": 2,
+      "neutral": 7,
+      "negative": 0
+    }
+  },
+  "summary": {
+    "economic_health": "moderate",
+    "key_indicators": {
+      "gdp": 6.48,
+      "inflation": 4.95,
+      "unemployment": 4.2
+    },
+    "data_sources": [
+      "World Bank API",
+      "Google Finance",
+      "Google News"
+    ]
+  }
+}

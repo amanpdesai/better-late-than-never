@@ -1,0 +1,6 @@
+{
+    "description": "Describe literally what is visible or happening in the meme image or video, without interpretation — who or what appears, what actions are shown, and any text that is visible.",
+    "humor": "Identify the type of humor being used, such as irony, absurdism, dark humor, wordplay, self-deprecation, or situational exaggeration, and explain it briefly in one sentence.",
+    "topic": "State the main subject or real-world theme that the meme relates to, such as politics, technology, relationships, work life, pop culture, or social commentary.",
+    "template": "Specify the meme format or template being used, such as 'Drake Hotline Bling,' 'Distracted Boyfriend,' 'NPC Wojak,' or 'custom original format,' describing it in one short sentence."
+}
