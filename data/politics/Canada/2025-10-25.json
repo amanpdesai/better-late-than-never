@@ -1,0 +1,137 @@
+{
+  "country": "Canada",
+  "category": "politics",
+  "timestamp": "2025-10-26T06:44:08.589947+00:00",
+  "leadership_and_government": {
+    "government_type": "Federal parliamentary constitutional monarchy",
+    "monarch": "Charles III",
+    "prime_minister": "Mark Carney",
+    "legislature": "Parliament",
+    "president": "King – Charles III [ II ] Governor General – Mary Simon"
+  },
+  "recent_and_upcoming": {
+    "recent_policies": [
+      {
+        "title": "Canada’s engagement with the United States - Affaires mondiales Canada",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZEt2ZFVLX0lhTTBfOHFxejlTa2hUUFcycDVYYVBldDJuZ2lfZG1zQ0Z6MWJ2X1phRUVDWW43NFZ4VEdCa3VMcTBjX2tzSkJyNFp6ZFoxYmVLdHd5WDZCdGxLZDlvQ0JNMEZtZnM0VGhmWmk2Vk5PaDQzQ2loaVcxYmNEZy1WeU0?oc=5",
+        "source": "Affaires mondiales Canada",
+        "published_at": "Tue, 04 Mar 2025 17:28:13 GMT"
+      },
+      {
+        "title": "Global Affairs Canada - Affaires mondiales Canada",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rRGFscDFhSkR5QVJ3QnlCTmVTRXdyNTBaX2VlYjVMeER0QWVwSVljcktaTW5lM3lJTWFGNmwxTHd0N3psZHpiMklXYjJ4by03Nm1Na2dKMkdiTF83UUE?oc=5",
+        "source": "Affaires mondiales Canada",
+        "published_at": "Wed, 30 Jul 2025 16:43:24 GMT"
+      },
+      {
+        "title": "Complete list of U.S. products subject to counter tariffs - canada.ca",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOZDlqT2tndVVEZU1yaVdmOU9uejVqSlZPY2NWUzNVd01rQU42aE5pQTdQYmJPRVZKaENmRGctRzNRcG9zcTRwR04yakluQTBTZnFNM1pLQnZIcnJ2OUxWZEhwbEJwdWs5VFRwcHFUai16UVI3UnBpQXZPQW8wWDBLdEcwTldBSURKVUpVVk9lcDZfUU92cV9OdV84U21aaXhKUnk3bnBjVXphUmloR3MtaV8zd05QUFlTd2VwXzlHOVR6TkFXQnp5cHhHM3RmUDljMU1nQTB2TjNJcWUzQ1lHMUlUTHBtazlXSHJlUlhnNFpraldUeWljcVZWNWNuM1R6QzRJ?oc=5",
+        "source": "canada.ca",
+        "published_at": "Mon, 28 Apr 2025 19:00:45 GMT"
+      },
+      {
+        "title": "Access Record of Employment on the Web (ROE Web) - canada.ca",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeE41S3RGYU9RWTRZcy02WG1nUmlON0hVSmNCYldTS2VJMjlQSnltMnVJU21xMTMwWlQxajJPdGttVE93cmk3RWRYbHZ1eDFOU0J1bW5LcFNuYWxET2ZxbVZ1S040UDN6NlRIYjdqdmRzUnp4RjdQZ09DQXI0UUlTSjRKNXdaZkdFVnk4Mm9Ibl9pZURnOENHVl9wVldBUQ?oc=5",
+        "source": "canada.ca",
+        "published_at": "Mon, 09 Dec 2024 08:00:00 GMT"
+      },
+      {
+        "title": "Service Request Form - E-service Canada.ca",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMRS1hTlZBempvMG54UmxKY21VMjRFSG8xODJvZUsxVXFDanN4NUpYbEx2SlNMWXVCdHZiSzhJaXpSclRmWlVnY3BKamEwQ1NJ?oc=5",
+        "source": "E-service Canada.ca",
+        "published_at": "Thu, 04 Jun 2020 00:23:01 GMT"
+      },
+      {
+        "title": "Police certificate - canada.ca",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOU2dkYm1SUEhLQ0l1V1ljYUdsN3BIYmh0Uy05ZmloS0lBRF9nWVdNcVJvZ1VranphcUJ3aGVJZGszcXJjLVRWYk1DbHZHNDlHcnNoSXZRZzhpY0lpRXM0OFg1MWJ2R2FCczJlODJYOWNMdDBEdzBkTlNYX0R5eUdVbUtqWnp4TnNYMFc2QTBIQzduX3NUUnpqR2Y0R1duZmpFNU9GXzh0QmUwMXBlQ29YLXFqNUswWm00Nnc?oc=5",
+        "source": "canada.ca",
+        "published_at": "Mon, 12 Aug 2024 07:00:00 GMT"
+      },
+      {
+        "title": "Government of Canada jobs - canada.ca",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxY1ZPSDEwZVYwMzVQWk42RDVKaHNSMUNxemFRUWZab1E0T29teUk0Ty1FdW9jZjVhcUg5RGJEOGs0S1dWY2tBb3JqTGhBZEVaTlNwZG1SSkZUREFqX2lsMzlIMkJKUGFGWkdTWk1DWXEzLUhON040?oc=5",
+        "source": "canada.ca",
+        "published_at": "Thu, 17 Nov 2016 10:07:25 GMT"
+      },
+      {
+        "title": "Parks Canada reservations - Plan your visit - Parks Canada",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBkdEs2OW5hQ016NWdxaE1mSVFEZUszQ0FaVGx5Q2VOblZFNzFSM2hocDQ3LURPVnhTb0Rtb19kb0YtdmtaemhJajJDS3JTMnFITnRMeTUtNkE?oc=5",
+        "source": "Parks Canada",
+        "published_at": "Tue, 14 Oct 2025 07:00:00 GMT"
+      }
+    ]
+  },
+  "political_climate": {
+    "key_issues": [
+      "Trump raises tariffs on Canada by 10% over Reagan ad - The Washington Post",
+      "Trump news at a glance: President raises tariffs on Canada as he attends Asean summit with Carney - The Guardian",
+      "What's in Reagan advert that caused US-Canada trade talks to collapse? - BBC",
+      "Trump Says He’s Cutting Off Trade Negotiations With Canada - The New York Times",
+      "Week in Politics: Trump’s relations with Latin America and Canada; East Wing demolition - NPR"
+    ],
+    "controversies": [],
+    "recent_headlines": [
+      {
+        "headline": "Trump raises tariffs on Canada by 10% over Reagan ad - The Washington Post",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaTdGS19CclpfOTVReHVCeU16eWRDWkt5MXZNMENNUW1OV1dpdXFGcFlLTXVnSHZyWGwxLTJucUR2dVJkeE9TbHNqSjFrblNjWi1oVnNEWElLWXZXX1Nydng5SzBtcVM4dXF5dl9QNlhPSE9pTHI2Ym96N3BjbHlLN083el92R1dCYnc?oc=5",
+        "published": "Sun, 26 Oct 2025 05:37:04 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Trump news at a glance: President raises tariffs on Canada as he attends Asean summit with Carney - The Guardian",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT0tBdWJKbVdqU0hGMU1LZWM5REhXdlJDRncyZ3ZrLUx1Y1BkTkdtOC1fclEyeV9aSWhZUkw3dElNOE90OWZCdjkta000aU0wYm1tQktua1J1aFdFbzN6MjhUbThtMXJobEZEQTFwT0JIN0NhOVppd3B5a3NOUHFxSGE1ZUNEdjVSYWc5dmg3cVFJcndlYnE4bFVn?oc=5",
+        "published": "Sun, 26 Oct 2025 00:47:55 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "What's in Reagan advert that caused US-Canada trade talks to collapse? - BBC",
+        "source": "BBC",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5idEp2QUJLYmtERnlFdWJodE9kT3Y3dko5aVVsOFpxNnN3VGF4YjZDYjFJcnRmb3FaU3doNENXQ3lFR2dyNlIzdjBZdnV2bnFTVXB3a2ZPaDlpUdIBX0FVX3lxTE1iY2lTOWpKWUw3cDhfM0dGV3dFM04tRWZzTE5QZHUyVXVuSHVVZTQ0X19mR0pyaG5GaVlwbG5URzF1bGt4M3FNWHlRa25kcDItRlVFRWFDazZPRVc2YjB3?oc=5",
+        "published": "Fri, 24 Oct 2025 20:21:57 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Trump Says He’s Cutting Off Trade Negotiations With Canada - The New York Times",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWHVuYm5VTFhlUGd6cXpBR1JXdk9CMEd3U3lFUnZCdVNfbk92MWN2MEwxb1R6OEFrTjVSbVBZS2VncWlkRlJzUDdvNWZod2g4R3hrTU5mVnFrTllSUEMzZkE3cFRraWRpbEEtbUt0eHJjVUNzQWtzd0VxMFQ3WHJTa1N6UF83V3lNcWc?oc=5",
+        "published": "Fri, 24 Oct 2025 03:23:10 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Week in Politics: Trump’s relations with Latin America and Canada; East Wing demolition - NPR",
+        "source": "NPR",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTUxJRkpfd3YtaFRMMGRRaGxxSFRFaGFCSThTNTlCTkVGbGVxQkpXQUo5aDdYMGg1Tm9EOUFXQ2tLVXFOblkwa2puaXZfYkRsZzN3LWllR0lrZ0lmdml6MU83aWJEb1pVclhHZUdFY3N1bjlCbUdWR19FTm9CQjBvSEQzM3RtZ2prcnpYcy1CaDZPTjVpbVloYWFVYnZGS1p5VHlfYktOUkxfVDE2WU81c3lHQVMtdk9OMlMxeVY1dzM2OGk3aTJhZQ?oc=5",
+        "published": "Sat, 25 Oct 2025 11:42:46 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Trump raises tariffs on Canada 10% after Reagan ad airs during World Series - ABC News - Breaking News, Latest News and Videos",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRVJSd1ZlMnBZa3ZXUGd4aTZlSzJqdFJ2TUx2dTFIaWJkLVNYaTkwYWlxUmNmc2l6YlpnWE14dVpEX1Fib1dpYXMwRFhqLUcwZ2dSd2U4OWpscnhXOHRsQnhXbHRLNllxWGVPbzVkSWF2TG1kcDhVbGlYRU1zbURoSElFMXFXSEJUOG1DS1ZHamN4Nms4WWhQV0h1ajVrUdIBowFBVV95cUxNZmhHdV94QTBianZxbmV4QTlJMVFmdldCb2JXQlNOanMwem1QNjZSQXBEeEFseHZya1lnaTVVTVRMdDJUS2h4aWp5TGRuTXNlLUgxZTJERHZMT3JsVFRCOGxrRnhXX1ZSNTZBTl81QUVVcU55cGRfSkNmXzZ4Z3NDLUtEZ3llZlFXN2hCZTRPcXRvVFV3aXgwTTlaYksxSWFtMW1V?oc=5",
+        "published": "Sat, 25 Oct 2025 21:56:15 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Trump Says He Will Raise Tariffs on Canada by 10% Over Ontario Ad - The Wall Street Journal",
+        "source": "The Wall Street Journal",
+        "url": "https://news.google.com/rss/articles/CBMiogNBVV95cUxPTVVfVG5MU0RhNEh5VkVPWGNCZ0dTNnpScDI3MGJnbm1ROXkzVnBHZk9aX0RrQXlyc2hmZ3R1N2ZmZ0RnSlV2NVFSMDRfQ2RDZWRKVzBkbW5aSXVJOEZ3TGtnZzBJRmZnQnBEZUc5azBZRTNnMFZxQTlfSjZaektCWDBwbXlTUEdYSHByLXVYaWoydHNsendwOVllSlBjSWZ4QVJhRWxVUUpIMTRpX1UtdTRpOXpvNm9Ra3E4VmFrTTZTZTBnTFpvOWFGc1BqcDdMYUdjYXktYzdUTTk3QnFtRTBaWFBVUnBiSmN3V3BMXy1BRllMWXZQY21Vem1WYTBudWdHOWUyb0VmaUkwTjMtZ1lGT3FBejFyNzZmVi1mWXItWHVhWGVnZ3NTbkxEWk1RM2hhSzU3eTFsQUJLNGUyY2ZJZy0tWU0zdUMtelQwdFhNZlZtQ2lqSHUyT1Nkc093em1RREZxR1NzRUgwZHBBeS1HcDBKR0FSZU4yQUNZWlR0Q0NuMXBxWkI1dUYxSWNwMUNpeE1xUkhKTnNwVWY5aVBR?oc=5",
+        "published": "Sun, 26 Oct 2025 02:51:00 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Trump threatens Canada with 10% extra import tax for not pulling down anti-tariffs ad sooner - NBC News",
+        "source": "NBC News",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTkJmZWJ2b0FVcDJWNnhXQnJ1STFXY0FSSGUzclJnR05iUl9sbUpJMXNldUNZeUo0MkJEa1VlaFY5WkVTN1FucWE3SXRsT2Z1M1BpMFQ1OGhyeEZ3b3RGY3l2UGZQN1hhTnRFM0NmYW8zUzFtWUVDUkh4eHl5b0N5S0pyOUxEVWRfVkllOWd2S2w2Y1JqQ3hRTUU5WWlqSjlfWGZTM1g1ME1hdzNqUkx0TjI0eEFJZlFLRWRHb2pnRW01MDdKaWRaNkxxWU1tYWvSAVZBVV95cUxNZ1hfLXFzY3l5YS0wVk11ZzVseHVaX1NCeVpoeUVaaUNubXkxbHBDRkExVXppT0xNYzVlNjY3WExuWEVZcV91eGlMTnlLbzZJV1FwTDI1Zw?oc=5",
+        "published": "Sat, 25 Oct 2025 20:58:00 GMT",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "summary": {
+    "overall_sentiment": "neutral",
+    "sentiment_score": 50,
+    "total_items": 16
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "country": "Australia",
+  "category": "economics",
+  "timestamp": "2025-10-26T05:15:38.135936+00:00",
+  "last_updated": "2025-10-26T05:15:38.135938+00:00",
+  "economic_indicators": {
+    "gdp_growth": {
+      "value": 1.43,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "inflation_rate": {
+      "value": 3.16,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "unemployment_rate": {
+      "value": 4.07,
+      "year": "2024",
+      "trend": "up",
+      "unit": "%"
+    },
+    "stock_index": {
+      "name": "ASX 200",
+      "value": 47207.12,
+      "change_pct": 0.0,
+      "trend": "stable"
+    }
+  },
+  "market_data": {
+    "top_gainers": [
+      {
+        "symbol": "BHP.AX",
+        "name": "BHP Group Limited",
+        "price": "43.24",
+        "change_pct": 0.23
+      }
+    ]
+  },
+  "news_headlines": [
+    {
+      "headline": "Back Australia by buying local",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.kidsnews.com.au/explainers/why-buying-australianmade-and-australianowned-is-important/news-story/dfbf39f84d9c23c68fe73f4e0808c002&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQICRAC&usg=AOvVaw3WDN7Yu9aL7qOE7gWqrbnW",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:37.971179+00:00"
+    },
+    {
+      "headline": "Australia's Services Keep The Economy Growing, Even As Manufacturing Stalls",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://finimize.com/content/australias-services-keep-the-economy-growing-even-as-manufacturing-stalls&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIAhAC&usg=AOvVaw2OgEi3zPZbaPzX-6ShF847",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:37.990459+00:00"
+    },
+    {
+      "headline": "Australia\u2019s Economy Accelerates Driven by Household Spending",
+      "source": "Bloomberg",
+      "url": "https://www.google.com/url?q=https://www.bloomberg.com/news/articles/2025-09-03/australia-s-economy-accelerates-driven-by-household-spending&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIChAC&usg=AOvVaw35MlaLhFiQom9Zbr6Ysyw0",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:38.009796+00:00"
+    },
+    {
+      "headline": "Shopping change you should make today",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.news.com.au/finance/economy/australian-economy/five-ways-to-save-our-economy-and-back-local-jobs/news-story/81daca8cd4c2ac20fbdfd80c6e1e3db3&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIBRAC&usg=AOvVaw07wnQ9k7zQuS2eg4zD75cL",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:38.031412+00:00"
+    },
+    {
+      "headline": "Australia's Q2 GDP growth quickens to 2-year high as consumers open wallets",
+      "source": "Yahoo Finance",
+      "url": "https://www.google.com/url?q=https://finance.yahoo.com/news/australia-economy-grows-0-6-014528586.html&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIBBAC&usg=AOvVaw3tT64iSiqmSb1jmczMOXjM",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:15:38.050902+00:00"
+    },
+    {
+      "headline": "Australia's muted Q1 economic growth signals need for more stimulus",
+      "source": "Reuters",
+      "url": "https://www.google.com/url?q=https://www.reuters.com/world/asia-pacific/australia-economy-barely-grows-q1-government-spending-drags-2025-06-04/&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIAxAC&usg=AOvVaw0NIsuLMh5o9SAgkhS6dS-j",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:15:38.070478+00:00"
+    },
+    {
+      "headline": "The $100 Aussie switch that changes everything",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.couriermail.com.au/news/national/back-australia/how-100-a-week-on-australianowned-goods-and-services-could-supercharge-our-economy/news-story/0e11152109f1e2835b2075e53b157b5f&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIARAC&usg=AOvVaw2t3b4vf4FedVqyCgN2fdNh",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:38.090253+00:00"
+    },
+    {
+      "headline": "Workplace gender segregation \u2018a handbrake\u2019 on Australia economy, new report finds",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.jurist.org/news/2025/08/workplace-gender-segregation-a-handbrake-on-australia-economy-new-report-finds/&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIBxAC&usg=AOvVaw08N5isGXaGNOR7LBIzUNHx",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:15:38.111609+00:00"
+    },
+    {
+      "headline": "Australia scores a B- on its latest economic report card. It\u2019s an improvement, but there\u2019s still a long way to go",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.theguardian.com/commentisfree/2025/sep/04/australia-scores-a-b--on-its-latest-economic-report-card-its-an-improvement-but-theres-still-a-long-way-to-go&sa=U&ved=2ahUKEwjk1uT6jcGQAxXqM0QIHc6_BTMQxfQBegQIBhAC&usg=AOvVaw1_q1QcIlIo3seUfjzHU21M",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:15:38.135899+00:00"
+    }
+  ],
+  "sentiment": {
+    "overall": "optimistic",
+    "score": 66,
+    "breakdown": {
+      "positive": 3,
+      "neutral": 6,
+      "negative": 0
+    }
+  },
+  "summary": {
+    "economic_health": "moderate",
+    "key_indicators": {
+      "gdp": 1.43,
+      "inflation": 3.16,
+      "unemployment": 4.07
+    },
+    "data_sources": [
+      "World Bank API",
+      "Google Finance",
+      "Google News"
+    ]
+  }
+}
