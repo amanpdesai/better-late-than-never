@@ -7,7 +7,7 @@ POST /pipeline/run
   "question": "...",                # required
   "start_from": "query" | "3",      # optional
   "top_k": 3,                       # optional overrides
-  "model": "gemini-2.5-flash-lite", # optional overrides
+  "model": "gemini-2.5-flash", # optional overrides
   "random_count": 2,
   "random_seed": 42,
   "no_random_images": true,

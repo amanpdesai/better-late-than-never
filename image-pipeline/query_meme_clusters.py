@@ -23,6 +23,10 @@ import random
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Ensure the project root is importable so we can reuse the shared Gemini pipeline utilities.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -168,14 +172,24 @@ CLUSTER_ANALYST_TEMPLATE = PromptTemplate(
     name="meme-cluster-analyst",
     system_instruction=(
         "You are an expert cultural analyst specialising in online meme trends. "
+        "Your goal is to select clusters that create COHESIVE, SENSIBLE meme concepts. "
         "Answer user questions strictly with the supplied cluster context. "
         "If the context is insufficient, give the most relevant answer regarding the closest matching cluster."
     ),
     task=(
-        "Interpret the question, highlight any matching clusters, and synthesise insights "
-        "grounded in the provided cluster descriptions and meme examples."
+        "Interpret the question, highlight matching clusters, and synthesise insights "
+        "grounded in the provided cluster descriptions and meme examples. "
+        "CRITICALLY: Ensure your selected clusters work together thematically to create a "
+        "coherent, unified meme concept rather than mixing unrelated themes."
     ),
     guidelines=[
+        "COHERENCE IS CRITICAL: Select clusters that work together thematically.",
+        "PREFER selecting the SAME cluster number across multiple categories when it makes thematic sense.",
+        "For example, if Cluster 5 has great humor AND topic for the user's request, use Cluster 5 for both.",
+        "Avoid mixing unrelated themes (e.g., don't combine 'political satire' + 'wholesome animals' + 'tech jokes').",
+        "Think: Would these clusters create a sensible, cohesive meme or a confusing mashup?",
+        "If the user's request strongly matches ONE cluster across multiple dimensions, bias toward that cluster.",
+        "Only select different clusters when the user's request genuinely requires different thematic elements.",
         "Reference clusters by number and explain why they are relevant.",
         "Use bullet points when listing clusters or recommendations.",
         "Call out missing information if the context does not contain an answer.",
@@ -212,8 +226,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default=os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"),
-        help="Gemini model name (default: gemini-2.5-flash-lite or GEMINI_MODEL env var).",
+        default=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
+        help="Gemini model name (default: gemini-2.5-flash or GEMINI_MODEL env var).",
     )
     parser.add_argument(
         "--with-random-images",

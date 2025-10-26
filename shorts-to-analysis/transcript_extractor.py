@@ -82,7 +82,7 @@ def get_transcript(video_path: str, api_key: str) -> Optional[str]:
 
             print("  [Transcript] Transcribing with Gemini...")
             # Use Gemini 2.5 Flash to transcribe
-            model = genai.GenerativeModel('gemini-2.5-flash-lite')
+            model = genai.GenerativeModel('gemini-2.5-flash')
 
             prompt = "Please transcribe all the speech in this audio file. Provide only the transcription text, nothing else."
 

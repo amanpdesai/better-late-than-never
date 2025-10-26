@@ -10,7 +10,7 @@ import re
 import requests
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, asdict
-from datetime import datetime
+from datetime import datetime, timedelta
 
 try:
     import praw  # Reddit API wrapper
@@ -180,7 +180,7 @@ def fetch_reddit_memes(country: str, limit_per_sub: int = 5) -> List[MemePost]:
 
 def fetch_youtube_shorts(country: str, max_results: int = 50) -> List[MemePost]:
     """
-    Fetch trending YouTube Shorts for a specific country.
+    Fetch trending YouTube Shorts for a specific country using search-based approach.
 
     Args:
         country: Country name (USA, UK, Australia, India, Canada)
@@ -203,85 +203,127 @@ def fetch_youtube_shorts(country: str, max_results: int = 50) -> List[MemePost]:
     try:
         import requests
 
-        # Fetch trending videos
-        url = "https://www.googleapis.com/youtube/v3/videos"
-        params = {
-            "key": api_key,
-            "part": "snippet,contentDetails,statistics",
-            "chart": "mostPopular",
-            "regionCode": region,
-            "maxResults": 50,  # API limit per page
-            "videoCategoryId": "23"  # Comedy category for meme-like content
+        # Country-specific search terms for more localized content
+        country_search_terms = {
+            'USA': ['american memes', 'usa funny', 'american comedy', 'us memes'],
+            'UK': ['british memes', 'uk funny', 'british comedy', 'england memes'],
+            'Australia': ['australian memes', 'aussie funny', 'australia comedy', 'straya memes'],
+            'India': ['indian memes', 'india funny', 'indian comedy', 'desi memes'],
+            'Canada': ['canadian memes', 'canada funny', 'canadian comedy', 'canuck memes']
         }
 
-        response = requests.get(url, params=params, timeout=20)
-        if response.status_code != 200:
-            print(f"[Warning] YouTube API error {response.status_code}: {response.text}")
-            return []
+        search_terms = country_search_terms.get(country, ['memes', 'funny', 'comedy'])
+        all_shorts = []
 
-        data = response.json()
-        items = data.get("items", [])
-
-        shorts = []
-        for item in items:
+        # Search for country-specific content
+        for search_term in search_terms[:2]:  # Limit to 2 search terms to avoid API limits
             try:
-                vid = item.get("id")
-                snippet = item.get("snippet", {})
-                stats = item.get("statistics", {})
-                content = item.get("contentDetails", {})
+                # Search for videos
+                search_url = "https://www.googleapis.com/youtube/v3/search"
+                search_params = {
+                    "key": api_key,
+                    "part": "snippet",
+                    "q": f"{search_term} #shorts",
+                    "type": "video",
+                    "regionCode": region,
+                    "maxResults": 15,  # Limit per search
+                    "order": "relevance",
+                    "publishedAfter": (datetime.now() - timedelta(days=7)).isoformat() + 'Z'  # Last 7 days
+                }
 
-                # Parse duration
-                duration_iso = content.get("duration", "PT0S")
-                duration_sec = parse_iso8601_duration(duration_iso)
+                search_response = requests.get(search_url, params=search_params, timeout=20)
+                if search_response.status_code != 200:
+                    print(f"[Warning] YouTube Search API error {search_response.status_code}")
+                    continue
 
-                # Check if it's a Short (<=60 seconds or has #shorts tag)
-                title = snippet.get("title", "") or ""
-                desc = snippet.get("description", "") or ""
-                is_shorts_tagged = ("#shorts" in title.lower()) or ("#shorts" in desc.lower())
+                search_data = search_response.json()
+                video_ids = [item['id']['videoId'] for item in search_data.get('items', [])]
 
-                if duration_sec > 60 and not is_shorts_tagged:
-                    continue  # Skip non-shorts
+                if not video_ids:
+                    continue
 
-                # Extract tags
-                tags = snippet.get("tags", []) or []
+                # Get detailed video information
+                videos_url = "https://www.googleapis.com/youtube/v3/videos"
+                videos_params = {
+                    "key": api_key,
+                    "part": "snippet,contentDetails,statistics",
+                    "id": ",".join(video_ids)
+                }
 
-                # Get thumbnail
-                thumbnails = snippet.get("thumbnails", {})
-                thumbnail = (
-                    thumbnails.get("high", {}).get("url") or
-                    thumbnails.get("medium", {}).get("url") or
-                    thumbnails.get("default", {}).get("url")
-                )
+                videos_response = requests.get(videos_url, params=videos_params, timeout=20)
+                if videos_response.status_code != 200:
+                    print(f"[Warning] YouTube Videos API error {videos_response.status_code}")
+                    continue
 
-                # Parse published date
-                published_at = snippet.get("publishedAt", "")
+                videos_data = videos_response.json()
+                items = videos_data.get("items", [])
 
-                short = MemePost(
-                    id=f"youtube_{vid}",
-                    title=title,
-                    platform='youtube',
-                    url=f"https://www.youtube.com/watch?v={vid}",
-                    permalink=f"https://www.youtube.com/shorts/{vid}",
-                    channel=snippet.get("channelTitle"),
-                    views=int(stats.get("viewCount", 0) or 0),
-                    likes=int(stats.get("likeCount", 0) or 0),
-                    comments=int(stats.get("commentCount", 0) or 0),
-                    created_at=published_at,
-                    thumbnail=thumbnail,
-                    is_video=True,
-                    tags=tags
-                )
-                shorts.append(short)
+                for item in items:
+                    try:
+                        vid = item.get("id")
+                        snippet = item.get("snippet", {})
+                        stats = item.get("statistics", {})
+                        content = item.get("contentDetails", {})
 
-                if len(shorts) >= max_results:
+                        # Parse duration
+                        duration_iso = content.get("duration", "PT0S")
+                        duration_sec = parse_iso8601_duration(duration_iso)
+
+                        # Check if it's a Short (<=60 seconds or has #shorts tag)
+                        title = snippet.get("title", "") or ""
+                        desc = snippet.get("description", "") or ""
+                        is_shorts_tagged = ("#shorts" in title.lower()) or ("#shorts" in desc.lower())
+
+                        if duration_sec > 60 and not is_shorts_tagged:
+                            continue  # Skip non-shorts
+
+                        # Extract tags
+                        tags = snippet.get("tags", []) or []
+
+                        # Get thumbnail
+                        thumbnails = snippet.get("thumbnails", {})
+                        thumbnail = (
+                            thumbnails.get("high", {}).get("url") or
+                            thumbnails.get("medium", {}).get("url") or
+                            thumbnails.get("default", {}).get("url")
+                        )
+
+                        # Parse published date
+                        published_at = snippet.get("publishedAt", "")
+
+                        short = MemePost(
+                            id=f"youtube_{vid}",
+                            title=title,
+                            platform='youtube',
+                            url=f"https://www.youtube.com/watch?v={vid}",
+                            permalink=f"https://www.youtube.com/shorts/{vid}",
+                            channel=snippet.get("channelTitle"),
+                            views=int(stats.get("viewCount", 0) or 0),
+                            likes=int(stats.get("likeCount", 0) or 0),
+                            comments=int(stats.get("commentCount", 0) or 0),
+                            created_at=published_at,
+                            thumbnail=thumbnail,
+                            is_video=True,
+                            tags=tags
+                        )
+                        all_shorts.append(short)
+
+                        if len(all_shorts) >= max_results:
+                            break
+
+                    except Exception as e:
+                        print(f"[Warning] Failed to parse YouTube video: {e}")
+                        continue
+
+                if len(all_shorts) >= max_results:
                     break
 
             except Exception as e:
-                print(f"[Warning] Failed to parse YouTube video: {e}")
+                print(f"[Warning] Failed to search for '{search_term}': {e}")
                 continue
 
-        print(f"Successfully fetched {len(shorts)} YouTube Shorts for {country}")
-        return shorts
+        print(f"Successfully fetched {len(all_shorts)} YouTube Shorts for {country}")
+        return all_shorts
 
     except Exception as e:
         print(f"[Error] Failed to fetch YouTube Shorts: {e}")

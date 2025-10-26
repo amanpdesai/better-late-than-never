@@ -11,6 +11,10 @@ import base64
 import json
 from pathlib import Path
 from typing import Dict, Iterable, Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 from openai import OpenAI
 

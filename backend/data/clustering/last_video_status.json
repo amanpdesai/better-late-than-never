@@ -1,0 +1,14 @@
+{
+  "id": "video_68fdedf18b648191b60493b9c6f1c18901a04a96cc624201",
+  "completed_at": 1761472113,
+  "created_at": 1761471985,
+  "error": null,
+  "expires_at": 1761475713,
+  "model": "sora-2",
+  "object": "video",
+  "progress": 100,
+  "remixed_from_video_id": null,
+  "seconds": "8",
+  "size": "720x1280",
+  "status": "completed"
+}

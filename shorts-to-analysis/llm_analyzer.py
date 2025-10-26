@@ -67,7 +67,7 @@ def analyze_video_content(
 
     # Use Gemini Exp 1206 (latest experimental model, Gemini 2.5 Flash) for vision capabilities with structured output
     model = genai.GenerativeModel(
-        'gemini-2.5-flash-lite',
+        'gemini-2.5-flash',
         generation_config={
             "response_mime_type": "application/json",
             "response_schema": schema

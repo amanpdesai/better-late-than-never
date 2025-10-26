@@ -69,7 +69,7 @@ class MemeScraper:
     def __init__(self):
         self.memes = []
 
-    def scrape_country(self, country: str, reddit_limit: int = 5, youtube_limit: int = 30) -> Dict[str, Any]:
+    def scrape_country(self, country: str, reddit_limit: int = 10, youtube_limit: int = 20) -> Dict[str, Any]:
         """
         Scrape memes for a specific country.
 
@@ -210,7 +210,7 @@ class MemeScraper:
         return result
 
 
-def scrape_meme_data(country: str, reddit_limit: int = 5, youtube_limit: int = 30) -> Dict[str, Any]:
+def scrape_meme_data(country: str, reddit_limit: int = 10, youtube_limit: int = 20) -> Dict[str, Any]:
     """
     Main function to scrape meme data for a country.
 
@@ -232,10 +232,10 @@ if __name__ == "__main__":
                        help=f'Country to scrape. Options: {SUPPORTED_COUNTRIES}')
     parser.add_argument('--output', type=str, default='../output/',
                        help='Output directory path')
-    parser.add_argument('--reddit-limit', type=int, default=5,
-                       help='Number of posts per subreddit (default: 5)')
-    parser.add_argument('--youtube-limit', type=int, default=30,
-                       help='Max YouTube Shorts to fetch (default: 30)')
+    parser.add_argument('--reddit-limit', type=int, default=10,
+                       help='Number of posts per subreddit (default: 10)')
+    parser.add_argument('--youtube-limit', type=int, default=20,
+                       help='Max YouTube Shorts to fetch (default: 20)')
     args = parser.parse_args()
 
     try:

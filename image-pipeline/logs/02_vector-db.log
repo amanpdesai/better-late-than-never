@@ -1,0 +1,8 @@
+# Step: Build embedding indexes and clusters
+# Command: /Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/bin/python /Users/eugenewong/Documents/unwrapathon/better-late-than-never/image-pipeline/vectorDB.py
+# Started: 2025-10-26T11:28:09Z
+
+Traceback (most recent call last):
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/image-pipeline/vectorDB.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

@@ -1,0 +1,8 @@
+flask
+flask-cors
+openai
+google-generativeai
+chromadb
+pillow
+requests
+python-dotenv

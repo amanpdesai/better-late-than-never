@@ -1,0 +1,61 @@
+================================================================================
+USER'S ORIGINAL REQUEST:
+================================================================================
+Create a funny lululemon meme about their leggings and how good they are in a video format. please make sure to use the most trending top memes and make a trendy shortform content video
+
+================================================================================
+CLUSTER-AWARE PROMPT (with YouTube shorts context):
+================================================================================
+
+Generate a short, visually engaging meme video.
+
+**PRIMARY USER REQUEST:** Create a funny lululemon meme about their leggings and how good they are in a video format. please make sure to use the most trending top memes and make a trendy shortform content video
+⚠️ THIS IS THE MAIN TOPIC - THE VIDEO MUST BE ABOUT THIS! ⚠️
+
+**Style Guidelines:**
+- Description Style: Social Commentary Through Humor and
+- Humor Style: Absurd Juxtapositions and Ironic Contrasts
+**PRIMARY TOPIC:** Create a funny lululemon meme about their leggings and how good they are in a video format. please make sure to use the most trending top memes and make a trendy shortform content video
+**Meme Style Context:** Musical Discontent and Corporate Critique
+- Visual Template: Social Media Satire and Screenshots
+
+**Format Requirements:**
+- Modern short-form meme (TikTok/Instagram Reels style)
+- 5-10 seconds long
+- Attention-grabbing pacing
+- Bold caption overlays
+- Trending sounds and music
+
+**CRITICAL CONSTRAINTS:**
+1. The video MUST focus exclusively on: Create a funny lululemon meme about their leggings and how good they are in a video format. please make sure to use the most trending top memes and make a trendy shortform content video
+2. DO NOT include any unrelated themes, objects, or content
+3. All visual and audio elements must directly relate to: Create a funny lululemon meme about their leggings and how good they are in a video format. please make sure to use the most trending top memes and make a trendy shortform content video
+4. Stay on-topic throughout the entire video
+
+
+================================================================================
+GEMINI-SANITIZED PROMPT (sent to Sora):
+================================================================================
+Generate a short, visually engaging meme video.
+
+**PRIMARY USER REQUEST:** Create a funny lululemon meme about their leggings and how good they are in a video format. Please make sure to use trending meme formats and create a trendy short-form content video.
+
+**Style Guidelines:**
+- Description Style: Social Commentary Through Humor
+- Humor Style: Absurd Juxtapositions and Ironic Contrasts
+
+**Meme Style Context:** Relatable Everyday Experiences and Consumer Culture Commentary
+- Visual Template: Social Media Satire and Screenshots
+
+**Format Requirements:**
+- Modern short-form meme (TikTok/Instagram Reels style)
+- 5-10 seconds long
+- Attention-grabbing pacing
+- Bold caption overlays
+- Trending sounds and music
+
+**CRITICAL CONSTRAINTS:**
+1. The video MUST focus exclusively on: Create a funny lululemon meme about their leggings and how good they are in a video format. Please make sure to use trending meme formats and create a trendy short-form content video.
+2. DO NOT include any unrelated themes, objects, or content.
+3. All visual and audio elements must directly relate to: Create a funny lululemon meme about their leggings and how good they are in a video format. Please make sure to use trending meme formats and create a trendy short-form content video.
+4. Stay on-topic throughout the entire video.

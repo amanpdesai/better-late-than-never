@@ -1,10 +1,364 @@
 # Step: Generate meme descriptions
-# Command: /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 /Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/generate_descriptions.py
-# Started: 2025-10-26T08:18:39Z
+# Command: /Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/bin/python /Users/eugenewong/Documents/unwrapathon/better-late-than-never/image-pipeline/generate_descriptions.py
+# Started: 2025-10-26T11:29:34Z
 
+Skipping funny_1ofoujp.jpeg (already done)
+Skipping memes_1of6adl.jpeg (already done)
+Skipping memes_1ofr2fw.png (already done)
+Skipping funny_1ofu5ez.jpeg (already done)
+Skipping memes_1ofv6l9.jpeg (already done)
+Skipping antimeme_1ofd4tp.png (already done)
+Skipping memes_1ofjc1y.jpeg (already done)
+Skipping me_irl_1ofucoy.png (already done)
+Skipping memes_1ofjly1.jpeg (already done)
+Skipping PrequelMemes_1of699q.jpeg (already done)
+Skipping lotrmemes_1of7su6.jpeg (already done)
+Skipping 196_1of7lao.jpeg (already done)
+Skipping memes_1ofhsqm.jpeg (already done)
+Skipping 196_1ofdy3p.png (already done)
+Skipping PrequelMemes_1of81t4.jpeg (already done)
+Skipping 196_1ofl5bu.jpeg (already done)
+Skipping antimeme_1of80nc.jpeg (already done)
+Skipping memes_1of7m9t.jpeg (already done)
+Skipping me_irl_1ofshge.jpeg (already done)
+Skipping 196_1of9ubp.jpeg (already done)
+Skipping funny_1ofufuc.jpeg (already done)
+Skipping memes_1ofhhbk.png (already done)
+Skipping memes_1ofq1it.png (already done)
+Skipping AdviceAnimals_1ofd731.jpeg (already done)
+Skipping starterpacks_1of8jv3.png (already done)
+Skipping me_irl_1ofysj4.jpeg (already done)
+Skipping antimeme_1ofu3hj.jpeg (already done)
+Skipping AdviceAnimals_1ofvg9x.jpeg (already done)
+Skipping comedyheaven_1ofsh2n.jpeg (already done)
+Skipping memes_1ofpxy4.jpeg (already done)
+Skipping 196_1of8rin.jpeg (already done)
+Skipping AdviceAnimals_1ofefpx.png (already done)
+Skipping me_irl_1ofhqmg.jpeg (already done)
+Skipping 196_1ofikqa.jpeg (already done)
+Skipping 196_1ofhgtn.png (already done)
+Skipping lotrmemes_1ofqixs.png (already done)
+Skipping memes_1ofj2hl.png (already done)
+Skipping PrequelMemes_1ofti23.jpeg (already done)
+Skipping 196_1of5zc3.jpeg (already done)
+Skipping memes_1ofmw6n.jpeg (already done)
+Skipping antimeme_1ofuxy6.jpeg (already done)
+Skipping 196_1ofemmw.jpeg (already done)
+Skipping memes_1ofcub4.jpeg (already done)
+Skipping lotrmemes_1oftxgv.jpeg (already done)
+Skipping antimeme_1ofpov9.jpeg (already done)
+Skipping memes_1ofh4gm.jpeg (already done)
+Skipping 2meirl4meirl_1oftgi3.jpeg (already done)
+Skipping memes_1ofj9ol.jpeg (already done)
+Skipping 196_1of6y78.jpeg (already done)
+Skipping me_irl_1ofni0q.png (already done)
+Skipping antimeme_1ofmcd0.jpeg (already done)
+Skipping 196_1oft5ma.png (already done)
+Skipping 196_1of8tdy.jpeg (already done)
+Skipping memes_1ofhs98.jpeg (already done)
+Skipping 196_1of93g8.jpeg (already done)
+Skipping 196_1of7jxd.jpeg (already done)
+Skipping antimeme_1ofwfkr.png (already done)
+Skipping 196_1ofvkyq.jpeg (already done)
+Skipping memes_1ofmlf5.jpeg (already done)
+Skipping me_irl_1ofvg1j.jpeg (already done)
+Skipping AdviceAnimals_1ofsglu.png (already done)
+Skipping me_irl_1ofrtcz.jpeg (already done)
+Skipping 196_1oft0vp.jpeg (already done)
+Skipping 196_1oftc3f.png (already done)
+Skipping AdviceAnimals_1of85i5.jpeg (already done)
+Skipping me_irl_1ofnahz.jpeg (already done)
+Skipping me_irl_1ofe2ah.jpeg (already done)
+Skipping me_irl_1ofqizf.jpeg (already done)
+Skipping lotrmemes_1ofrbx1.jpeg (already done)
+Skipping memes_1ofietk.jpeg (already done)
+Skipping 196_1ofatcr.jpeg (already done)
+Skipping 196_1ofaakt.jpeg (already done)
+Skipping AdviceAnimals_1oflh9l.jpeg (already done)
+Skipping 2meirl4meirl_1ofqwhf.jpeg (already done)
+Skipping memes_1of6kay.jpeg (already done)
+Skipping memes_1ofmozu.jpeg (already done)
+Skipping 196_1ofbg9c.png (already done)
+Skipping HistoryMemes_1of7ghl.jpeg (already done)
+Skipping PrequelMemes_1of80nr.jpeg (already done)
+Skipping memes_1ofhapr.jpeg (already done)
+Skipping me_irl_1ofb4ye.png (already done)
+Skipping memes_1ofr51f.png (already done)
+Skipping me_irl_1ofoo7q.jpeg (already done)
+Skipping memes_1ofwzlc.jpeg (already done)
+Skipping memes_1ofbsxi.jpeg (already done)
+Skipping lotrmemes_1ofuov5.jpeg (already done)
+Skipping comedyheaven_1of6uei.jpeg (already done)
+Skipping lotrmemes_1ofqfl2.jpeg (already done)
+Skipping me_irl_1ofnldc.jpeg (already done)
+Skipping 196_1of9lf8.png (already done)
+Skipping memes_1ofcvxh.png (already done)
+Skipping 196_1ofm7w6.png (already done)
+Skipping me_irl_1ofy5xt.jpeg (already done)
+Skipping starterpacks_1ofov7t.jpeg (already done)
+Skipping lotrmemes_1ofe8mw.jpeg (already done)
+Skipping memes_1ofsreb.jpeg (already done)
+Skipping me_irl_1ofxkp5.jpeg (already done)
+Skipping me_irl_1ofxl7f.jpeg (already done)
+Skipping me_irl_1oftnsh.jpeg (already done)
+Skipping me_irl_1oftb5q.jpeg (already done)
+Skipping memes_1ofvozc.jpeg (already done)
+Skipping HistoryMemes_1ofbiby.jpeg (already done)
+Skipping memes_1ofr0o1.jpeg (already done)
+Skipping 196_1ofs9l8.jpeg (already done)
+Skipping antimeme_1ofxiaa.png (already done)
+Skipping AdviceAnimals_1ofxmq1.jpeg (already done)
+Skipping 196_1off2hu.jpeg (already done)
+Skipping memes_1ofulxu.jpeg (already done)
+Skipping funny_1ofas5m.jpeg (already done)
+Skipping AdviceAnimals_1of8l5m.jpeg (already done)
+Skipping PrequelMemes_1ofmf8r.jpeg (already done)
+Skipping 196_1ofbn1b.jpeg (already done)
+Skipping memes_1ofamxp.jpeg (already done)
+Skipping comedyheaven_1ofpbmq.jpeg (already done)
+Skipping AdviceAnimals_1ofcu3z.jpeg (already done)
+Skipping 196_1ofhgfi.jpeg (already done)
+Skipping memes_1ofg3k5.jpeg (already done)
+Skipping memes_1ofbqt1.png (already done)
+Skipping memes_1of9e1w.png (already done)
+Skipping PrequelMemes_1of8t8u.png (already done)
+Skipping AdviceAnimals_1oflfnf.png (already done)
+Skipping memes_1ofwofd.jpeg (already done)
+Skipping 196_1ofabaw.png (already done)
+Skipping memes_1ofw4o6.png (already done)
+Skipping surrealmemes_1ofble4.jpeg (already done)
+Skipping antimeme_1ofxtf3.jpeg (already done)
+Skipping funny_1ofae1y.jpeg (already done)
+Skipping me_irl_1ofmfcp.jpeg (already done)
+Skipping memes_1ofpylo.jpeg (already done)
+Skipping memes_1of9hoe.png (already done)
+Skipping memes_1ofer9v.jpeg (already done)
+Skipping me_irl_1ofnjen.jpeg (already done)
+Skipping 196_1ofv7ul.jpeg (already done)
+Skipping me_irl_1ofvay2.jpeg (already done)
+Skipping antimeme_1ofjq7w.png (already done)
+Skipping me_irl_1ofo1cm.jpeg (already done)
+Skipping memes_1of9c1t.png (already done)
+Skipping funny_1ofirbg.jpeg (already done)
+Skipping me_irl_1ofrewv.jpeg (already done)
+Skipping AdviceAnimals_1ofoipx.jpeg (already done)
+Skipping memes_1ofx0ru.png (already done)
+Skipping 196_1ofcf1i.jpeg (already done)
+Skipping 196_1of6zg2.jpeg (already done)
+Skipping memes_1ofm1c1.jpeg (already done)
+Skipping memes_1ofulh2.png (already done)
+Skipping me_irl_1ofyhst.jpeg (already done)
+Skipping PrequelMemes_1ofg2ar.jpeg (already done)
+Skipping memes_1of8g2x.jpeg (already done)
+Skipping memes_1ofvmf3.jpeg (already done)
+Skipping 2meirl4meirl_1ofovyw.png (already done)
+Skipping terriblefacebookmemes_1ofpt7s.png (already done)
+Skipping 196_1ofgr06.jpeg (already done)
+Skipping memes_1offlrf.jpeg (already done)
+Skipping antimeme_1of7ub0.jpeg (already done)
+Skipping antimeme_1of6gie.png (already done)
+Skipping memes_1ofvpb1.jpeg (already done)
+Skipping memes_1of7x1l.jpeg (already done)
+Skipping PrequelMemes_1ofmlc6.jpeg (already done)
+Skipping PrequelMemes_1ofvapv.jpeg (already done)
+Skipping lotrmemes_1offo9e.png (already done)
+Skipping me_irl_1of95jy.png (already done)
+Skipping 196_1ofskym.png (already done)
+Skipping surrealmemes_1of7c5l.jpeg (already done)
+Skipping 196_1ofwcmt.jpeg (already done)
+Skipping memes_1ofapqo.jpeg (already done)
+Skipping 196_1oflbq1.png (already done)
+Skipping comedyheaven_1ofttft.jpeg (already done)
+Skipping me_irl_1ofvgu8.jpeg (already done)
+Skipping memes_1ofrx43.jpeg (already done)
+Skipping MemeEconomy_1ofoe6g.png (already done)
+Skipping 2meirl4meirl_1of6pil.jpeg (already done)
+Skipping 196_1ofx43b.jpeg (already done)
+Skipping memes_1ofjxtv.png (already done)
+Skipping 196_1of7gy4.jpeg (already done)
+Skipping 196_1ofi6g2.jpeg (already done)
+Skipping 196_1of81ww.jpeg (already done)
+Skipping 196_1ofre5l.jpeg (already done)
+Skipping memes_1ofvmec.png (already done)
+Skipping starterpacks_1ofv5b8.png (already done)
+Skipping lotrmemes_1ofy470.jpeg (already done)
+Skipping PrequelMemes_1ofli04.jpeg (already done)
+Skipping 196_1ofan5k.jpeg (already done)
+Skipping PrequelMemes_1oftgc8.jpeg (already done)
+Skipping 196_1oflipt.jpeg (already done)
+Skipping memes_1ofd5mx.jpeg (already done)
+Skipping starterpacks_1offpmd.png (already done)
+Skipping comedyheaven_1ofuq9v.jpeg (already done)
+Skipping 196_1ofiljg.jpeg (already done)
+Skipping antimeme_1ofv0vs.jpeg (already done)
+Skipping memes_1ofq2kt.png (already done)
+Skipping 196_1ofnuls.jpeg (already done)
+Skipping dankmemes_1of9tdx.png (already done)
+Skipping AdviceAnimals_1of9zbx.jpeg (already done)
+Skipping me_irl_1ofsggh.jpeg (already done)
+Skipping funny_1ofenu4.jpeg (already done)
+Skipping PrequelMemes_1ofxcrl.png (already done)
+Skipping lotrmemes_1ofbn7d.jpeg (already done)
+Skipping 196_1ofi3ho.jpeg (already done)
+Skipping memes_1oflwc2.png (already done)
+Skipping PrequelMemes_1ofprnl.jpeg (already done)
+Skipping memes_1of87li.jpeg (already done)
+Skipping 196_1ofh3pd.jpeg (already done)
+Skipping memes_1ofr6y0.jpeg (already done)
+Skipping memes_1ofb3q2.jpeg (already done)
+Skipping memes_1ofb7fy.jpeg (already done)
+Skipping lotrmemes_1offo1n.jpeg (already done)
+Skipping PrequelMemes_1ofminr.png (already done)
+Skipping memes_1ofsjvz.jpeg (already done)
+Skipping 196_1ofv6cf.png (already done)
+Skipping AdviceAnimals_1ofy2tg.jpeg (already done)
+Skipping dankmemes_1of6p48.jpeg (already done)
+Skipping me_irl_1offhzt.jpeg (already done)
+Skipping 196_1ofso49.png (already done)
+Skipping AdviceAnimals_1ofwyog.jpeg (already done)
+Skipping 196_1of65t1.jpeg (already done)
+Skipping 196_1ofepwz.jpeg (already done)
+Skipping lotrmemes_1of7s29.jpeg (already done)
+Skipping 196_1of9r6b.png (already done)
+Skipping 196_1ofr5ux.jpeg (already done)
+Skipping antimeme_1ofs0ck.jpeg (already done)
+Skipping me_irl_1ofv3d1.jpeg (already done)
+Skipping me_irl_1ofnjgu.jpeg (already done)
+Skipping 196_1ofuhnu.jpeg (already done)
+Skipping 196_1offx7o.jpeg (already done)
+Skipping AdviceAnimals_1ofcac0.png (already done)
+Skipping 196_1ofhg8l.jpeg (already done)
+Skipping AdviceAnimals_1of6hnu.jpeg (already done)
+Skipping lotrmemes_1ofrhbn.jpeg (already done)
+Skipping comedyheaven_1oftfxx.jpeg (already done)
+Skipping memes_1ofw144.jpeg (already done)
+Skipping MemeEconomy_1ofs04g.jpeg (already done)
+Skipping antimeme_1of5too.jpeg (already done)
+Skipping memes_1ofn5zb.png (already done)
+Skipping me_irl_1ofoh48.png (already done)
+Skipping memes_1of8hkg.jpeg (already done)
+Skipping me_irl_1ofwopc.jpeg (already done)
+Skipping 196_1ofsv7b.png (already done)
+Skipping AdviceAnimals_1of943y.png (already done)
+Skipping dankmemes_1ofexr9.jpeg (already done)
+Skipping memes_1ofliv7.jpeg (already done)
+Skipping 196_1ofj8fi.jpeg (already done)
+Skipping AdviceAnimals_1of8gtg.jpeg (already done)
+Skipping memes_1ofiz8c.jpeg (already done)
+Skipping me_irl_1ofa7at.jpeg (already done)
+Skipping me_irl_1ofoe2s.jpeg (already done)
+Skipping 196_1ofcq5o.jpeg (already done)
+Skipping me_irl_1ofvzju.jpeg (already done)
+Skipping 2meirl4meirl_1oftbkc.jpeg (already done)
+Skipping memes_1ofhp0x.jpeg (already done)
+Skipping antimeme_1ofqlvi.png (already done)
+Skipping 196_1ofgxdj.jpeg (already done)
+Skipping lotrmemes_1oftrzg.jpeg (already done)
+Skipping me_irl_1ofmmi7.jpeg (already done)
+Skipping memes_1of6o9v.jpeg (already done)
+Skipping me_irl_1ofl6y1.jpeg (already done)
+Skipping memes_1ofw0t6.jpeg (already done)
+Processing 2meirl4meirl_1ofot3d.png...
+Processing funny_1ofqa9z.jpeg...
+Processing funny_1ofxfzj.jpeg...
+Processing PrequelMemes_1of8192.jpeg...
+Skipping comedyheaven_1ofvg2k.png (already done)
+Processing me_irl_1ofsoad.jpeg...
+Processing 196_1oftq6y.png...
+Skipping antimeme_1ofjh8h.jpeg (already done)
+Processing 196_1ofwhsm.jpeg...
+Processing memes_1ofh020.jpeg...
+Processing me_irl_1oflh32.jpeg...
+Processing antimeme_1ofgwoy.png...
+Processing 196_1ofsyzh.jpeg...
+Processing funny_1offb80.jpeg...
+Processing 196_1ofcwaj.jpeg...
+Processing lotrmemes_1ofrr3r.jpeg...
+Processing 196_1ofea30.jpeg...
+Processing me_irl_1ofkhla.png...
+Processing PrequelMemes_1of5s39.jpeg...
+Processing 196_1ofkbeb.jpeg...
+Processing HistoryMemes_1ofd6hg.jpeg...
+Processing 196_1ofew7c.png...
+Processing memes_1of8m1q.jpeg...
+Processing me_irl_1of76xk.jpeg...
+Processing memes_1of8xhx.jpeg...
+Processing memes_1ofcz0y.jpeg...
+Processing memes_1of6ix5.jpeg...
+Processing 196_1of7g34.png...
+Processing me_irl_1ofnm94.jpeg...
+Processing surrealmemes_1ofrrg4.jpeg...
+Processing 196_1of90zd.jpeg...
+Processing antimeme_1of5nhw.jpeg...
+Processing antimeme_1ofox1q.jpeg...
+Processing memes_1of6w0k.jpeg...
 Traceback (most recent call last):
-  File "/Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/generate_descriptions.py", line 9, in <module>
-    genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-                            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "<frozen os>", line 679, in __getitem__
-KeyError: 'GOOGLE_API_KEY'
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/image-pipeline/generate_descriptions.py", line 56, in <module>
+    response = model.generate_content([PROMPT, img])
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/generativeai/generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/client.py", line 835, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/api_core/gapic_v1/method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 75, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 328, in _with_call
+    call = self._interceptor.intercept_unary_unary(
+        continuation, client_call_details, request
+    )
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/google/ai/generativelanguage_v1beta/services/generative_service/transports/grpc.py", line 79, in intercept_unary_unary
+    response = continuation(client_call_details, request)
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 1177, in with_call
+    state, call = self._blocking(
+                  ~~~~~~~~~~~~~~^
+        request, timeout, metadata, credentials, wait_for_ready, compression
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 1150, in _blocking
+    event = call.next_event()
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 388, in grpc._cython.cygrpc.SegregatedCall.next_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 211, in grpc._cython.cygrpc._next_call_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 205, in grpc._cython.cygrpc._next_call_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/completion_queue.pyx.pxi", line 97, in grpc._cython.cygrpc._latent_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/completion_queue.pyx.pxi", line 80, in grpc._cython.cygrpc._internal_latent_event
+  File "src/python/grpcio/grpc/_cython/_cygrpc/completion_queue.pyx.pxi", line 61, in grpc._cython.cygrpc._next
+KeyboardInterrupt

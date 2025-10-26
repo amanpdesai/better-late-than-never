@@ -1,0 +1,24 @@
+================================================================================
+SIMPLE MODE PROMPT (sent to Sora):
+================================================================================
+
+Create a short-form meme video (5-10 seconds) for social media.
+
+**Topic:** Create a funny lululemon meme about their leggings and how good they are in a video format. please make sure to use the most trending top memes and make a trendy short-form content video
+
+**Requirements:**
+- Modern, trendy TikTok/Instagram Reels style
+- Fun and engaging visuals
+- Upbeat, trendy music or sounds
+- Bold text overlays if relevant
+- High energy pacing
+- Relatable and shareable content
+
+**Style:**
+- Keep it light, funny, and positive
+- Focus on the specific topic mentioned above
+- Use current meme formats and trends
+- Make it visually appealing and dynamic
+
+The video should be optimized for social media sharing and appeal to a broad audience.
+

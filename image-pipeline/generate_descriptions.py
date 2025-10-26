@@ -1,6 +1,10 @@
 import os, json
 import google.generativeai as genai
 from PIL import Image
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # === Config ===
 MEME_DIR = "all_memes"
@@ -8,7 +12,7 @@ OUT_JSON = "meme_descriptions.json"
 MAX_MEMES = 300
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
-model = genai.GenerativeModel("gemini-2.5-flash-lite")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # === Load existing data ===
 if os.path.exists(OUT_JSON):

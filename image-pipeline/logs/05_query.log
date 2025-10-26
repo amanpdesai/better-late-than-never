@@ -1,22 +1,18 @@
 # Step: Query clusters with Gemini
-# Command: /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 /Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/query_meme_clusters.py 'What meme clusters should I explore?' --top-k 3 --model gemini-2.5-flash-lite --output-file /Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/output.txt --with-random-images --random-count 2
-# Started: 2025-10-26T06:57:49Z
+# Command: /Users/eugenewong/Documents/unwrapathon/better-late-than-never/.venv/bin/python /Users/eugenewong/Documents/unwrapathon/better-late-than-never/image-pipeline/query_meme_clusters.py 'Create a funny lululemon meme about their leggings and how good they are in an image format. please make sure to use the most trending top memes and make a hilarious drake style meme' --top-k 3 --model gemini-2.5-flash-lite --output-file /Users/eugenewong/Documents/unwrapathon/better-late-than-never/image-pipeline/output.txt --with-random-images --random-count 2
+# Started: 2025-10-26T11:33:37Z
 
 Best Match DESCRIPTION: Cluster 4
-Best Match HUMOR: Cluster 2
-Best Match TOPIC: Cluster 7
+Best Match HUMOR: Cluster 4
+Best Match TOPIC: Cluster 4
 Best Match MEME_TEMPLATE: Cluster 4
 
 Random image suggestions:
 DESCRIPTION (Cluster 4)
-  - 2meirl4meirl_1oftgi3.jpeg: A cartoon depicts a person standing at a fork in the road; one path labeled 'giving up' leads to a sunny castle, and the other labeled 'keep it going' leads to a dark, stormy castle.
-  - memes_1ofd5mx.jpeg: A parody Dr. Seuss book cover features Sam-I-Am recoiling from green food, with the vulgarized title 'What The Fuck Is This Shit?'.
-HUMOR (Cluster 2)
-  - 196_1ofemmw.jpeg: The humor arises from the tagline 'SWEETER, SWEETER, PUMPKIN EATER,' a parody of a famous movie quote.
-  - AdviceAnimals_1ofcu3z.jpeg: The humor arises from Kermit's nonchalant 'none of my business' dismissal of a pointed observation.
-TOPIC (Cluster 7)
-  - 196_1ofaakt.jpeg: The meme explores anime fandom culture, character hype, and the meta-commentary on creator-audience interactions.
-  - AdviceAnimals_1oflfnf.png: The meme parodies national symbols and historical declarations through whimsical reinterpretation and internet absurdity.
+  (cluster not found or contains no items)
+HUMOR (Cluster 4)
+  (cluster not found or contains no items)
+TOPIC (Cluster 4)
+  (cluster not found or contains no items)
 MEME_TEMPLATE (Cluster 4)
-  - 196_1ofdy3p.png: A text-based tweet screenshot used to present a humorous or opinionated statement.
-  - 196_1ofan5k.jpeg: This is an edited screenshot parodying a mobile food delivery application's tracking interface.
+  (cluster not found or contains no items)

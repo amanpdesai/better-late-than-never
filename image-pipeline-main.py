@@ -20,6 +20,10 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Callable, Dict, List, Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def iso_now() -> str:
@@ -170,8 +174,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="gemini-2.5-flash-lite",
-        help="Gemini model name (default: gemini-2.5-flash-lite).",
+        default="gemini-2.5-flash",
+        help="Gemini model name (default: gemini-2.5-flash).",
     )
     parser.add_argument(
         "--status-file",
