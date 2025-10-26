@@ -3,13 +3,13 @@
   "success": true,
   "error": null,
   "analysis": {
-    "description": "The video opens with a mirrored image of a woman with long, light brown hair, wearing red ear protection and a black t-shirt, aiming and firing a pistol at an indoor shooting range. The scene transitions to a title card reading \"OTHER PEOPLE SHOOTING\" in yellow text, followed by footage of a child in an orange hat and brown overalls lying prone in a sparse, outdoor landscape, aiming a large scoped rifle. This is succeeded by another clip under the same title, showing a man with dreadlocks, wearing a light blue t-shirt, standing in a green field and firing a shotgun. The video then introduces the text \"THIS GUY...\" in yellow, revealing a man in a black t-shirt and khaki pants, wearing ear protection and sunglasses, standing in a desert-like environment while holding an extremely long and heavy-looking rifle. The words \"NO WAY\" in bright blue, accompanied by a crown and skull emoji, are overlaid on the screen in this final segment, with \"Xurnex2\" visible as a watermark throughout.",
-    "humor": "absurdist comedy",
-    "topic": "shooting sports",
-    "template": "A comparative format that showcases multiple examples before culminating in an exaggerated or unexpected final reveal.",
-    "sound_description": "This audio features lively, excited speech intertwined with a highly repetitive and often rapid-fire \"quack\" sound effect that functions like a rhythmic percussion. Speakers are engaged in enthusiastic banter, at one point discussing \"tactical turkey,\" as the unusual \"quack\" sound becomes increasingly chaotic and distorts into electronic noise."
+    "description": "The video opens with a mirrored image of a woman at an indoor shooting range, wearing ear protection and holding a pistol. This transitions to an outdoor scene where a child, wearing an orange hat and overalls, lies prone and aims a large sniper rifle, accompanied by the text \"OTHER PEOPLE SHOOTING\". The next shot shows a man with dreadlocks and headphones standing in a grassy field, holding and aiming a pump-action shotgun, also with the text \"OTHER PEOPLE SHOOTING\" overlaid. The final scene features a man standing in a rugged, desert-like landscape, holding an extremely large, long-barreled sniper rifle, with text appearing that reads \"THIS GUY...\" and \"NO WAY...\", along with a crowned skull emoji. A \"Xurnex2\" watermark is visible throughout the video.",
+    "humor": "exaggeration, situational irony",
+    "topic": "gun culture, shooting sports",
+    "template": "A comparison format with escalating examples and descriptive text overlays highlighting a progressively extreme scenario.",
+    "sound_description": "This is an energetic electronic track, likely in the trap or hip-hop genre, featuring a driving beat and repetitive vocal samples. It's punctuated by enthusiastic speech (\"Let's get it, baby!\") and frequent, prominent gunshot sound effects, ending with an electronic buzz."
   },
-  "transcript": "It was fun. Let's get it baby. So he has tactical turkey dude.\nEverybody ready?\n",
+  "transcript": "Hey, what's up? Let's get it, baby. Everybody ready? So he was tactical turkey. Do it.",
   "keyframes": [
     "output/keyframes/OIs4CdJ8uE4_frame_000.jpg",
     "output/keyframes/OIs4CdJ8uE4_frame_001.jpg",

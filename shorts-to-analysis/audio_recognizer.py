@@ -41,7 +41,7 @@ def analyze_audio_with_gemini(audio_path: str, api_key: str) -> str:
 
             print("  [Audio] Analyzing with Gemini...")
             # Use Gemini 2.5 Flash to analyze audio
-            model = genai.GenerativeModel('gemini-2.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
             prompt = """Analyze this audio and provide a brief description (1-2 sentences) covering:
 - Type of audio (music, speech, sound effects, silence, etc.)
