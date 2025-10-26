@@ -386,28 +386,38 @@ class GoogleTrendsScraper:
         """Fetch hourly interest history per query to infer the trend direction."""
         meta: Dict[str, TrendMeta] = {}
         unique_queries = list(dict.fromkeys(queries))
+        logger.info(f"Building interest meta for {len(unique_queries)} queries: {unique_queries[:5]}...")
+        
         for batch in chunked(unique_queries, MAX_INTEREST_BATCH):
             if not batch:
                 continue
             try:
+                logger.debug(f"Fetching interest data for batch: {batch}")
                 self.pytrends.build_payload(
                     batch, timeframe="now 1-d", geo=self.config["geo"]
                 )
                 df = self.pytrends.interest_over_time()
+                logger.debug(f"Interest data shape: {df.shape}, columns: {list(df.columns)}")
             except Exception as exc:  # noqa: BLE001
-                logger.debug("interest_over_time failed for %s: %s", batch, exc)
+                logger.warning("interest_over_time failed for %s: %s", batch, exc)
                 continue
 
             if df.empty:
+                logger.warning(f"Empty interest data for batch: {batch}")
                 continue
 
             for query in batch:
                 if query not in df.columns:
+                    logger.debug(f"Query '{query}' not found in interest data columns")
                     continue
                 series = df[query].dropna()
                 if series.empty:
+                    logger.debug(f"Empty series for query: {query}")
                     continue
+                logger.debug(f"Analyzing series for '{query}': {series.tolist()}")
                 meta[query] = analyze_interest_series(series)
+        
+        logger.info(f"Built interest meta for {len(meta)} queries")
         return meta
 
     def _fetch_related_queries(self, queries: Sequence[str]) -> Dict[str, List[str]]:
@@ -576,16 +586,22 @@ def analyze_interest_series(series: pd.Series) -> TrendMeta:
     if not values:
         return TrendMeta(trend="unknown", percent_change=0.0, trend_duration_hours=0, sparkline=[])
 
+    # Calculate percent change from first to last value
     first, last = values[0], values[-1]
-    percent_change = ((last - first) / max(first, 1)) * 100 if first else 0.0
+    percent_change = ((last - first) / max(first, 1)) * 100 if first > 0 else 0.0
 
+    # Determine trend based on percent change
     trend = "steady"
     if percent_change > 15:
         trend = "rising"
     elif percent_change < -15:
         trend = "falling"
 
+    # Calculate consecutive growth hours (looking at recent trend)
     duration = consecutive_growth_hours(values)
+
+    # Debug logging to see what's happening
+    logger.debug(f"Interest series analysis: first={first}, last={last}, change={percent_change:.2f}%, trend={trend}")
 
     return TrendMeta(
         trend=trend,
@@ -596,15 +612,28 @@ def analyze_interest_series(series: pd.Series) -> TrendMeta:
 
 
 def consecutive_growth_hours(values: List[float]) -> int:
+    """Calculate consecutive hours of growth/decline from the end of the series."""
     if len(values) < 2:
         return 0
+    
     duration = 0
+    # Look backwards from the most recent value
     for idx in range(len(values) - 1, 0, -1):
         if values[idx] > values[idx - 1]:
             duration += 1
         else:
             break
-    return duration
+    
+    # Also check for consecutive decline
+    decline_duration = 0
+    for idx in range(len(values) - 1, 0, -1):
+        if values[idx] < values[idx - 1]:
+            decline_duration += 1
+        else:
+            break
+    
+    # Return the longer duration (growth or decline)
+    return max(duration, decline_duration)
 
 
 def categorize_query(query: str) -> str:

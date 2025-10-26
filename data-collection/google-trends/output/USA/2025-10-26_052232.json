@@ -1,0 +1,772 @@
+{
+  "country": "USA",
+  "category": "google_trends",
+  "timestamp": "2025-10-26T05:22:32.922603+00:00",
+  "last_updated": "2025-10-26T05:22:32.922603+00:00",
+  "trending_searches": [
+    {
+      "rank": 1,
+      "query": "june lockhart",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        6.0,
+        6.0,
+        7.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        5.0
+      ],
+      "related_queries": [
+        "june lockhart 2025",
+        "june lockhart movies",
+        "lassie",
+        "lassie june lockhart",
+        "june lockhart lost in space"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 2,
+      "query": "texas a&m vs lsu",
+      "search_volume": "500K+",
+      "traffic": 500000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        15.0,
+        12.0,
+        11.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        6.0,
+        6.0,
+        5.0,
+        5.0,
+        4.0
+      ],
+      "related_queries": [
+        "texas a&m football vs lsu",
+        "lsu football",
+        "texas a&m football",
+        "texas football",
+        "a&m football"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 3,
+      "query": "alabama vs south carolina",
+      "search_volume": "500K+",
+      "traffic": 500000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0
+      ],
+      "related_queries": [
+        "alabama football",
+        "alabama vs south carolina football",
+        "south carolina football",
+        "south carolina gamecocks football",
+        "alabama crimson tide football"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 4,
+      "query": "michigan vs mi state",
+      "search_volume": "500K+",
+      "traffic": 500000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        7.0,
+        5.0,
+        5.0,
+        4.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        3.0,
+        4.0,
+        3.0
+      ],
+      "related_queries": [
+        "michigan football",
+        "michigan vs michigan state football",
+        "michigan vs mi state football",
+        "michigan state football",
+        "michigan wolverines football"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 5,
+      "query": "timothy mellon",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        7.0,
+        7.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "related_queries": [
+        "timothy mellon net worth",
+        "who is timothy mellon",
+        "trump",
+        "timothy mellon trump",
+        "shutdown"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 6,
+      "query": "colorado vs utah",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 1,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        31.0,
+        38.0,
+        38.0,
+        38.0,
+        32.0,
+        31.0,
+        32.0,
+        35.0,
+        35.0,
+        35.0,
+        33.0,
+        34.0
+      ],
+      "related_queries": [
+        "utah vs colorado",
+        "colorado football"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 7,
+      "query": "texas vs ms state",
+      "search_volume": "500K+",
+      "traffic": 500000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        4.0,
+        6.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "related_queries": [
+        "arch manning injury",
+        "matthew caldwell"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 8,
+      "query": "mizkif",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 2,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        21.0,
+        19.0,
+        21.0,
+        22.0,
+        22.0,
+        22.0,
+        21.0,
+        23.0,
+        22.0,
+        20.0,
+        22.0,
+        24.0
+      ],
+      "related_queries": [
+        "emiru mizkif",
+        "mizkif and emiru",
+        "mizkif twitch"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 9,
+      "query": "cruz azul - monterrey",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        30.0,
+        39.0,
+        32.0,
+        35.0,
+        39.0,
+        27.0,
+        37.0,
+        36.0,
+        33.0,
+        35.0,
+        57.0,
+        40.0
+      ],
+      "related_queries": [
+        "cruz azul vs monterrey",
+        "monterrey vs cruz azul"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 10,
+      "query": "tennessee vs kentucky",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        21.0,
+        17.0,
+        12.0,
+        11.0,
+        8.0,
+        7.0,
+        7.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        5.0
+      ],
+      "related_queries": [
+        "where to watch tennessee volunteers football vs kentucky wildcats football",
+        "kentucky vs tennessee"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 11,
+      "query": "guadalajara - atlas",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        18.0,
+        16.0,
+        12.0,
+        11.0,
+        9.0,
+        18.0,
+        12.0,
+        10.0,
+        8.0,
+        8.0,
+        7.0,
+        7.0
+      ],
+      "related_queries": [
+        "guadalajara vs atlas",
+        "chivas vs atlas"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 12,
+      "query": "wisconsin vs oregon",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        8.0,
+        8.0,
+        6.0,
+        6.0,
+        7.0,
+        6.0,
+        5.0,
+        6.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "related_queries": [
+        "oregon vs wisconsin",
+        "wisconsin football"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 13,
+      "query": "suns vs nuggets",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        30.0,
+        46.0,
+        40.0,
+        24.0,
+        20.0,
+        14.0,
+        13.0,
+        12.0,
+        10.0,
+        10.0,
+        9.0,
+        8.0
+      ],
+      "related_queries": [
+        "nikola joki\u0107",
+        "nuggets",
+        "nuggets vs suns"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 14,
+      "query": "ole miss vs oklahoma",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "sports",
+      "trend": "falling",
+      "trend_duration_hours": 0,
+      "percent_change": -50.0,
+      "trend_sparkline": [
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "related_queries": [
+        "ou football",
+        "ou vs ole miss",
+        "oklahoma football"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 15,
+      "query": "thunder vs hawks",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        6.0,
+        4.0,
+        5.0,
+        4.0,
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        3.0,
+        4.0,
+        4.0
+      ],
+      "related_queries": [
+        "okc vs hawks"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 16,
+      "query": "hornets vs 76ers",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        6.0,
+        7.0,
+        6.0,
+        6.0,
+        4.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "related_queries": [
+        "quentin grimes",
+        "sixers",
+        "hornets"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 17,
+      "query": "brentford vs liverpool",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        1.0
+      ],
+      "related_queries": [
+        "liverpool",
+        "brentford - liverpool",
+        "liverpool f.c"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 18,
+      "query": "auburn vs arkansas",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "related_queries": [
+        "auburn football",
+        "arkansas vs auburn"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 19,
+      "query": "bulls vs magic",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "sports",
+      "trend": "rising",
+      "trend_duration_hours": 0,
+      "percent_change": 150.0,
+      "trend_sparkline": [
+        6.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        4.0,
+        5.0,
+        5.0,
+        4.0,
+        5.0,
+        6.0,
+        5.0
+      ],
+      "related_queries": [
+        "bulls",
+        "chicago bulls",
+        "orlando magic"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 20,
+      "query": "time change 2025",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "general",
+      "trend": "rising",
+      "trend_duration_hours": 1,
+      "percent_change": 400.0,
+      "trend_sparkline": [
+        11.0,
+        9.0,
+        11.0,
+        11.0,
+        9.0,
+        9.0,
+        11.0,
+        10.0,
+        11.0,
+        13.0,
+        9.0,
+        10.0
+      ],
+      "related_queries": [
+        "daylight savings 2025",
+        "daylight savings"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    }
+  ],
+  "breakout_searches": [
+    {
+      "query": "june lockhart 2025",
+      "parent_query": "june lockhart",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "june lockhart movies",
+      "parent_query": "june lockhart",
+      "growth": "5000%+",
+      "category": "entertainment"
+    },
+    {
+      "query": "lassie",
+      "parent_query": "june lockhart",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "texas a&m football vs lsu",
+      "parent_query": "texas a&m vs lsu",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "lsu football",
+      "parent_query": "texas a&m vs lsu",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "texas a&m football",
+      "parent_query": "texas a&m vs lsu",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "alabama football",
+      "parent_query": "alabama vs south carolina",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "alabama vs south carolina football",
+      "parent_query": "alabama vs south carolina",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "south carolina football",
+      "parent_query": "alabama vs south carolina",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "michigan football",
+      "parent_query": "michigan vs mi state",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "michigan vs michigan state football",
+      "parent_query": "michigan vs mi state",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "michigan vs mi state football",
+      "parent_query": "michigan vs mi state",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "timothy mellon net worth",
+      "parent_query": "timothy mellon",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "who is timothy mellon",
+      "parent_query": "timothy mellon",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "trump",
+      "parent_query": "timothy mellon",
+      "growth": "5000%+",
+      "category": "general"
+    }
+  ],
+  "category_breakdown": {
+    "general": 30,
+    "sports": 70
+  },
+  "geographic_distribution": {
+    "Alabama": 12.5,
+    "Alaska": 12.5,
+    "Arizona": 12.5,
+    "Arkansas": 12.5,
+    "California": 12.5,
+    "Colorado": 12.5,
+    "Connecticut": 12.5,
+    "Delaware": 12.5
+  },
+  "summary": {
+    "total_trending_searches": 20,
+    "total_breakout_searches": 15,
+    "top_category": "sports",
+    "most_searched_term": "june lockhart",
+    "notable_topics": [
+      "june lockhart",
+      "texas a&m vs lsu",
+      "alabama vs south carolina",
+      "michigan vs mi state",
+      "timothy mellon"
+    ]
+  },
+  "sources": [
+    "Google Trends Daily",
+    "PyTrends interest_over_time",
+    "PyTrends related_queries"
+  ]
+}

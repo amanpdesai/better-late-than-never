@@ -1,0 +1,733 @@
+{
+  "country": "CANADA",
+  "category": "google_trends",
+  "timestamp": "2025-10-26T05:24:11.463783+00:00",
+  "last_updated": "2025-10-26T05:24:11.463783+00:00",
+  "trending_searches": [
+    {
+      "rank": 1,
+      "query": "oilers vs kraken",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        29.0,
+        29.0,
+        32.0,
+        31.0,
+        51.0,
+        70.0,
+        66.0,
+        40.0,
+        28.0,
+        22.0,
+        33.0,
+        14.0
+      ],
+      "related_queries": [
+        "canadiens vs canucks",
+        "oilers vs kraken prediction"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 2,
+      "query": "canadiens vs canucks",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        5.0,
+        5.0,
+        7.0,
+        5.0,
+        7.0,
+        6.0,
+        6.0,
+        5.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "dodgers vs blue jays",
+        "montreal vs canucks",
+        "canadiens vs oilers",
+        "vancouver canucks",
+        "canucks vs predators"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 3,
+      "query": "mizkif",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 1,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        30.0,
+        28.0,
+        25.0,
+        29.0,
+        27.0,
+        27.0,
+        28.0,
+        26.0,
+        28.0,
+        27.0,
+        25.0,
+        42.0
+      ],
+      "related_queries": [
+        "mizkif emiru",
+        "emiru",
+        "emiru and mizkif",
+        "mizkif reddit",
+        "mizkif twitch"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 4,
+      "query": "oceania insignia norovirus outbreak",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "health",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        6.0,
+        4.0,
+        4.0,
+        6.0,
+        7.0,
+        6.0,
+        6.0,
+        5.0,
+        4.0,
+        9.0,
+        4.0,
+        0.0
+      ],
+      "related_queries": [
+        "tropical storm melissa hurricane jamaica"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 5,
+      "query": "june lockhart",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        7.0,
+        4.0,
+        8.0,
+        6.0,
+        5.0,
+        7.0,
+        4.0,
+        7.0,
+        7.0,
+        5.0,
+        8.0,
+        0.0
+      ],
+      "related_queries": [
+        "june lockhart 2025",
+        "june lockhart lassie",
+        "lassie",
+        "lost in space",
+        "lost in space june lockhart"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 6,
+      "query": "satish shah",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        7.0,
+        6.0,
+        7.0,
+        6.0,
+        0.0,
+        5.0,
+        6.0,
+        5.0,
+        0.0,
+        6.0,
+        7.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 7,
+      "query": "cholesterol medication recalled",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        3.0,
+        4.0,
+        4.0,
+        6.0,
+        8.0,
+        6.0,
+        6.0,
+        7.0,
+        6.0,
+        7.0,
+        8.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 8,
+      "query": "colonel sanders",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        7.0,
+        7.0,
+        7.0,
+        6.0,
+        4.0,
+        5.0,
+        6.0,
+        5.0,
+        5.0,
+        6.0,
+        6.0,
+        0.0
+      ],
+      "related_queries": [
+        "colonel sanders blue jays",
+        "jays game"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 9,
+      "query": "sabres vs maple leafs",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "sabres \u2013 maple leafs",
+        "leafs game tonight"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 10,
+      "query": "yoshinobu yamamoto",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        10.0,
+        8.0,
+        9.0,
+        8.0,
+        9.0,
+        7.0,
+        9.0,
+        7.0,
+        9.0,
+        10.0,
+        8.0,
+        0.0
+      ],
+      "related_queries": [
+        "jays vs dodgers game 2",
+        "jays",
+        "world series game 3"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 11,
+      "query": "aspinall vs gane",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "falling",
+      "trend_duration_hours": 0,
+      "percent_change": -100.0,
+      "trend_sparkline": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        2.0,
+        3.0,
+        0.0
+      ],
+      "related_queries": [
+        "tom aspinall vs gane",
+        "ufc",
+        "aspinall"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 12,
+      "query": "brentford vs liverpool",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "liverpool",
+        "brentford \u2013 liverpool",
+        "premier league table"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 13,
+      "query": "alessia cara",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        2.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "jonas brothers toronto"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 14,
+      "query": "wind warning",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        3.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        2.0,
+        2.0,
+        0.0
+      ],
+      "related_queries": [
+        "power outage vancouver"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 15,
+      "query": "lions vs roughriders",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "related_queries": [
+        "cfl playoff schedule",
+        "bc lions",
+        "saskatchewan roughriders"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 16,
+      "query": "timothy mellon",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 17,
+      "query": "snl host",
+      "search_volume": "2K+",
+      "traffic": 2000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        13.0,
+        18.0,
+        23.0,
+        23.0,
+        25.0,
+        41.0,
+        39.0,
+        37.0,
+        34.0,
+        0.0
+      ],
+      "related_queries": [
+        "is snl new tonight"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 18,
+      "query": "brandon montour",
+      "search_volume": "2K+",
+      "traffic": 2000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.0,
+        14.0,
+        0.0,
+        90.0,
+        31.0,
+        18.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "brandon montour brother",
+        "cameron montour"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 19,
+      "query": "suns vs nuggets",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        62.0,
+        52.0,
+        44.0,
+        26.0,
+        16.0,
+        0.0,
+        14.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "nikola joki\u0107",
+        "nuggets",
+        "denver nuggets"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 20,
+      "query": "jordan eberle",
+      "search_volume": "1K+",
+      "traffic": 1000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        16.0,
+        0.0,
+        100.0,
+        71.0,
+        64.0,
+        60.0,
+        23.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    }
+  ],
+  "breakout_searches": [
+    {
+      "query": "canadiens vs canucks",
+      "parent_query": "oilers vs kraken",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "oilers vs kraken prediction",
+      "parent_query": "oilers vs kraken",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "dodgers vs blue jays",
+      "parent_query": "canadiens vs canucks",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "montreal vs canucks",
+      "parent_query": "canadiens vs canucks",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "canadiens vs oilers",
+      "parent_query": "canadiens vs canucks",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "mizkif emiru",
+      "parent_query": "mizkif",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "emiru",
+      "parent_query": "mizkif",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "emiru and mizkif",
+      "parent_query": "mizkif",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "tropical storm melissa hurricane jamaica",
+      "parent_query": "oceania insignia norovirus outbreak",
+      "growth": "5000%+",
+      "category": "technology"
+    },
+    {
+      "query": "june lockhart 2025",
+      "parent_query": "june lockhart",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "june lockhart lassie",
+      "parent_query": "june lockhart",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "lassie",
+      "parent_query": "june lockhart",
+      "growth": "5000%+",
+      "category": "general"
+    }
+  ],
+  "category_breakdown": {
+    "sports": 35,
+    "general": 60,
+    "health": 5
+  },
+  "geographic_distribution": {
+    "Alberta": 12.5,
+    "British Columbia": 12.5,
+    "Manitoba": 12.5,
+    "New Brunswick": 12.5,
+    "Newfoundland and Labrador": 12.5,
+    "Northwest Territories": 12.5,
+    "Nova Scotia": 12.5,
+    "Ontario": 12.5
+  },
+  "summary": {
+    "total_trending_searches": 20,
+    "total_breakout_searches": 12,
+    "top_category": "general",
+    "most_searched_term": "oilers vs kraken",
+    "notable_topics": [
+      "oilers vs kraken",
+      "canadiens vs canucks",
+      "mizkif",
+      "oceania insignia norovirus outbreak",
+      "june lockhart"
+    ]
+  },
+  "sources": [
+    "Google Trends Daily",
+    "PyTrends interest_over_time",
+    "PyTrends related_queries"
+  ]
+}

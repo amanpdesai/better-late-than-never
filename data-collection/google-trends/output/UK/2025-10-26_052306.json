@@ -1,0 +1,748 @@
+{
+  "country": "UK",
+  "category": "google_trends",
+  "timestamp": "2025-10-26T05:23:06.630210+00:00",
+  "last_updated": "2025-10-26T05:23:06.630210+00:00",
+  "trending_searches": [
+    {
+      "rank": 1,
+      "query": "brentford vs liverpool",
+      "search_volume": "500K+",
+      "traffic": 500000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        2.0,
+        2.0,
+        3.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        3.0,
+        3.0
+      ],
+      "related_queries": [
+        "brentford f.c. vs liverpool f.c.",
+        "brentford f.c. vs liverpool",
+        "liverpool f.c.",
+        "brentford f.c.",
+        "man united vs brighton"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 2,
+      "query": "man united vs brighton",
+      "search_volume": "500K+",
+      "traffic": 500000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "related_queries": [
+        "brentford vs liverpool",
+        "manchester united vs brighton",
+        "chelsea vs sunderland",
+        "brighton vs newcastle",
+        "man utd vs brighton"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 3,
+      "query": "clocks go back",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "general",
+      "trend": "rising",
+      "trend_duration_hours": 0,
+      "percent_change": 433.33,
+      "trend_sparkline": [
+        11.0,
+        13.0,
+        13.0,
+        12.0,
+        10.0,
+        13.0,
+        13.0,
+        14.0,
+        17.0,
+        19.0,
+        16.0,
+        16.0
+      ],
+      "related_queries": [
+        "do clocks go back",
+        "clocks go back when",
+        "the clocks go back",
+        "when do clocks go back",
+        "do the clocks go back"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 4,
+      "query": "chelsea vs sunderland",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "newcastle",
+        "newcastle vs fulham",
+        "premier league",
+        "man united vs brighton",
+        "chelsea f.c."
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 5,
+      "query": "wardley vs parker",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "related_queries": [
+        "parker vs wardley time",
+        "fabio wardley",
+        "joseph parker",
+        "joseph parker vs fabio wardley",
+        "parker vs wardley undercard"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 6,
+      "query": "cholesterol medication recalled",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        3.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 7,
+      "query": "lottery results",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "general",
+      "trend": "rising",
+      "trend_duration_hours": 0,
+      "percent_change": 500.0,
+      "trend_sparkline": [
+        8.0,
+        10.0,
+        9.0,
+        10.0,
+        10.0,
+        10.0,
+        12.0,
+        14.0,
+        11.0,
+        13.0,
+        16.0,
+        12.0
+      ],
+      "related_queries": [
+        "lottery result"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 8,
+      "query": "newcastle vs fulham",
+      "search_volume": "100K+",
+      "traffic": 100000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "michael carrick",
+        "newcastle united"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 9,
+      "query": "aspinall",
+      "search_volume": "200K+",
+      "traffic": 200000,
+      "category": "general",
+      "trend": "rising",
+      "trend_duration_hours": 0,
+      "percent_change": 950.0,
+      "trend_sparkline": [
+        17.0,
+        16.0,
+        16.0,
+        15.0,
+        17.0,
+        19.0,
+        20.0,
+        20.0,
+        22.0,
+        23.0,
+        23.0,
+        21.0
+      ],
+      "related_queries": [
+        "tom aspinall vs gane",
+        "tom aspinal"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 10,
+      "query": "what time is it",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "general",
+      "trend": "rising",
+      "trend_duration_hours": 0,
+      "percent_change": 3100.0,
+      "trend_sparkline": [
+        21.0,
+        23.0,
+        27.0,
+        22.0,
+        21.0,
+        25.0,
+        31.0,
+        29.0,
+        30.0,
+        43.0,
+        40.0,
+        32.0
+      ],
+      "related_queries": [
+        "welcome to derry",
+        "it welcome to derry"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 11,
+      "query": "lucy powell",
+      "search_volume": "50K+",
+      "traffic": 50000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "lucy powell labour deputy leadership",
+        "bridget phillipson"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 12,
+      "query": "satish shah",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 13,
+      "query": "mizkif",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        20.0,
+        29.0,
+        28.0,
+        21.0,
+        19.0,
+        24.0,
+        24.0,
+        19.0,
+        18.0,
+        15.0,
+        18.0,
+        15.0
+      ],
+      "related_queries": [
+        "emiru",
+        "emiru mizkif"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 14,
+      "query": "june lockhart",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        13.0,
+        14.0,
+        9.0,
+        12.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        11.0,
+        10.0
+      ],
+      "related_queries": [
+        "lost in space"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 15,
+      "query": "do clocks go back tonight",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        11.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "daylight savings 2025",
+        "clocks going back 2025"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 16,
+      "query": "napoli vs inter",
+      "search_volume": "20K+",
+      "traffic": 20000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 17,
+      "query": "tropical storm melissa hurricane jamaica",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "technology",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.0,
+        0.0
+      ],
+      "related_queries": [
+        "jamaica",
+        "jamaica hurricane",
+        "storm melissa"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 18,
+      "query": "benfica vs arouca",
+      "search_volume": "10K+",
+      "traffic": 10000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "related_queries": [
+        "benfica - arouca",
+        "liga portugal"
+      ],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 19,
+      "query": "phil foden",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "general",
+      "trend": "steady",
+      "trend_duration_hours": 0,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        12.0,
+        9.0,
+        11.0,
+        12.0,
+        15.0,
+        13.0,
+        21.0,
+        16.0,
+        15.0,
+        15.0,
+        22.0,
+        0.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    },
+    {
+      "rank": 20,
+      "query": "england vs new zealand",
+      "search_volume": "5K+",
+      "traffic": 5000,
+      "category": "sports",
+      "trend": "steady",
+      "trend_duration_hours": 1,
+      "percent_change": 0.0,
+      "trend_sparkline": [
+        42.0,
+        53.0,
+        34.0,
+        30.0,
+        37.0,
+        47.0,
+        52.0,
+        55.0,
+        64.0,
+        57.0,
+        48.0,
+        100.0
+      ],
+      "related_queries": [],
+      "related_news": [],
+      "share_url": null,
+      "snippet": null
+    }
+  ],
+  "breakout_searches": [
+    {
+      "query": "brentford f.c. vs liverpool f.c.",
+      "parent_query": "brentford vs liverpool",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "brentford f.c. vs liverpool",
+      "parent_query": "brentford vs liverpool",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "liverpool f.c.",
+      "parent_query": "brentford vs liverpool",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "brentford vs liverpool",
+      "parent_query": "man united vs brighton",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "manchester united vs brighton",
+      "parent_query": "man united vs brighton",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "chelsea vs sunderland",
+      "parent_query": "man united vs brighton",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "do clocks go back",
+      "parent_query": "clocks go back",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "clocks go back when",
+      "parent_query": "clocks go back",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "the clocks go back",
+      "parent_query": "clocks go back",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "newcastle",
+      "parent_query": "chelsea vs sunderland",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "newcastle vs fulham",
+      "parent_query": "chelsea vs sunderland",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "premier league",
+      "parent_query": "chelsea vs sunderland",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "parker vs wardley time",
+      "parent_query": "wardley vs parker",
+      "growth": "5000%+",
+      "category": "sports"
+    },
+    {
+      "query": "fabio wardley",
+      "parent_query": "wardley vs parker",
+      "growth": "5000%+",
+      "category": "general"
+    },
+    {
+      "query": "joseph parker",
+      "parent_query": "wardley vs parker",
+      "growth": "5000%+",
+      "category": "general"
+    }
+  ],
+  "category_breakdown": {
+    "sports": 40,
+    "general": 55,
+    "technology": 5
+  },
+  "geographic_distribution": {
+    "England": 25.0,
+    "Northern Ireland": 25.0,
+    "Scotland": 25.0,
+    "Wales": 25.0
+  },
+  "summary": {
+    "total_trending_searches": 20,
+    "total_breakout_searches": 15,
+    "top_category": "general",
+    "most_searched_term": "brentford vs liverpool",
+    "notable_topics": [
+      "brentford vs liverpool",
+      "man united vs brighton",
+      "clocks go back",
+      "chelsea vs sunderland",
+      "wardley vs parker"
+    ]
+  },
+  "sources": [
+    "Google Trends Daily",
+    "PyTrends interest_over_time",
+    "PyTrends related_queries"
+  ]
+}
