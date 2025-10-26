@@ -1,0 +1,536 @@
+{
+  "country": "Canada",
+  "category": "news",
+  "timestamp": "2025-10-26T05:06:15.729289Z",
+  "last_updated": "2025-10-26T05:06:15.729297Z",
+  "items": [
+    {
+      "id": "google_news_CA_0_1761455160",
+      "title": "Blue Jays drop Game 2 of World Series as Dodgers' Yamamoto goes distance",
+      "content": "Blue Jays drop Game 2 of World Series as Dodgers' Yamamoto goes distance",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMirgFBVV95cUxOU29CSFdQOUVVWnNwek1GOTl2TldvOWRLWS16eTY5VmlPREQteDRLRFM2UDNtYTlXd1daeVBtOU5lYlNaSDBRWVV4WXZxZVhLcUJIWTY5ZW9lQjM2SDFUN0NvX0pIWTZpUXp3Sk5ScWZrMkVVVldmeDlBT0F5Q0pjeXlfZWR4WHVzQVk5cmkzYkg3MmVGUjlsbFg0QkpBYkVtQ2UwT2c5dTNKZUNjVGc?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-26T02:46:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 83,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_1_1761455160",
+      "title": "Dodgers defeat Jays 5-1 to even the World Series 1-1",
+      "content": "Dodgers defeat Jays 5-1 to even the World Series 1-1",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMinAFBVV95cUxObTE4TVZqbDNwYW13LTVid1o1ZTRXSnBuTFhsbkJtOE1wbWdmQTRDTWU2Rkk2aTJ4VUhRUWplU1BHbVFRR1dwN3o1MWZWSDkwYWFIMXRtUGhyV0h6XzhaaVNtSkFTNXc0Q3ZjY0FhM3VBb3FsS3Bfd2Z6SHFYYlFoWHFLMElpOWotM05yQnBJR0ljNVU0SWstbnVyMko?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-26T03:49:43Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 57,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_2_1761455160",
+      "title": "Dodgers big favourites to win World Series after getting split in Toronto",
+      "content": "Dodgers big favourites to win World Series after getting split in Toronto",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMirgFBVV95cUxOcmVkcUxNemJXS2FPNGg1b0hrbU44RWM3eUVQYTJLcjNxbUdnQW83UTRZV3NVUWhlZ0ZIbXBFYkQtTF92aDRSek42S1BaWndLV2pNSksxaDBKVjJUSy1VX0s2VkZlb0pTUHFjVkRNd2NXMXlUaGplb282SGZZcnhfbmdnQXk4M3BHQm0ycE9TYzBIaDU5VXNuaWZRZVZNWTNBVzZod19aZjdVaDRsVWc?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-26T02:55:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 94,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_3_1761455160",
+      "title": "Going the Distance: Yamamoto outduels Gausman as Dodgers pull even in World Series",
+      "content": "Going the Distance: Yamamoto outduels Gausman as Dodgers pull even in World Series",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiggJBVV95cUxOM0c2YjQ2Q1Y0eHE2V2xMbC10ZXdqR1hlWXJ0eXBDb3N3TDhmdnpQNjAxT0h3RHJOaW5JWWpnZmVPRlBhdkViNnItbHdZUHVsb0pfeVRfR2d0amp5MEtKUjk1ZC1TTWZKcFU0VDRqamgxZDVCX1VWalE0aHRUS3U4eWs4UWtER1Rxd1VFcVZqU1hDQzUyaHgzbUV2TjNEU0ZXN1cxQUhiUU9oeEp4TUJPWVdiSHhQa2lEM0FqaV91NDMxNjJhS2ZvTFVfTHI0S004cjFyZmFMZmExYWhET1pMUl9CcWlRWEVuSlZ5OTdnS0t0XzhnbVhwMnZZalVSYWhaTFE?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-26T04:45:22Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 47,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_4_1761455160",
+      "title": "Trump raises tariffs on Canada by 10% in retaliation for anti-tariff TV ad",
+      "content": "Trump raises tariffs on Canada by 10% in retaliation for anti-tariff TV ad",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiigFBVV95cUxPTGRLT0lFZUdpa3F4bzhQbGdUZjRZZExfcU9fUG5uWlppZ3Q0b0RJTjJvcUJPeUo0ejZCbjNzXzRwU21DdEtDTWdGblhpWHpkWEE1LW9ZZjlSanVUSUMwdnJoT1RkbjE4QnNHMl9ZLWNBTWc5T05UbzM5ZlNNaDN5TUFTTGlBMWRsUXc?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-26T03:56:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 80,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_5_1761455160",
+      "title": "Trump says he's hiking 'tariff on Canada' by 10% 'over and above' what it pays now",
+      "content": "Trump says he's hiking 'tariff on Canada' by 10% 'over and above' what it pays now",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMivAFBVV95cUxNWDd1bEd4cjJxQkNKc3d6YXphVlRDYzBXTWJhSGlScEZkdFkyekoxWE1iYUt6VXBUbHNyQWR4Z0dtRmNwMXBhakplS2dpeVlicW1GOEhULUZyTWVCbVVTdWp3T3NYa1dQODgwcVJPUUU1c1BKTHhzc29wajlDQ1hBdjkyNXpub3hXbWxvUWs1NWdFRW4yVGJvSi1Kekx5ajM4Y2lxR2tpR0VxVmpvRGt5YmFtb2YyZ2VEVEcxeA?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-25T20:49:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 58,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_6_1761455160",
+      "title": "What's in Reagan advert that caused US-Canada trade talks to collapse?",
+      "content": "What's in Reagan advert that caused US-Canada trade talks to collapse?",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiWkFVX3lxTE5idEp2QUJLYmtERnlFdWJodE9kT3Y3dko5aVVsOFpxNnN3VGF4YjZDYjFJcnRmb3FaU3doNENXQ3lFR2dyNlIzdjBZdnV2bnFTVXB3a2ZPaDlpUQ?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-24T20:21:57Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 44,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_CA_7_1761455160",
+      "title": "Trump did not give Carney advance notice about tariff hike, official says",
+      "content": "Trump did not give Carney advance notice about tariff hike, official says",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMisAFBVV95cUxNUHU3SGs1NkEwRlZweXNzUHhpUy1CUm9CRXEtZlI4ZUpMWmd5UlJLcnc3VXM2UkkwRjhIYmdJMEVwSHM0dzg3dFhyS1hQTGp4aWFDb1k4eEZNOVM0OU9rNWJlOVFGUExZYUp4WTZOVmRadVAteWxVSVpCbUJlTW1RZVpXQXMyMUJxV01RVE9wOWU2Q0ZSVnRnNGlDYklnLWJKMWI5eVBlczdOYmRVLXowUQ?hl=en-CA&gl=CA&ceid=CA%3Aen",
+      "created_at": "2025-10-26T00:53:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 68,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_0_1761455167",
+      "title": "Teachers and supporters gather in Alberta education minister's riding as back-to-work legislation looms",
+      "content": "Teachers and supporters gather in Alberta education minister's riding as back-to-work legislation looms",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/calgary/alberta-teachers-gather-calgary-bow-9.6953749",
+      "created_at": "2025-10-26T05:06:07.497355Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 70,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_1_1761455167",
+      "title": "'Now, she can't be a mom': Family of woman allegedly killed by ex says motherhood was everything to her",
+      "content": "'Now, she can't be a mom': Family of woman allegedly killed by ex says motherhood was everything to her",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/toronto/savannah-rose-kulla-davies-amber-alert-9.6953058",
+      "created_at": "2025-10-26T05:06:07.497395Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 64,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_2_1761455167",
+      "title": "Father and son discover fossilized ichthyosaur skull in B.C.'s Kiskatinaw River valley",
+      "content": "Father and son discover fossilized ichthyosaur skull in B.C.'s Kiskatinaw River valley",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/british-columbia/ichthyosaur-fossil-discovered-kiskatinaw-river-valley-9.6947676",
+      "created_at": "2025-10-26T05:06:07.497418Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 52,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_3_1761455167",
+      "title": "Yamamoto outduels Gausman in Game 2 as Dodgers beat Blue Jays",
+      "content": "Yamamoto outduels Gausman in Game 2 as Dodgers beat Blue Jays",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/sports/dodgers-win-game-2-world-series-9.6954019",
+      "created_at": "2025-10-26T05:06:07.497432Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 93,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_4_1761455167",
+      "title": "Whale-watching vessel collides with humpback in 'surprise encounter' near Vancouver",
+      "content": "Whale-watching vessel collides with humpback in 'surprise encounter' near Vancouver",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/british-columbia/humpback-whale-struck-prince-of-whales-9.6953329",
+      "created_at": "2025-10-26T05:06:07.497451Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 63,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_5_1761455167",
+      "title": "Why a century-old journal found at Value Village in London, Ont., led to 'collective gasp' at Cambridge church",
+      "content": "Why a century-old journal found at Value Village in London, Ont., led to 'collective gasp' at Cambridge church",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/kitchener-waterloo/missing-journal-central-church-cambridge-9.6949043",
+      "created_at": "2025-10-26T05:06:07.497470Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 52,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_6_1761455167",
+      "title": "Supreme Court of Canada affirms Sask. man's acquittal in use of Good Samaritan law",
+      "content": "Supreme Court of Canada affirms Sask. man's acquittal in use of Good Samaritan law",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/saskatchewan/supreme-court-good-samaritan-law-9.6952103",
+      "created_at": "2025-10-26T05:06:07.497491Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 46,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_7_1761455167",
+      "title": "Say goodbye to rent control, indefinite leases if Ontario passes housing proposal: advocates",
+      "content": "Say goodbye to rent control, indefinite leases if Ontario passes housing proposal: advocates",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/toronto/proposal-rent-control-removal-ontario-9.6952992",
+      "created_at": "2025-10-26T05:06:07.497515Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 70,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_8_1761455167",
+      "title": "Political 'instability' a factor in move to Manitoba, says 1 of 6 docs recruited from U.S.",
+      "content": "Political 'instability' a factor in move to Manitoba, says 1 of 6 docs recruited from U.S.",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/manitoba/us-emergency-doctor-brandon-9.6950975",
+      "created_at": "2025-10-26T05:06:07.497535Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 54,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_9_1761455167",
+      "title": "Alberta unions urge provincial government not to use notwithstanding clause in back-to-work legislation",
+      "content": "Alberta unions urge provincial government not to use notwithstanding clause in back-to-work legislation",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/edmonton/alberta-unions-urge-provincial-government-not-to-use-notwithstanding-clause-in-back-to-work-legislation-9.6953823",
+      "created_at": "2025-10-26T05:06:07.497553Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 68,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_10_1761455167",
+      "title": "Trump says he's hiking 'tariff on Canada' by 10% 'over and above' what it pays now",
+      "content": "Trump says he's hiking 'tariff on Canada' by 10% 'over and above' what it pays now",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/politics/trump-says-he-s-hiking-tariff-on-canada-by-10-over-and-above-what-it-pays-now-9.6953786",
+      "created_at": "2025-10-26T05:06:07.497566Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 72,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_11_1761455167",
+      "title": "Ottawa’s culinary community mourns young Inuk chef killed in stabbing",
+      "content": "Ottawa’s culinary community mourns young Inuk chef killed in stabbing",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/north/ottawa-culinary-community-mourns-inuk-chef-9.6952822",
+      "created_at": "2025-10-26T05:06:07.497582Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 89,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_12_1761455167",
+      "title": "Social worker tells murder trial of 2 Ontario women that boy’s zip-tied pyjamas made her ‘uncomfortable’",
+      "content": "Social worker tells murder trial of 2 Ontario women that boy’s zip-tied pyjamas made her ‘uncomfortable’",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/hamilton/hamber-cooney-trial-9.6952509",
+      "created_at": "2025-10-26T05:06:07.497601Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 92,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_13_1761455167",
+      "title": "20 years later, Fredericton woman reflects on moment she became a Robert Munsch character",
+      "content": "20 years later, Fredericton woman reflects on moment she became a Robert Munsch character",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/new-brunswick/swamp-water-robert-munsch-fredericton-9.6948799",
+      "created_at": "2025-10-26T05:06:07.497619Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 45,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "cbc_Canada_14_1761455167",
+      "title": "Ontario trustee resigns after education minister tables legislation to fire him over $45K Italy art trip",
+      "content": "Ontario trustee resigns after education minister tables legislation to fire him over $45K Italy art trip",
+      "source_platform": "news_site",
+      "source_name": "CBC",
+      "source_url": "https://www.cbc.ca/news/canada/toronto/ontario-trustee-resigns-9.6952421",
+      "created_at": "2025-10-26T05:06:07.497636Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 44,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    }
+  ],
+  "news_by_source": {
+    "Google News": 8,
+    "CBC": 15,
+    "The Globe and Mail": 0
+  },
+  "summary": {
+    "total_stories": 23,
+    "overall_sentiment": "mixed",
+    "sentiment_breakdown": {
+      "neutral": 20,
+      "positive": 3
+    },
+    "top_topics": [
+      "world",
+      "series",
+      "dodgers",
+      "trump",
+      "jays"
+    ],
+    "sources_count": 3,
+    "avg_virality_score": 65.43478260869566
+  }
+}

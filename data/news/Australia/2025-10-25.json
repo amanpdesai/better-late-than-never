@@ -1,0 +1,977 @@
+{
+  "country": "Australia",
+  "category": "news",
+  "timestamp": "2025-10-26T04:59:21.057195Z",
+  "last_updated": "2025-10-26T04:59:21.057202Z",
+  "items": [
+    {
+      "id": "google_news_AU_0_1761454743",
+      "title": "Scott Morrison backs Kevin Rudd and calls for ‘AUKUS Tsar’ with wide-ranging powers",
+      "content": "Scott Morrison backs Kevin Rudd and calls for ‘AUKUS Tsar’ with wide-ranging powers",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiugFBVV95cUxQeE1iQXpEb2tjRkowZHBBR2xHcGpHWDNYT1VUUHZrUDItZXhYa2dNaS1leXd4SnR6U2UxTU1jbjVYVGhEbEtCZGRnbklFQnlIZmQxNzdpT0xUNUdtVTJ5aDJTMURqTjZGaVBTNzljZmdpMWpfenl6dlZSSUM4OWpfN0xKM09pV2E3Q1plVGNTdXVSMEJsWWc2djNlZmFqQmdiRzhTQUQtVGw0QkxGX005Y2MwR0tCN0FtSmfSAb8BQVVfeXFMT2tHOUVSLVBvR0ZpV0lpTC12U0Z2Q0pvQzF5N0ppTzRZWmhVc054eXVXRDVucjZCMWswbUp0dGdqZVhvSVVLQVNTaVdDWU0ybG5LXzFVcjZTWkt5bU93NHd0TG8wMDhzVXI4MUVGVWxrenR6V1N5REFqYUQ5U3JudGtYTEFJRHltdlU4NXZSMXlCQXRXOU1ZdmU2dWxDSWFWRkF1ZkhXTHA2QkNEV05hQ2c3STFJYTlDRjhPZUNxaTQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-25T08:07:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 45,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_1_1761454743",
+      "title": "‘Get on with the job’: Morrison urges action on turning AUKUS plan into reality as sub production lags",
+      "content": "‘Get on with the job’: Morrison urges action on turning AUKUS plan into reality as sub production lags",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi9gFBVV95cUxPYko0LWNNQUo1eXB3cldZZEdIUG9DSmJrMVVZWDJGZkNSR0hRbUtZQm1yNDRFQW5ITXNOc1ZoSmIxNjhLUDBBUzVPMkpqRlowamJocWRmeTdhZmZrS2pGTEZKc3VNc3hGTGE0bXlPZ0V3ekxKZ0dpanAxVEJzY0pLWjk5d3Y0azJueWV2d0lqV2Fobm5lYUVQLTVMekEtcmJ0V09Pd0YxOTRHSkNaTTd1TmhqRDNIUllZWlgzT3J3SWZ4NjlxOTRFWkpiTi1xMmVtQ3pSc3pHNXptRzVIblFmVXlnZ0hLSXl6U2FEYnhPb29KWkhCUHc?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T08:30:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 85,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_2_1761454743",
+      "title": "‘Here for the long term’: US seeks to entrench presence in Australia under AUKUS",
+      "content": "‘Here for the long term’: US seeks to entrench presence in Australia under AUKUS",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi1AFBVV95cUxNZFp6N3BGWGxEbWxGRG9CZnZZMWc5X2gtbTh6QmU4RTJQY21FLWNnc1dPandFMW5VdTRDZ2ZRblhmMVJnTW5jR0hmdlRISVdVd1JxS0FaSDBfQTRnVWJ1eXdDRDI5TVhNVG5jbDhrVktFYVlkdWZTOEQ2YXVzR29KT2lReExOOXhDc2FBR1M1Mlo0ci1CLURQMVNtNjkwek0xeTdxWVFrbzYtSlZYTk1UUG5XSUQwVkwzdVV1bUNiU1dOWXVzamgzb0JjRE5PU0N0QXdkag?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-23T07:19:13Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 84,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_3_1761454743",
+      "title": "AUKUS architect says 'prepare for the worst' in scathing assessment of Trump",
+      "content": "AUKUS architect says 'prepare for the worst' in scathing assessment of Trump",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMimwFBVV95cUxQS01ycnZlaVhNaS1MSGwyRDNndXNlM1pTVzMxQzNiS2Raa016bEloQ2xHMExFV3N5bTZaZE1xanVQbjJXbll5REhVUFdUWHhmek42WURYbXo5VGxUV3VLaU9rRjUwYktsSTVscXI3ZGNYaFZTMklzUjdQVGVfLTlURXFGRDNBQVh0a3FfV01pYVRWaU1mM0xEYWxWSQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-21T19:46:05Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 57,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_4_1761454743",
+      "title": "Trump heads to Asia, eyes Kim meeting",
+      "content": "Trump heads to Asia, eyes Kim meeting",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMinAJBVV95cUxQa1IxQUY1eEJfcXpkTTB5c01vQWFsd3prR0JlN3NJOU51VWFXOFNmYnZQWHBraDdRVlhLRklRckJxcUE1STdqZjBaTXRCQTZVR2hIRmJwdDdGbnB3MmFfazktNXRiYWtJMEV6eGVLWmd0cEZrWTZtV211RkdDM3NYb2JBWkNSMDBjYXBwRV9JdnZ5UmhhcWN6dTJ2OTR1Y3VvQ1MyYTVpbjFMSGJnN21xX0VYWXpYcG9jVjhXQ25UTHhPMEVyWkJyMS1YRkYzNVZKV3UxWDQtUmYxWVZQaTR3SDFIUm51SXA3RFNrd252RzNLN2Z4OS12OXlEaVJaWXVnRDY5QTYzOU1UVkNhcDdiNF9YbWhDWXQyZll5Rg?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-25T16:15:22Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 76,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_5_1761454743",
+      "title": "Donald Trump says he wants to meet Kim Jong Un on Asia trip",
+      "content": "Donald Trump says he wants to meet Kim Jong Un on Asia trip",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiWkFVX3lxTE5KUjhtZjZHSnhjMUJOUlZtZWtEYlc0dk5ZcEF3ZHBXOG1tZ01nbnI4Xzg5bWtxWXlIcWNZcjdzVkE4cy1hc3BlaDNVQ2F6aHZ4b3dXU2FzZnBoQQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-25T09:10:25Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 84,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_6_1761454743",
+      "title": "Trump says he is open to meeting Kim Jong-un as he embarks on whirlwind Asia tour",
+      "content": "Trump says he is open to meeting Kim Jong-un as he embarks on whirlwind Asia tour",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMitAFBVV95cUxNZmNqNjRXUnJjdnpVWWhlQ1k5azAtT0ltNmJ3R0lrVWl2aDV2UW5VT1RmOUZuYXBoVEM1Q0hzUWN5RUNpWlAxYThpRmxXdGxWZ0Nxc2dZeEo3em5PZTBpTTB2RXQ4ckMzV2ZWYVNyRGtmQXBkT1U1Z2tGS1JLMG15NUJYU01iQmlmTVhHS1BybU1HYnc3OTMzU19tS0U5RUJjXzFYeUNTR25MWFlGaDNoeGZnWTI?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-25T06:01:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 47,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_7_1761454743",
+      "title": "Trump opens door to Kim Jong-un summit",
+      "content": "Trump opens door to Kim Jong-un summit",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi6AFBVV95cUxNYTMyU242RTdvc2JUMDgwWUwtdWk2R0hLS0VjNmxXM2lUeEtvX0o5cUVOZ0d4RnB0THVPYTlybHVyTW8zcHRsVUxXU2JvWW9HSXpEVDl6NjFuc2piTGd4OWRCcDV3bHlFOS1tY1hSVnlwWU5NWW1FTElQd0VrakhEc2JRNVZKNVNRZjE3UjdhWlFibUFPak9VZm1JeTZad3M4aGJmYloyeTdBVWFWV1lGbHhqdUhvendHcWI3ZG9US09lYWtEVGRMSkpvVXY4SWF5QkJsWlpvU3V6NDNkV19PS2g3OVEyRWNj?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-25T18:02:39Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 56,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_9_1761454743",
+      "title": "The fourth plenum and China's modernization path",
+      "content": "The fourth plenum and China's modernization path",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiqAFBVV95cUxOZVBYeTlMMkFCQTBMcmFxR3pXTXVTejF4R3ZLVFFSNzZRZ3ZULXFKX0hreTl0VGJIUnB1LUJaS1FqMEpScWx1UENxM0h4WGJVVmJ0TVRwRUFVRV83UG5jNEN1UFE5OHNjWVBuWjFFdnN3dW95cy1XazRvdGk2b2pNZjd1bU5rM3NlYmpLamxEQUozT3RSWkRtVTBUbEptMUVPSmlfNzl5Q0o?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T12:51:19Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 51,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_10_1761454743",
+      "title": "Three things we learned from China's big political meeting this week",
+      "content": "Three things we learned from China's big political meeting this week",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiWkFVX3lxTE9zYllzSXJ5dG5YVHZhaUlocjk4cVJtTjFmT19ZaEswdWNQT2lLVHhTeER4amNhblZwaUxyeU9xR3VfZ2lYWDR0aUt6MkdTbzZkRkswVDFJQWQwQQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T07:22:43Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 50,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_11_1761454743",
+      "title": "China’s plenum has just finished – here are five key takeaways",
+      "content": "China’s plenum has just finished – here are five key takeaways",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiqAFBVV95cUxON3dRMEVlU2NBS1I2X0tYXzlZUkYwWGRzOVM3MGx5OUhUemttVFRnU1l1VFJHeDB5aXg0Y3V6dTlZTDF0SHhkUjV2emU0S0ZHYXZ0Q3VzeXljTkpWZmxFNm5iaEtFVF80QmpJeDRFdFdyczFfWXBidTIwS2NkRjJPUzR6VTRWSGU3UE9TcldYLUwwakdpT1ZsSFhCOWVsbDVzNFpkdzlYd0Q?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T06:05:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 72,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_12_1761454743",
+      "title": "The VERY important meeting in China that you probably missed",
+      "content": "The VERY important meeting in China that you probably missed",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiqgFBVV95cUxQYjNqMTc2anZXOW5pdUhWM1l5V094SnZkSE42blpTTkttdlhwdDd1cnlUSWVGYjh5SWdfcXg0ckx4clFBQW1ZMERMdW5Fem9HOGswUzdVSG1meVAxSGFveEZOajBIcHdxRjFYTktuZ1hCTTVyZFpwbzJVRTl6MWNGbFlZWmR3WHNwZGItOE5SZWt2d0hmRGVITko0amVVWXR5akRyWVhVY05Odw?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T06:09:13Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 52,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_13_1761454743",
+      "title": "Jacqui Lambie told to undergo spinal surgery, set to miss final weeks of parliament",
+      "content": "Jacqui Lambie told to undergo spinal surgery, set to miss final weeks of parliament",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMioAFBVV95cUxPc1h4QjFfUktWVjdUVUR4aXZ0X2J3OGw1cTMwc0VKbVdpVXh3V3kySmQ4bjdpNGI1Z0pPZ21sejU1Vm0wc04zdF9HU000U3JKNTN4TWRJY2piQ3B5S2lEUHVYWl8yNFBEbGszM0JCay1YLUpXaUp5SzJ0bmFUVGs5cUNCeXdld21mYUZETkFNWEFRNVhCMWc0c2FLUHNjbVdp0gF4QVVfeXFMTlE2NDhDTWZqeURsWnVwb1d0Sl9LUGxzWkN3SHRXN3dRT2hWMzJkeUR2a1FBSzBnOHVnT1ZySXNmNDFsSXJybWE5SlNYaFU5TU12Yi1RNk1NV2o4a2RsMW1KU1FPZWZfd2dTcmRjWVBPMG44dGxBR3Yz?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T07:58:09Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 65,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_14_1761454743",
+      "title": "Jacqui Lambie’s surgery bombshell",
+      "content": "Jacqui Lambie’s surgery bombshell",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi6AFBVV95cUxOY252cU9FNlJOMWxRVVFXdU5CU2EwemN6dFplOGlLU2tsTFdOVDJDSXplelRJUk1kazFSTkJsODZJdndsV19ReHVxRVFEblJ3Vi04T2lEdnJxQm9kVHNlOVQ1LTB4aUIwREdMeklTV3dHWnIwVzNRSkZuTHhsNFcwckMzcWJaTXJaM2ZobGVXa1RPd2JZQlJGMWN0VllZT2lMWXFKRHBRUExPY0taUWFDUWpnNHpTOF9WakxmRjNwbUo4REVfYktiR3A5U3k0X2dIMlU0eDhicVJETG5ESG42clIzVHluR19K0gHuAUFVX3lxTE5RYlNWYllPOVJYbEJUMGV3bW9HMnVybGRwbGs5U1FJREZnb1BTVnBSQzdhRk05OU1GUmRNRkU1cDVPNFVFYUlBRy0zeDNyd2x6RWxkOWZ3YkYzZF9pRHB1OTF0TWFkaEtmODhRWHVIMmFVNjdIN1dSemdNd1hEVTZkcXlNOWJPLU9rZ1cyM1BjZ3ctVGgxTzc2RkczR3BHeFl3U090OU95cnpfdFhJVjVwcl9valp1MkNvWjRuSjFtQkxzZmtaYWFkLTc4RWQ0ZWJrQUdValJtSkRTVXhSTjROeXZXSjdPT2dEaVE1LXc?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T06:41:03Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 74,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_15_1761454743",
+      "title": "Jacqui Lambie’s shock health crisis",
+      "content": "Jacqui Lambie’s shock health crisis",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi_AFBVV95cUxNeHktVHpvb3REZ2F3cTVNMU5mN0gwcEt1SUZIYnJWV1Y4TlZ1bUt1SmpOQVB0VS1yclhIY1Y5UXQxN2hvTnF2Ulh4MVQ0MTV2MWU5Nkd4V0ZTYWxKamtNS1pnQ3JFLXlIcml6M3VaS0o4OUhZN3pWQTU3S3Y5OUxRZnJMdkJZVndkX0pNZXEyNzdqOG1INU1KckE1ME1lVG5yUElxV1FVTTY1cFZxRjN1a0FhamNYcXJyeXlGRTRKSEhabHZVMmU1eVMzQm9kUVlOcDNObHJKa2tmb3VBa281dFFpNmQ1WllZMnVLdTJtT25EVTN0Zkl3ckUwSGc?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-25T10:02:28Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 48,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_16_1761454743",
+      "title": "Jacqui Lambie out of action as surgery looms, doctors order bed rest",
+      "content": "Jacqui Lambie out of action as surgery looms, doctors order bed rest",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiogFBVV95cUxNSFBJU2h6VExGYzBucWp5ZVNXWUhCVmNjRHdrNFp4d0EwMHFGWk1ybnkyc0FiekJGVzE5TmhseDFRenotMDFoMS1rRnJwYWpLMDEwd0xhZ0dUdHJEc3JwcUlUOTBNZnRLQVQtRmNEYTJTTXctY1BYOEtlenNjTjV3dk4wN2J1dllqUGhWY1FuOTFTWUNlVUNLRW94T09rT3ZicWc?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-24T21:20:15Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 87,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_18_1761454743",
+      "title": "As social media age restrictions spread, is the internet entering its Victorian era?",
+      "content": "As social media age restrictions spread, is the internet entering its Victorian era?",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiuAFBVV95cUxPRV9pbnFwZjM1RGNTYVFZS0I2bkE1TndNVEViZW0zV3IwVU5LUnJDUnd6YnNTQ1dWemZzNmxxTGU2WDk1YjlQVFNUbXk4aUQ3bkt4YnJXbWkxUW1yNzBSNUdhY2JBLWpNZ2VsZTUyVll2Q3JxMlpienByZ2VESHFqZ29WUkNhUVNEdnNyOHN0ZmNIRFZiNjd5bWlvRzFDZmpTZ1pWVHZVbER2N205dXRfbTZudlJXcXBQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-16T07:00:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 68,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_19_1761454743",
+      "title": "Five takeaways from the ABC's Your Say: The Digital Dilemma forum",
+      "content": "Five takeaways from the ABC's Your Say: The Digital Dilemma forum",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMimwFBVV95cUxNS2NjelhnbXFMMzJSLTJvR3l1ZW9OVFlLMEFHeHRrejluLUlVN1JrN1dTM3FIQ1NlYW5JUDlUcFYtdTU2bGtaV1BqY3hiQkZVTUZrTEpyYVpMR3pjRFlyd0lYVGRVWWVfX2RQbzBnclBYOGdLVVR3U0dlSTdFMUdjSzQ5MDFlamc0ZUUwSlZjalRRcEpIOF9IV0Fsbw?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-14T07:00:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 84,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_20_1761454743",
+      "title": "Google starts bid to stymie tech ban",
+      "content": "Google starts bid to stymie tech ban",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi1AFBVV95cUxOZE4yRmJUWk5jMnlIaDZzN1BQZnl2ZDZjRzNGSFJiMy1VYlN4M0FJbmdIU01Oc1VtZS1maU5MTFZDN3U0bk55NlhOTjMxNFJNSVJyOG9MTWpYWnhHLVVVQzZaUXNUMlRuVFBWSFYxMUQzWDNEdDRwdmhiVW9HZFpmX2JiZEVwSThWalFpcGxocVpqMm9rdFFodjJHTXNVX183YmhLM3pjNk9lUVZja1p1NnpJV3JKQjVDanRhejZWXzU5aHpSM3h0ZUhnMHREb0dfSmtVVw?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-19T10:27:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 71,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_21_1761454743",
+      "title": "Kids who dodge social media ban will be exposed to a more dangerous internet, experts warn",
+      "content": "Kids who dodge social media ban will be exposed to a more dangerous internet, experts warn",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMihAFBVV95cUxNbWhVS3BDYVdGLV9KQUtGYmJsWVVGTTlsS2V2cFZuZzh5YXFOVDBNSGt1cEZnaVA1ejlERHhLcXg4U1ZjQzRsMG1FVnNhTW0wamhBempvOXdrUVZhUkZCZHdBQlJUNTYwMU1JbGFJX1JLOFpZY1pHRHk5T3RicnEtMXUwdUU?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-21T21:27:37Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 82,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_22_1761454743",
+      "title": "PM says 13-hour workday reports are false",
+      "content": "PM says 13-hour workday reports are false",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMikgFBVV95cUxQeXdtUDVkZ0FXWldRbmtySFV5aHRNamt0SlhGa0dnZ1Bwbm5LQkV1ZDdJN2V1dXF4b0s4TEZ1R2RLcEFJLWlaLXVuSHRuc1F5bzdlcmdiT0N2SWlRLTR5bFN3U29RUkt1ZU42VS1ZdkFNcDRzdV9wWFo4SFc5bGFhWUc0YWNobkw1cUdfV0xZSmUyQQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-19T08:52:19Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 48,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_23_1761454743",
+      "title": "Controversial 13-hour workday law passes in Greece amid protests",
+      "content": "Controversial 13-hour workday law passes in Greece amid protests",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMingFBVV95cUxQSUN4TzVkOHliQTQ5Yi1JNUVDSGswX2o1aGRJSUNkNWNrWk5BRzA0MXNrMHR6VllXdDF1OFpXeGxwUnJaS3NWa0k4X2N5RHlDN3cxZVRTVlNGckVkNUlJNWIzOXNFSEk4OEMzQTRENVZYclhkbWJVTTg1dXEzaHBXMVJOeC1hQml5R25VRXVlWjJKU3ZWdGFUcGU3d1pJQQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-16T21:59:33Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 76,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_24_1761454743",
+      "title": "Greece's parliament approves bill extending working hours despite nationwide protests",
+      "content": "Greece's parliament approves bill extending working hours despite nationwide protests",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMivAFBVV95cUxNM3BwMGh4U0NtWk9mdFNsTjVCVl9FcFhtd0p4LXhuQzdCMkFZR2g3Qjg5aElwbURZX2c3UEZ3dmNjUnRHNzVTbHNuaVB5N0hfRVVYcmpJMVViaGd1TkZUemNVUlk3bXE0dUt4dkNmMm10RWx0eTZGbFFZcEdIYzF3amNIaV9VVkQ3TUd0andhdUZDRWV2SlAwM2RwRjFaaVlVSUswYm9lYVREV2J4NGx5X2w4VEw5YWk0cFJJVA?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-17T07:00:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 44,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_25_1761454743",
+      "title": "Greece passes labour law allowing 13-hour workdays in some cases",
+      "content": "Greece passes labour law allowing 13-hour workdays in some cases",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiWkFVX3lxTE43TFprQVVjdFVaVENFWVFvVUdlN190dWNCN1ctRmpzZlQ1VUpLXzFhOFYyOV9MeHlYSWpycE5uUHdSeGFJRWswVTN4VVFTTjhOMDBWQjZvc3JoQQ?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-16T07:00:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 91,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_26_1761454743",
+      "title": "Pauline Hanson rubbishes claim Barnaby Joyce will lead One Nation",
+      "content": "Pauline Hanson rubbishes claim Barnaby Joyce will lead One Nation",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi0gFBVV95cUxNVzBnTkRyRmphYkQtUzF2SURaZ0dxcDg3dmx5VFZTbXRsaUJWZE01c0NHS0Q1S0UxaENvWTNEeThTTnB3NjdoT1JtazhhZE4zOG1YRkdtcktId3J0VnhRdFFuQ0dvS3RDaTJzQ2tVM3Y4OXRsRDVKMFR3U01NU1VVN0Z5Z1NlckoyN0ZFQTBjUHpjYVpncU52aDJBLTBoNkMzQjRBcnA0NC1fTjVtVmdHY0ZFWWd2SWVicUZZMDVXRFRGd2ZQRkFWUWNyQTNPLWo2M2c?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-23T01:24:28Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 91,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_27_1761454743",
+      "title": "Australia news live: Barnaby Joyce says he remains with Nationals but will not attend party room meetings this sitting fortnight",
+      "content": "Australia news live: Barnaby Joyce says he remains with Nationals but will not attend party room meetings this sitting fortnight",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi8AFBVV95cUxPQjV5Z3VMUjBPdE96NHRJdnRwUFFmck0zSFY3U3FMb3F5NTVYUkw2bmNZcFF0M1NzOUVPSUUwaHFZLXFZV0dHQngtNmFnaHA2NFM4UUZ4X3JZdzZEMFZvQlhxVXJVQ0c1bk94RFNKSzhWcGFNc0F6bldlTWR5UFdUVzFnSkFiQ1NhdFRycmNDcDNjekQ0b2lyS1RESVRiVjNNU3JaQndsdGtUNjJTOWY0bWFIYjVYQU5VU2NhdkU1R25jenFFMWNuQnpOblRSeTBVUUQyQkdQNmo2R3plaEhSNnZQQVFyeU9yN2hFV1g0em0?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-26T03:52:02Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 60,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_28_1761454743",
+      "title": "‘Wait and see’: Looming Barnaby question",
+      "content": "‘Wait and see’: Looming Barnaby question",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMi1gFBVV95cUxPUGhnd2VGaUFjNGdTOEpNUkQ1dURVV2huNTY3QmRBWlNsQzVfQ0w4QTVaSC1jMzh6Ql9waWwtaVQtcUxkMk1GU3pWdWplZGRqVDJsbU1YYVA5OUxJT29jNVlROVB3bDd4ZmMzUlRYUTlNUE81Wm85MHNuT3g3b1ltaVJ4aXBRNFV4YlhLUW5oczdJYjJOSnlCQkdFWHo2YWRlcEptTEhIRjFwNkZMRk15SFNVc0trMGx2MEpUR0RSd1A3clp5UjkzQ2VwRE10Y0hha1F0cy13?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-26T02:24:44Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 52,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "google_news_AU_29_1761454743",
+      "title": "Trying to kill Barnaby Joyce with love has only made him stronger",
+      "content": "Trying to kill Barnaby Joyce with love has only made him stronger",
+      "source_platform": "google_news",
+      "source_name": "Google News",
+      "source_url": "https://news.google.com/read/CBMiugFBVV95cUxQUjBCbFB1Ull2bkRIaWdKdXBuQk56cVRWRVB5MHZhVnI5QkRsdldQRlJaMHd4WXdIVmFyTm9UM21vU0lYZWxuME8wdHotaEh5c0RRSlFVSGszLWV2Zkp3TXF4b3l0T3FYb1lOT0x2UlVTZm5WeHdFV2tnQ2dQbm9sMDBFelRfMHJ2NTBFbkdNYVlsU0RlSEI1bnc1YmRYUmhKdTJocHpuZWxnbHJuOEI0cFVuMFZmcnMyeFE?hl=en-AU&gl=AU&ceid=AU%3Aen",
+      "created_at": "2025-10-23T09:00:00Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 41,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_0_1761454751",
+      "title": "Albanese dismisses lingering questions about Trump and Rudd",
+      "content": "Albanese dismisses lingering questions about Trump and Rudd",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/albanese-dismisses-trump-comment-fake-media/105935518",
+      "created_at": "2025-10-26T04:59:11.844161Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 46,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_1_1761454751",
+      "title": "Pallister breaks Ledecky's world record, McKeown creates more history",
+      "content": "Pallister breaks Ledecky's world record, McKeown creates more history",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/lani-pallister-kaylee-mckeown-swimming-world-records/105935460",
+      "created_at": "2025-10-26T04:59:11.844207Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "positive",
+      "virality_score": 69,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_2_1761454751",
+      "title": "Nationals' net zero review has not undertaken economic modelling",
+      "content": "Nationals' net zero review has not undertaken economic modelling",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/nationals-net-zero-report-canavan/105935222",
+      "created_at": "2025-10-26T04:59:11.844237Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 73,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_3_1761454751",
+      "title": "A Sydney map shows what's exactly at stake in the NIMBY and YIMBY debate",
+      "content": "A Sydney map shows what's exactly at stake in the NIMBY and YIMBY debate",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/nimbys-yimbys-housing-debate-heritage-conservation-area/105931706",
+      "created_at": "2025-10-26T04:59:11.844265Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 60,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_4_1761454751",
+      "title": "Literary detective work is thrilling, but biographers face challenge in age of AI",
+      "content": "Literary detective work is thrilling, but biographers face challenge in age of AI",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/biography-ai-algorithm-letters-diaries-digital-world/105923770",
+      "created_at": "2025-10-26T04:59:11.844291Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 91,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_5_1761454751",
+      "title": "Why Thai cave rescuer Richard Harris can't quit diving",
+      "content": "Why Thai cave rescuer Richard Harris can't quit diving",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/richard-harris-deeper-jennifer-peedom-thai-cave-rescue-diving/105919694",
+      "created_at": "2025-10-26T04:59:11.844319Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 66,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_6_1761454751",
+      "title": "Entrepreneurs and innovators vie for 2025 Rural Women's Award",
+      "content": "Entrepreneurs and innovators vie for 2025 Rural Women's Award",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/agrifutures-rural-womens-award-2025-finalist/105924530",
+      "created_at": "2025-10-26T04:59:11.844348Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 48,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_7_1761454751",
+      "title": "Knee braces are the norm in this competitive sport adaptation",
+      "content": "Knee braces are the norm in this competitive sport adaptation",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/walking-netball-masters-games-active-inclusive-sport/105934176",
+      "created_at": "2025-10-26T04:59:11.844379Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 55,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_8_1761454751",
+      "title": "Class action ignites pressure for cultural change in ADF",
+      "content": "Class action ignites pressure for cultural change in ADF",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-25/class-action-targets-sexual-violence-in-defence/105932520",
+      "created_at": "2025-10-26T04:59:11.844406Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 43,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_9_1761454751",
+      "title": "Man charged with murder of woman, 58, in WA's north",
+      "content": "Man charged with murder of woman, 58, in WA's north",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/man-charged-murder-woman-death-broome-/105935516",
+      "created_at": "2025-10-26T04:59:11.844432Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 51,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_10_1761454751",
+      "title": "Entrepreneurs and innovators vie for 2025 Rural Women's Award",
+      "content": "Entrepreneurs and innovators vie for 2025 Rural Women's Award",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/agrifutures-rural-womens-award-2025-finalist/105924530",
+      "created_at": "2025-10-26T04:59:11.844456Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 69,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_11_1761454751",
+      "title": "Harry was bored on the farm. So he restored a vintage LandCruiser",
+      "content": "Harry was bored on the farm. So he restored a vintage LandCruiser",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/farm-boy-restores-vintage-toyota-landcruiser/105927368",
+      "created_at": "2025-10-26T04:59:11.844484Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 47,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_12_1761454751",
+      "title": "Entrepreneurs and innovators vie for 2025 Rural Women's Award",
+      "content": "Entrepreneurs and innovators vie for 2025 Rural Women's Award",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/agrifutures-rural-womens-award-2025-finalist/105924530",
+      "created_at": "2025-10-26T04:59:11.844509Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "negative",
+      "virality_score": 60,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_13_1761454751",
+      "title": "10yo boy holds toy train exhibition to raise funds for sick children",
+      "content": "10yo boy holds toy train exhibition to raise funds for sick children",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/boy-holds-toy-train-exhibition-to-raise-funds-for-sick-children/105899456",
+      "created_at": "2025-10-26T04:59:11.844534Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 57,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "abc_news_Australia_14_1761454751",
+      "title": "Kaitie was always told they would never drive. This new tech changed that",
+      "content": "Kaitie was always told they would never drive. This new tech changed that",
+      "source_platform": "news_site",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2025-10-26/driving-simulator-assists-people-with-disabilities/105758844",
+      "created_at": "2025-10-26T04:59:11.844559Z",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 93,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    }
+  ],
+  "news_by_source": {
+    "Google News": 28,
+    "ABC News": 15,
+    "The Sydney Morning Herald": 0
+  },
+  "summary": {
+    "total_stories": 43,
+    "overall_sentiment": "mixed_negative",
+    "sentiment_breakdown": {
+      "neutral": 30,
+      "positive": 6,
+      "negative": 7
+    },
+    "top_topics": [
+      "trump",
+      "meeting",
+      "jacqui",
+      "barnaby",
+      "action"
+    ],
+    "sources_count": 3,
+    "avg_virality_score": 64.3953488372093
+  }
+}

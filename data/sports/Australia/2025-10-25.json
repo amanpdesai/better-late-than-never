@@ -1,0 +1,451 @@
+{
+  "country": "Australia",
+  "category": "sports",
+  "timestamp": "2025-10-26T05:14:35.099018Z",
+  "last_updated": "2025-10-26T05:14:35.099020Z",
+  "items": [
+    {
+      "id": "espn_cricket_Australia_0_1761455657",
+      "title": "Sydney soaks up that special Rohit-Kohli feeling",
+      "content": "Cricket: Sydney soaks up that special Rohit-Kohli feeling",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/story/aus-vs-ind-3rd-odi-sydney-soaks-up-that-rohit-sharma-virat-kohli-feeling-1508704",
+      "created_at": "2025-10-26T05:14:17.037918Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 52,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_1_1761455657",
+      "title": "Chopra: Kohli and Rohit keep adding confidence",
+      "content": "Cricket: Chopra: Kohli and Rohit keep adding confidence",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-virat-kohli-and-rohit-sharma-keep-adding-confidence-says-aakash-chopra-1508676",
+      "created_at": "2025-10-26T05:14:17.037952Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 69,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_2_1761455657",
+      "title": "What Renshaw learnt from Rohit and Kohli",
+      "content": "Cricket: What Renshaw learnt from Rohit and Kohli",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-3rd-odi-what-matt-renshaw-learnt-from-rohit-sharma-virat-kohli-about-odis-1508717",
+      "created_at": "2025-10-26T05:14:17.037967Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 59,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_3_1761455657",
+      "title": "Gill on Rohit and Kohli: 'It's a treat to watch'",
+      "content": "Cricket: Gill on Rohit and Kohli: 'It's a treat to watch'",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-3rd-odi-shubman-gill-on-the-rohit-sharma-virat-kohli-partnership-1508722",
+      "created_at": "2025-10-26T05:14:17.037983Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 85,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_4_1761455657",
+      "title": "Gill explains Harshit's importance in ODIs",
+      "content": "Cricket: Gill explains Harshit's importance in ODIs",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-shubman-gill-explains-harshit-rana-s-importance-in-odis-1508723",
+      "created_at": "2025-10-26T05:14:17.037994Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 62,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_5_1761455657",
+      "title": "Chopra: India need to give Reddy a bigger role",
+      "content": "Cricket: Chopra: India need to give Reddy a bigger role",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-india-need-to-give-nitish-kumar-reddy-a-bigger-role-says-aakash-chopra-1508677",
+      "created_at": "2025-10-26T05:14:17.038004Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 54,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_6_1761455657",
+      "title": "Chopra: Kuldeep plays if conditions apply",
+      "content": "Cricket: Chopra: Kuldeep plays if conditions apply",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-kuldeep-yadav-plays-odis-only-if-conditions-apply-says-aakash-chopra-1508678",
+      "created_at": "2025-10-26T05:14:17.038013Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 72,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_7_1761455657",
+      "title": "Chopra sees IPL interest for Cooper Connolly",
+      "content": "Cricket: Chopra sees IPL interest for Cooper Connolly",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/aus-vs-ind-a-lot-of-ipl-interest-for-cooper-connolly-says-aakash-chopra-1508679",
+      "created_at": "2025-10-26T05:14:17.038035Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 75,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_9_1761455657",
+      "title": "Live - Carse, Wood make inroads after Brook's 135",
+      "content": "Cricket: Live - Carse, Wood make inroads after Brook's 135",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espncricinfo.com/series/england-in-new-zealand-2025-26-1491677/new-zealand-vs-england-1st-odi-1491720/live-cricket-score",
+      "created_at": "2025-10-26T05:14:17.038048Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 80,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_10_1761455657",
+      "title": "Live - NZ bat in Devine's farewell; Wyatt-Hodge in for England",
+      "content": "Cricket: Live - NZ bat in Devine's farewell; Wyatt-Hodge in for England",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espncricinfo.com/series/icc-women-s-world-cup-2025-26-1478193/england-women-vs-new-zealand-women-27th-match-1490439/live-cricket-score",
+      "created_at": "2025-10-26T05:14:17.038058Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 71,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_11_1761455657",
+      "title": "Live - Nair hits ton; Services win inside four sessions",
+      "content": "Cricket: Live - Nair hits ton; Services win inside four sessions",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/series/ranji-trophy-2025-26-1492381/jammu-kashmir-vs-rajasthan-elite-group-d-1492423/live-match-blog-2",
+      "created_at": "2025-10-26T05:14:17.038067Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 65,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_12_1761455657",
+      "title": "India aim to fine-tune against Bangladesh before semis",
+      "content": "Cricket: India aim to fine-tune against Bangladesh before semis",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/series/icc-women-s-world-cup-2025-26-1478193/india-women-vs-bangladesh-women-28th-match-1490440/match-preview",
+      "created_at": "2025-10-26T05:14:17.038076Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 75,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_13_1761455657",
+      "title": "There are legspinners, and there is Alana King",
+      "content": "Cricket: There are legspinners, and there is Alana King",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/story/womens-world-cup-2025-aus-vs-sa-there-are-legspinners-and-there-is-alana-king-1508732",
+      "created_at": "2025-10-26T05:14:17.038083Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 57,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_cricket_Australia_14_1761455657",
+      "title": "The secret to six-hitting in women's cricket",
+      "content": "Cricket: The secret to six-hitting in women's cricket",
+      "source_platform": "espn",
+      "source_name": "ESPN Cricket",
+      "source_url": "https://www.espn.com/cricket-videos/the-secret-to-six-hitting-in-the-womens-game-with-katey-martin-1508558",
+      "created_at": "2025-10-26T05:14:17.038093Z",
+      "sport": "Cricket",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 55,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "bbc_rugby_Australia_5_1761455669",
+      "title": "Elsewhere on the BBC",
+      "content": "Rugby: Elsewhere on the BBC",
+      "source_platform": "bbc_sport",
+      "source_name": "BBC Sport Rugby",
+      "source_url": "https://www.bbc.com/sport/rugby-union",
+      "created_at": "2025-10-26T05:14:29.999476Z",
+      "sport": "Rugby",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 82,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "bbc_football_Australia_10_1761455675",
+      "title": "More European football",
+      "content": "Football: More European football",
+      "source_platform": "bbc_sport",
+      "source_name": "BBC Sport Football",
+      "source_url": "https://www.bbc.com/sport/football/european",
+      "created_at": "2025-10-26T05:14:35.098842Z",
+      "sport": "Football",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 63,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "bbc_football_Australia_11_1761455675",
+      "title": "More Scottish football news",
+      "content": "Football: More Scottish football news",
+      "source_platform": "bbc_sport",
+      "source_name": "BBC Sport Football",
+      "source_url": "https://www.bbc.com/sport/football/scottish-premiership",
+      "created_at": "2025-10-26T05:14:35.098876Z",
+      "sport": "Football",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 81,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "bbc_football_Australia_12_1761455675",
+      "title": "Women's football news",
+      "content": "Football: Women's football news",
+      "source_platform": "bbc_sport",
+      "source_name": "BBC Sport Football",
+      "source_url": "https://www.bbc.com/sport/football/womens",
+      "created_at": "2025-10-26T05:14:35.098895Z",
+      "sport": "Football",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 72,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    }
+  ],
+  "sports_by_source": {
+    "ESPN Cricket": 14,
+    "BBC Sport Cricket": 0,
+    "BBC Sport Rugby": 1,
+    "BBC Sport Football": 3
+  },
+  "summary": {
+    "total_items": 18,
+    "overall_sentiment": "neutral",
+    "top_sports": [
+      "Cricket",
+      "Football",
+      "Rugby"
+    ],
+    "top_topics": [
+      "rohit",
+      "live",
+      "football",
+      "kohli",
+      "gill"
+    ],
+    "sources_count": 4,
+    "sports_breakdown": {
+      "Cricket": 14,
+      "Rugby": 1,
+      "Football": 3
+    },
+    "avg_virality_score": 68.27777777777777
+  }
+}
