@@ -1,0 +1,62 @@
+{
+  "DESCRIPTION": {
+    "cluster_id": "4",
+    "description": null,
+    "humor": null,
+    "topic": null,
+    "meme_template": null,
+    "random_image": {
+      "id": "memes_1ofwofd.jpeg",
+      "description": null,
+      "humor": null,
+      "topic": null,
+      "meme_template": null
+    },
+    "centroid_image": null
+  },
+  "HUMOR": {
+    "cluster_id": "2",
+    "description": null,
+    "humor": null,
+    "topic": null,
+    "meme_template": null,
+    "random_image": {
+      "id": "196_1ofan5k.jpeg",
+      "description": null,
+      "humor": null,
+      "topic": null,
+      "meme_template": null
+    },
+    "centroid_image": null
+  },
+  "TOPIC": {
+    "cluster_id": "4",
+    "description": null,
+    "humor": null,
+    "topic": null,
+    "meme_template": null,
+    "random_image": {
+      "id": "196_1oft0vp.jpeg",
+      "description": null,
+      "humor": null,
+      "topic": null,
+      "meme_template": null
+    },
+    "centroid_image": null
+  },
+  "MEME_TEMPLATE": {
+    "cluster_id": "7",
+    "description": null,
+    "humor": null,
+    "topic": null,
+    "meme_template": null,
+    "random_image": {
+      "id": "me_irl_1oftb5q.jpeg",
+      "description": null,
+      "humor": null,
+      "topic": null,
+      "meme_template": null
+    },
+    "centroid_image": null
+  }
+}

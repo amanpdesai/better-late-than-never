@@ -1,0 +1,170 @@
+{
+  "DESCRIPTION ===": {
+    "Cluster 1": {
+      "label": "\"Social Commentary Through Humor and",
+      "count": 18,
+      "description": "Contains 18 memes with distinctive characteristics: \"social commentary through humor and"
+    },
+    "Cluster 2": {
+      "label": "\"Surreal Juxtaposition of Pop Culture\"",
+      "count": 34,
+      "description": "Contains 34 memes with distinctive characteristics: \"surreal juxtaposition of pop culture\""
+    },
+    "Cluster 3": {
+      "label": "\"Expressive Reactions to Absurd Scenarios\"",
+      "count": 24,
+      "description": "Contains 24 memes with distinctive characteristics: \"expressive reactions to absurd scenarios\""
+    },
+    "Cluster 4": {
+      "label": "\"Contrasting Perspectives on Everyday Situations\"",
+      "count": 32,
+      "description": "Contains 32 memes with distinctive characteristics: \"contrasting perspectives on everyday situations\""
+    },
+    "Cluster 5": {
+      "label": "\"Absurdity in Everyday Situations and",
+      "count": 28,
+      "description": "Contains 28 memes with distinctive characteristics: \"absurdity in everyday situations and"
+    },
+    "Cluster 6": {
+      "label": "\"Mobile Culture and Modern Frustrations\"",
+      "count": 19,
+      "description": "Contains 19 memes with distinctive characteristics: \"mobile culture and modern frustrations\""
+    },
+    "Cluster 7": {
+      "label": "\"Pop Culture Mashups with Dark",
+      "count": 20,
+      "description": "Contains 20 memes with distinctive characteristics: \"pop culture mashups with dark"
+    },
+    "Cluster 8": {
+      "label": "Absurdist humor meets existential commentary.",
+      "count": 39,
+      "description": "Contains 39 memes with distinctive characteristics: absurdist humor meets existential commentary."
+    }
+  },
+  "HUMOR ===": {
+    "Cluster 1": {
+      "label": "\"Relatable Absurdity in Everyday Struggles\"",
+      "count": 29,
+      "description": "Contains 29 memes with distinctive characteristics: \"relatable absurdity in everyday struggles\""
+    },
+    "Cluster 2": {
+      "label": "\"Absurd Juxtapositions and Ironic Contrasts\"",
+      "count": 39,
+      "description": "Contains 39 memes with distinctive characteristics: \"absurd juxtapositions and ironic contrasts\""
+    },
+    "Cluster 3": {
+      "label": "\"Absurd Juxtaposition and Dark Humor\"",
+      "count": 33,
+      "description": "Contains 33 memes with distinctive characteristics: \"absurd juxtaposition and dark humor\""
+    },
+    "Cluster 4": {
+      "label": "\"Hyperbolic Fandom Reactions and Absurdity\"",
+      "count": 36,
+      "description": "Contains 36 memes with distinctive characteristics: \"hyperbolic fandom reactions and absurdity\""
+    },
+    "Cluster 5": {
+      "label": "\"Absurdity Meets Dark Relatable Frustration\"",
+      "count": 38,
+      "description": "Contains 38 memes with distinctive characteristics: \"absurdity meets dark relatable frustration\""
+    },
+    "Cluster 6": {
+      "label": "\"Digital Frustration and Absurdity Unleashed\"",
+      "count": 15,
+      "description": "Contains 15 memes with distinctive characteristics: \"digital frustration and absurdity unleashed\""
+    },
+    "Cluster 7": {
+      "label": "\"Absurd Juxtapositions of High and",
+      "count": 15,
+      "description": "Contains 15 memes with distinctive characteristics: \"absurd juxtapositions of high and"
+    },
+    "Cluster 8": {
+      "label": "Absurdity and Hyperbole in Everyday",
+      "count": 9,
+      "description": "Contains 9 memes with distinctive characteristics: absurdity and hyperbole in everyday"
+    }
+  },
+  "TOPIC ===": {
+    "Cluster 1": {
+      "label": "\"Relatable Life Struggles and Humor\"",
+      "count": 24,
+      "description": "Contains 24 memes with distinctive characteristics: \"relatable life struggles and humor\""
+    },
+    "Cluster 2": {
+      "label": "\"Pop Culture Parody and Critique\"",
+      "count": 15,
+      "description": "Contains 15 memes with distinctive characteristics: \"pop culture parody and critique\""
+    },
+    "Cluster 3": {
+      "label": "\"Musical Discontent and Corporate Critique\"",
+      "count": 7,
+      "description": "Contains 7 memes with distinctive characteristics: \"musical discontent and corporate critique\""
+    },
+    "Cluster 4": {
+      "label": "\"Existential Critique of Modern Life\"",
+      "count": 87,
+      "description": "Contains 87 memes with distinctive characteristics: \"existential critique of modern life\""
+    },
+    "Cluster 5": {
+      "label": "\"Obsessive fandom, dark humor, nostalgia.\"",
+      "count": 23,
+      "description": "Contains 23 memes with distinctive characteristics: \"obsessive fandom, dark humor, nostalgia.\""
+    },
+    "Cluster 6": {
+      "label": "\"Digital Perception and Cultural Critique\"",
+      "count": 8,
+      "description": "Contains 8 memes with distinctive characteristics: \"digital perception and cultural critique\""
+    },
+    "Cluster 7": {
+      "label": "\"Whimsical Absurdity and Playful Subversion\"",
+      "count": 36,
+      "description": "Contains 36 memes with distinctive characteristics: \"whimsical absurdity and playful subversion\""
+    },
+    "Cluster 8": {
+      "label": "\"Digital Discourse and Societal Critique\"",
+      "count": 14,
+      "description": "Contains 14 memes with distinctive characteristics: \"digital discourse and societal critique\""
+    }
+  },
+  "MEME_TEMPLATE ===": {
+    "Cluster 1": {
+      "label": "\"Contradictory Humor in Multi-Panel Formats\"",
+      "count": 32,
+      "description": "Contains 32 memes with distinctive characteristics: \"contradictory humor in multi-panel formats\""
+    },
+    "Cluster 2": {
+      "label": "\"Emotionally Charged Reaction Image Variety\"",
+      "count": 48,
+      "description": "Contains 48 memes with distinctive characteristics: \"emotionally charged reaction image variety\""
+    },
+    "Cluster 3": {
+      "label": "\"Meta-humor and juxtaposition in visuals.\"",
+      "count": 37,
+      "description": "Contains 37 memes with distinctive characteristics: \"meta-humor and juxtaposition in visuals.\""
+    },
+    "Cluster 4": {
+      "label": "\"Social Media Satire and Screenshots\"",
+      "count": 22,
+      "description": "Contains 22 memes with distinctive characteristics: \"social media satire and screenshots\""
+    },
+    "Cluster 5": {
+      "label": "\"Relatable Humor Through Diverse Formats\"",
+      "count": 20,
+      "description": "Contains 20 memes with distinctive characteristics: \"relatable humor through diverse formats\""
+    },
+    "Cluster 6": {
+      "label": "\"Contrasting Ideologies Through Visual Juxtaposition\"",
+      "count": 20,
+      "description": "Contains 20 memes with distinctive characteristics: \"contrasting ideologies through visual juxtaposition\""
+    },
+    "Cluster 7": {
+      "label": "\"Layered Interactions with Pop Culture\"",
+      "count": 32,
+      "description": "Contains 32 memes with distinctive characteristics: \"layered interactions with pop culture\""
+    },
+    "Cluster 8": {
+      "label": "\"Subtle Sarcasm and Detached Commentary\"",
+      "count": 3,
+      "description": "Contains 3 memes with distinctive characteristics: \"subtle sarcasm and detached commentary\""
+    }
+  }
+}

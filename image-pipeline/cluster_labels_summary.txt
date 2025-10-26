@@ -3,29 +3,29 @@
 
 📊 DESCRIPTION === FIELD
 ------------------------------
-Cluster 1: "Societal Commentary Through Humor and
-  └─ Contains 18 memes with distinctive characteristics: "societal commentary through humor and
+Cluster 1: "Social Commentary Through Humor and
+  └─ Contains 18 memes with distinctive characteristics: "social commentary through humor and
 
-Cluster 2: "Absurdist Humor and Surreal Juxtapositions"
-  └─ Contains 34 memes with distinctive characteristics: "absurdist humor and surreal juxtapositions"
+Cluster 2: "Surreal Juxtaposition of Pop Culture"
+  └─ Contains 34 memes with distinctive characteristics: "surreal juxtaposition of pop culture"
 
-Cluster 3: "Surreal Reactions to Absurd Scenarios"
-  └─ Contains 24 memes with distinctive characteristics: "surreal reactions to absurd scenarios"
+Cluster 3: "Expressive Reactions to Absurd Scenarios"
+  └─ Contains 24 memes with distinctive characteristics: "expressive reactions to absurd scenarios"
 
-Cluster 4: "Contrasts in Expectations and Realities"
-  └─ Contains 32 memes with distinctive characteristics: "contrasts in expectations and realities"
+Cluster 4: "Contrasting Perspectives on Everyday Situations"
+  └─ Contains 32 memes with distinctive characteristics: "contrasting perspectives on everyday situations"
 
-Cluster 5: "Whimsical Satire on Cultural Icons"
-  └─ Contains 28 memes with distinctive characteristics: "whimsical satire on cultural icons"
+Cluster 5: "Absurdity in Everyday Situations and
+  └─ Contains 28 memes with distinctive characteristics: "absurdity in everyday situations and
 
-Cluster 6: "Tech Frustrations and Ironic Observations"
-  └─ Contains 19 memes with distinctive characteristics: "tech frustrations and ironic observations"
+Cluster 6: "Mobile Culture and Modern Frustrations"
+  └─ Contains 19 memes with distinctive characteristics: "mobile culture and modern frustrations"
 
-Cluster 7: "Pop Culture Satire and Parody"
-  └─ Contains 20 memes with distinctive characteristics: "pop culture satire and parody"
+Cluster 7: "Pop Culture Mashups with Dark
+  └─ Contains 20 memes with distinctive characteristics: "pop culture mashups with dark
 
-Cluster 8: Absurdity and irony in daily
-  └─ Contains 39 memes with distinctive characteristics: absurdity and irony in daily
+Cluster 8: Absurdist humor meets existential commentary.
+  └─ Contains 39 memes with distinctive characteristics: absurdist humor meets existential commentary.
 
 
 📊 HUMOR === FIELD
@@ -33,50 +33,50 @@ Cluster 8: Absurdity and irony in daily
 Cluster 1: "Relatable Absurdity in Everyday Struggles"
   └─ Contains 29 memes with distinctive characteristics: "relatable absurdity in everyday struggles"
 
-Cluster 2: Absurd juxtapositions with dark irony.
-  └─ Contains 39 memes with distinctive characteristics: absurd juxtapositions with dark irony.
+Cluster 2: "Absurd Juxtapositions and Ironic Contrasts"
+  └─ Contains 39 memes with distinctive characteristics: "absurd juxtapositions and ironic contrasts"
 
 Cluster 3: "Absurd Juxtaposition and Dark Humor"
   └─ Contains 33 memes with distinctive characteristics: "absurd juxtaposition and dark humor"
 
-Cluster 4: "Exaggerated fandom humor with absurdity."
-  └─ Contains 36 memes with distinctive characteristics: "exaggerated fandom humor with absurdity."
+Cluster 4: "Hyperbolic Fandom Reactions and Absurdity"
+  └─ Contains 36 memes with distinctive characteristics: "hyperbolic fandom reactions and absurdity"
 
-Cluster 5: Absurdity and irony in daily
-  └─ Contains 38 memes with distinctive characteristics: absurdity and irony in daily
+Cluster 5: "Absurdity Meets Dark Relatable Frustration"
+  └─ Contains 38 memes with distinctive characteristics: "absurdity meets dark relatable frustration"
 
-Cluster 6: "Digital Disillusionment and Absurdity Satire"
-  └─ Contains 15 memes with distinctive characteristics: "digital disillusionment and absurdity satire"
+Cluster 6: "Digital Frustration and Absurdity Unleashed"
+  └─ Contains 15 memes with distinctive characteristics: "digital frustration and absurdity unleashed"
 
-Cluster 7: "Absurd Juxtapositions and Materialistic Dismissals"
-  └─ Contains 15 memes with distinctive characteristics: "absurd juxtapositions and materialistic dismissals"
+Cluster 7: "Absurd Juxtapositions of High and
+  └─ Contains 15 memes with distinctive characteristics: "absurd juxtapositions of high and
 
-Cluster 8: "Absurdity and Satire in Everyday
-  └─ Contains 9 memes with distinctive characteristics: "absurdity and satire in everyday
+Cluster 8: Absurdity and Hyperbole in Everyday
+  └─ Contains 9 memes with distinctive characteristics: absurdity and hyperbole in everyday
 
 
 📊 TOPIC === FIELD
 ------------------------------
-Cluster 1: "Relatable Everyday Struggles and Humor"
-  └─ Contains 24 memes with distinctive characteristics: "relatable everyday struggles and humor"
+Cluster 1: "Relatable Life Struggles and Humor"
+  └─ Contains 24 memes with distinctive characteristics: "relatable life struggles and humor"
 
-Cluster 2: "Parodying Lore with Dark Humor"
-  └─ Contains 15 memes with distinctive characteristics: "parodying lore with dark humor"
+Cluster 2: "Pop Culture Parody and Critique"
+  └─ Contains 15 memes with distinctive characteristics: "pop culture parody and critique"
 
 Cluster 3: "Musical Discontent and Corporate Critique"
   └─ Contains 7 memes with distinctive characteristics: "musical discontent and corporate critique"
 
-Cluster 4: "Existential Dread and Social Critique"
-  └─ Contains 87 memes with distinctive characteristics: "existential dread and social critique"
+Cluster 4: "Existential Critique of Modern Life"
+  └─ Contains 87 memes with distinctive characteristics: "existential critique of modern life"
 
-Cluster 5: "Obsessive fandom meets dark humor."
-  └─ Contains 23 memes with distinctive characteristics: "obsessive fandom meets dark humor."
+Cluster 5: "Obsessive fandom, dark humor, nostalgia."
+  └─ Contains 23 memes with distinctive characteristics: "obsessive fandom, dark humor, nostalgia."
 
-Cluster 6: "Visual Illusions and Cultural Critiques"
-  └─ Contains 8 memes with distinctive characteristics: "visual illusions and cultural critiques"
+Cluster 6: "Digital Perception and Cultural Critique"
+  └─ Contains 8 memes with distinctive characteristics: "digital perception and cultural critique"
 
-Cluster 7: "Whimsical Absurdity Meets Cultural Commentary"
-  └─ Contains 36 memes with distinctive characteristics: "whimsical absurdity meets cultural commentary"
+Cluster 7: "Whimsical Absurdity and Playful Subversion"
+  └─ Contains 36 memes with distinctive characteristics: "whimsical absurdity and playful subversion"
 
 Cluster 8: "Digital Discourse and Societal Critique"
   └─ Contains 14 memes with distinctive characteristics: "digital discourse and societal critique"
@@ -84,28 +84,28 @@ Cluster 8: "Digital Discourse and Societal Critique"
 
 📊 MEME_TEMPLATE === FIELD
 ------------------------------
-Cluster 1: "Humor through irony and contrast."
-  └─ Contains 32 memes with distinctive characteristics: "humor through irony and contrast."
+Cluster 1: "Contradictory Humor in Multi-Panel Formats"
+  └─ Contains 32 memes with distinctive characteristics: "contradictory humor in multi-panel formats"
 
-Cluster 2: "Emotionally Charged Reaction Image Diversity"
-  └─ Contains 48 memes with distinctive characteristics: "emotionally charged reaction image diversity"
+Cluster 2: "Emotionally Charged Reaction Image Variety"
+  └─ Contains 48 memes with distinctive characteristics: "emotionally charged reaction image variety"
 
-Cluster 3: "Meta-humor, juxtaposition, and relatable absurdity."
-  └─ Contains 37 memes with distinctive characteristics: "meta-humor, juxtaposition, and relatable absurdity."
+Cluster 3: "Meta-humor and juxtaposition in visuals."
+  └─ Contains 37 memes with distinctive characteristics: "meta-humor and juxtaposition in visuals."
 
-Cluster 4: "Social Media Satire and Observational
-  └─ Contains 22 memes with distinctive characteristics: "social media satire and observational
+Cluster 4: "Social Media Satire and Screenshots"
+  └─ Contains 22 memes with distinctive characteristics: "social media satire and screenshots"
 
-Cluster 5: "Relatable Textual Humor and Self-Reflection"
-  └─ Contains 20 memes with distinctive characteristics: "relatable textual humor and self-reflection"
+Cluster 5: "Relatable Humor Through Diverse Formats"
+  └─ Contains 20 memes with distinctive characteristics: "relatable humor through diverse formats"
 
-Cluster 6: "Contrasting Ideologies and Expectations Explored"
-  └─ Contains 20 memes with distinctive characteristics: "contrasting ideologies and expectations explored"
+Cluster 6: "Contrasting Ideologies Through Visual Juxtaposition"
+  └─ Contains 20 memes with distinctive characteristics: "contrasting ideologies through visual juxtaposition"
 
-Cluster 7: "Layered Visuals with Cultural References"
-  └─ Contains 32 memes with distinctive characteristics: "layered visuals with cultural references"
+Cluster 7: "Layered Interactions with Pop Culture"
+  └─ Contains 32 memes with distinctive characteristics: "layered interactions with pop culture"
 
-Cluster 8: "Subtle Commentary with Frog Sarcasm"
-  └─ Contains 3 memes with distinctive characteristics: "subtle commentary with frog sarcasm"
+Cluster 8: "Subtle Sarcasm and Detached Commentary"
+  └─ Contains 3 memes with distinctive characteristics: "subtle sarcasm and detached commentary"
 
 

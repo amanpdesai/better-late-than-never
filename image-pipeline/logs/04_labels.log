@@ -1,0 +1,176 @@
+# Step: Generate cluster labels
+# Command: /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 /Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/generate_cluster_labels.py
+# Started: 2025-10-26T06:15:36Z
+
+🔍 Analyzing meme clusters and generating labels...
+
+📊 Processing DESCRIPTION === field...
+  🏷️  Generating label for Cluster 1 (18 memes)...
+    ✅ Cluster 1: "Social Commentary Through Humor and
+  🏷️  Generating label for Cluster 2 (34 memes)...
+    ✅ Cluster 2: "Surreal Juxtaposition of Pop Culture"
+  🏷️  Generating label for Cluster 3 (24 memes)...
+    ✅ Cluster 3: "Expressive Reactions to Absurd Scenarios"
+  🏷️  Generating label for Cluster 4 (32 memes)...
+    ✅ Cluster 4: "Contrasting Perspectives on Everyday Situations"
+  🏷️  Generating label for Cluster 5 (28 memes)...
+    ✅ Cluster 5: "Absurdity in Everyday Situations and
+  🏷️  Generating label for Cluster 6 (19 memes)...
+    ✅ Cluster 6: "Mobile Culture and Modern Frustrations"
+  🏷️  Generating label for Cluster 7 (20 memes)...
+    ✅ Cluster 7: "Pop Culture Mashups with Dark
+  🏷️  Generating label for Cluster 8 (39 memes)...
+    ✅ Cluster 8: Absurdist humor meets existential commentary.
+
+📊 Processing HUMOR === field...
+  🏷️  Generating label for Cluster 1 (29 memes)...
+    ✅ Cluster 1: "Relatable Absurdity in Everyday Struggles"
+  🏷️  Generating label for Cluster 2 (39 memes)...
+    ✅ Cluster 2: "Absurd Juxtapositions and Ironic Contrasts"
+  🏷️  Generating label for Cluster 3 (33 memes)...
+    ✅ Cluster 3: "Absurd Juxtaposition and Dark Humor"
+  🏷️  Generating label for Cluster 4 (36 memes)...
+    ✅ Cluster 4: "Hyperbolic Fandom Reactions and Absurdity"
+  🏷️  Generating label for Cluster 5 (38 memes)...
+    ✅ Cluster 5: "Absurdity Meets Dark Relatable Frustration"
+  🏷️  Generating label for Cluster 6 (15 memes)...
+    ✅ Cluster 6: "Digital Frustration and Absurdity Unleashed"
+  🏷️  Generating label for Cluster 7 (15 memes)...
+    ✅ Cluster 7: "Absurd Juxtapositions of High and
+  🏷️  Generating label for Cluster 8 (9 memes)...
+    ✅ Cluster 8: Absurdity and Hyperbole in Everyday
+
+📊 Processing TOPIC === field...
+  🏷️  Generating label for Cluster 1 (24 memes)...
+    ✅ Cluster 1: "Relatable Life Struggles and Humor"
+  🏷️  Generating label for Cluster 2 (15 memes)...
+    ✅ Cluster 2: "Pop Culture Parody and Critique"
+  🏷️  Generating label for Cluster 3 (7 memes)...
+    ✅ Cluster 3: "Musical Discontent and Corporate Critique"
+  🏷️  Generating label for Cluster 4 (87 memes)...
+    ✅ Cluster 4: "Existential Critique of Modern Life"
+  🏷️  Generating label for Cluster 5 (23 memes)...
+    ✅ Cluster 5: "Obsessive fandom, dark humor, nostalgia."
+  🏷️  Generating label for Cluster 6 (8 memes)...
+    ✅ Cluster 6: "Digital Perception and Cultural Critique"
+  🏷️  Generating label for Cluster 7 (36 memes)...
+    ✅ Cluster 7: "Whimsical Absurdity and Playful Subversion"
+  🏷️  Generating label for Cluster 8 (14 memes)...
+    ✅ Cluster 8: "Digital Discourse and Societal Critique"
+
+📊 Processing MEME_TEMPLATE === field...
+  🏷️  Generating label for Cluster 1 (32 memes)...
+    ✅ Cluster 1: "Contradictory Humor in Multi-Panel Formats"
+  🏷️  Generating label for Cluster 2 (48 memes)...
+    ✅ Cluster 2: "Emotionally Charged Reaction Image Variety"
+  🏷️  Generating label for Cluster 3 (37 memes)...
+    ✅ Cluster 3: "Meta-humor and juxtaposition in visuals."
+  🏷️  Generating label for Cluster 4 (22 memes)...
+    ✅ Cluster 4: "Social Media Satire and Screenshots"
+  🏷️  Generating label for Cluster 5 (20 memes)...
+    ✅ Cluster 5: "Relatable Humor Through Diverse Formats"
+  🏷️  Generating label for Cluster 6 (20 memes)...
+    ✅ Cluster 6: "Contrasting Ideologies Through Visual Juxtaposition"
+  🏷️  Generating label for Cluster 7 (32 memes)...
+    ✅ Cluster 7: "Layered Interactions with Pop Culture"
+  🏷️  Generating label for Cluster 8 (3 memes)...
+    ✅ Cluster 8: "Subtle Sarcasm and Detached Commentary"
+
+✅ Results saved to:
+  📄 cluster_labels.json
+  📄 cluster_labels_dict.json
+  📄 cluster_labels_summary.txt
+
+🏷️  CLUSTER DISTINCTIVE LABELS
+==================================================
+
+📊 DESCRIPTION ===
+------------------------------
+Cluster 1: "Social Commentary Through Humor and
+Cluster 2: "Surreal Juxtaposition of Pop Culture"
+Cluster 3: "Expressive Reactions to Absurd Scenarios"
+Cluster 4: "Contrasting Perspectives on Everyday Situations"
+Cluster 5: "Absurdity in Everyday Situations and
+Cluster 6: "Mobile Culture and Modern Frustrations"
+Cluster 7: "Pop Culture Mashups with Dark
+Cluster 8: Absurdist humor meets existential commentary.
+
+📊 HUMOR ===
+------------------------------
+Cluster 1: "Relatable Absurdity in Everyday Struggles"
+Cluster 2: "Absurd Juxtapositions and Ironic Contrasts"
+Cluster 3: "Absurd Juxtaposition and Dark Humor"
+Cluster 4: "Hyperbolic Fandom Reactions and Absurdity"
+Cluster 5: "Absurdity Meets Dark Relatable Frustration"
+Cluster 6: "Digital Frustration and Absurdity Unleashed"
+Cluster 7: "Absurd Juxtapositions of High and
+Cluster 8: Absurdity and Hyperbole in Everyday
+
+📊 TOPIC ===
+------------------------------
+Cluster 1: "Relatable Life Struggles and Humor"
+Cluster 2: "Pop Culture Parody and Critique"
+Cluster 3: "Musical Discontent and Corporate Critique"
+Cluster 4: "Existential Critique of Modern Life"
+Cluster 5: "Obsessive fandom, dark humor, nostalgia."
+Cluster 6: "Digital Perception and Cultural Critique"
+Cluster 7: "Whimsical Absurdity and Playful Subversion"
+Cluster 8: "Digital Discourse and Societal Critique"
+
+📊 MEME_TEMPLATE ===
+------------------------------
+Cluster 1: "Contradictory Humor in Multi-Panel Formats"
+Cluster 2: "Emotionally Charged Reaction Image Variety"
+Cluster 3: "Meta-humor and juxtaposition in visuals."
+Cluster 4: "Social Media Satire and Screenshots"
+Cluster 5: "Relatable Humor Through Diverse Formats"
+Cluster 6: "Contrasting Ideologies Through Visual Juxtaposition"
+Cluster 7: "Layered Interactions with Pop Culture"
+Cluster 8: "Subtle Sarcasm and Detached Commentary"
+
+📋 DICTIONARY FORMAT:
+==============================
+
+DESCRIPTION === = {
+    "Cluster 1": ""Social Commentary Through Humor and",
+    "Cluster 2": ""Surreal Juxtaposition of Pop Culture"",
+    "Cluster 3": ""Expressive Reactions to Absurd Scenarios"",
+    "Cluster 4": ""Contrasting Perspectives on Everyday Situations"",
+    "Cluster 5": ""Absurdity in Everyday Situations and",
+    "Cluster 6": ""Mobile Culture and Modern Frustrations"",
+    "Cluster 7": ""Pop Culture Mashups with Dark",
+    "Cluster 8": "Absurdist humor meets existential commentary.",
+}
+
+HUMOR === = {
+    "Cluster 1": ""Relatable Absurdity in Everyday Struggles"",
+    "Cluster 2": ""Absurd Juxtapositions and Ironic Contrasts"",
+    "Cluster 3": ""Absurd Juxtaposition and Dark Humor"",
+    "Cluster 4": ""Hyperbolic Fandom Reactions and Absurdity"",
+    "Cluster 5": ""Absurdity Meets Dark Relatable Frustration"",
+    "Cluster 6": ""Digital Frustration and Absurdity Unleashed"",
+    "Cluster 7": ""Absurd Juxtapositions of High and",
+    "Cluster 8": "Absurdity and Hyperbole in Everyday",
+}
+
+TOPIC === = {
+    "Cluster 1": ""Relatable Life Struggles and Humor"",
+    "Cluster 2": ""Pop Culture Parody and Critique"",
+    "Cluster 3": ""Musical Discontent and Corporate Critique"",
+    "Cluster 4": ""Existential Critique of Modern Life"",
+    "Cluster 5": ""Obsessive fandom, dark humor, nostalgia."",
+    "Cluster 6": ""Digital Perception and Cultural Critique"",
+    "Cluster 7": ""Whimsical Absurdity and Playful Subversion"",
+    "Cluster 8": ""Digital Discourse and Societal Critique"",
+}
+
+MEME_TEMPLATE === = {
+    "Cluster 1": ""Contradictory Humor in Multi-Panel Formats"",
+    "Cluster 2": ""Emotionally Charged Reaction Image Variety"",
+    "Cluster 3": ""Meta-humor and juxtaposition in visuals."",
+    "Cluster 4": ""Social Media Satire and Screenshots"",
+    "Cluster 5": ""Relatable Humor Through Diverse Formats"",
+    "Cluster 6": ""Contrasting Ideologies Through Visual Juxtaposition"",
+    "Cluster 7": ""Layered Interactions with Pop Culture"",
+    "Cluster 8": ""Subtle Sarcasm and Detached Commentary"",
+}

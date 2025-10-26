@@ -1,42 +1,42 @@
 {
   "DESCRIPTION ===": {
-    "Cluster 1": "\"Societal Commentary Through Humor and",
-    "Cluster 2": "\"Absurdist Humor and Surreal Juxtapositions\"",
-    "Cluster 3": "\"Surreal Reactions to Absurd Scenarios\"",
-    "Cluster 4": "\"Contrasts in Expectations and Realities\"",
-    "Cluster 5": "\"Whimsical Satire on Cultural Icons\"",
-    "Cluster 6": "\"Tech Frustrations and Ironic Observations\"",
-    "Cluster 7": "\"Pop Culture Satire and Parody\"",
-    "Cluster 8": "Absurdity and irony in daily"
+    "Cluster 1": "\"Social Commentary Through Humor and",
+    "Cluster 2": "\"Surreal Juxtaposition of Pop Culture\"",
+    "Cluster 3": "\"Expressive Reactions to Absurd Scenarios\"",
+    "Cluster 4": "\"Contrasting Perspectives on Everyday Situations\"",
+    "Cluster 5": "\"Absurdity in Everyday Situations and",
+    "Cluster 6": "\"Mobile Culture and Modern Frustrations\"",
+    "Cluster 7": "\"Pop Culture Mashups with Dark",
+    "Cluster 8": "Absurdist humor meets existential commentary."
   },
   "HUMOR ===": {
     "Cluster 1": "\"Relatable Absurdity in Everyday Struggles\"",
-    "Cluster 2": "Absurd juxtapositions with dark irony.",
+    "Cluster 2": "\"Absurd Juxtapositions and Ironic Contrasts\"",
     "Cluster 3": "\"Absurd Juxtaposition and Dark Humor\"",
-    "Cluster 4": "\"Exaggerated fandom humor with absurdity.\"",
-    "Cluster 5": "Absurdity and irony in daily",
-    "Cluster 6": "\"Digital Disillusionment and Absurdity Satire\"",
-    "Cluster 7": "\"Absurd Juxtapositions and Materialistic Dismissals\"",
-    "Cluster 8": "\"Absurdity and Satire in Everyday"
+    "Cluster 4": "\"Hyperbolic Fandom Reactions and Absurdity\"",
+    "Cluster 5": "\"Absurdity Meets Dark Relatable Frustration\"",
+    "Cluster 6": "\"Digital Frustration and Absurdity Unleashed\"",
+    "Cluster 7": "\"Absurd Juxtapositions of High and",
+    "Cluster 8": "Absurdity and Hyperbole in Everyday"
   },
   "TOPIC ===": {
-    "Cluster 1": "\"Relatable Everyday Struggles and Humor\"",
-    "Cluster 2": "\"Parodying Lore with Dark Humor\"",
+    "Cluster 1": "\"Relatable Life Struggles and Humor\"",
+    "Cluster 2": "\"Pop Culture Parody and Critique\"",
     "Cluster 3": "\"Musical Discontent and Corporate Critique\"",
-    "Cluster 4": "\"Existential Dread and Social Critique\"",
-    "Cluster 5": "\"Obsessive fandom meets dark humor.\"",
-    "Cluster 6": "\"Visual Illusions and Cultural Critiques\"",
-    "Cluster 7": "\"Whimsical Absurdity Meets Cultural Commentary\"",
+    "Cluster 4": "\"Existential Critique of Modern Life\"",
+    "Cluster 5": "\"Obsessive fandom, dark humor, nostalgia.\"",
+    "Cluster 6": "\"Digital Perception and Cultural Critique\"",
+    "Cluster 7": "\"Whimsical Absurdity and Playful Subversion\"",
     "Cluster 8": "\"Digital Discourse and Societal Critique\""
   },
   "MEME_TEMPLATE ===": {
-    "Cluster 1": "\"Humor through irony and contrast.\"",
-    "Cluster 2": "\"Emotionally Charged Reaction Image Diversity\"",
-    "Cluster 3": "\"Meta-humor, juxtaposition, and relatable absurdity.\"",
-    "Cluster 4": "\"Social Media Satire and Observational",
-    "Cluster 5": "\"Relatable Textual Humor and Self-Reflection\"",
-    "Cluster 6": "\"Contrasting Ideologies and Expectations Explored\"",
-    "Cluster 7": "\"Layered Visuals with Cultural References\"",
-    "Cluster 8": "\"Subtle Commentary with Frog Sarcasm\""
+    "Cluster 1": "\"Contradictory Humor in Multi-Panel Formats\"",
+    "Cluster 2": "\"Emotionally Charged Reaction Image Variety\"",
+    "Cluster 3": "\"Meta-humor and juxtaposition in visuals.\"",
+    "Cluster 4": "\"Social Media Satire and Screenshots\"",
+    "Cluster 5": "\"Relatable Humor Through Diverse Formats\"",
+    "Cluster 6": "\"Contrasting Ideologies Through Visual Juxtaposition\"",
+    "Cluster 7": "\"Layered Interactions with Pop Culture\"",
+    "Cluster 8": "\"Subtle Sarcasm and Detached Commentary\""
   }
 }

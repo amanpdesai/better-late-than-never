@@ -212,8 +212,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
-        help="Gemini model name (default: gemini-2.5-flash or GEMINI_MODEL env var).",
+        default=os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite"),
+        help="Gemini model name (default: gemini-2.5-flash-lite or GEMINI_MODEL env var).",
     )
     parser.add_argument(
         "--with-random-images",

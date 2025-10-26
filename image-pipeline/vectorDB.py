@@ -5,14 +5,14 @@ import faiss
 from openai import OpenAI
 from sklearn.manifold import TSNE
 from sklearn.cluster import KMeans
+from sklearn.metrics import pairwise_distances_argmin_min
 import matplotlib.pyplot as plt
 
 # === CONFIG ===
 JSON_FILE = "meme_descriptions.json"
 CACHE_FILE = "emb_cache.json"
-REPORT_FILE = "meme_clusters.txt"
+OUTPUT_JSON = "meme_clusters.json"
 EMBED_MODEL = "text-embedding-3-small"
-# client = OpenAI()
 
 # === Load memes ===
 with open(JSON_FILE, "r") as f:
@@ -47,72 +47,82 @@ for meme_id, meme_data in memes.items():
 with open(CACHE_FILE, "w") as f:
     json.dump(cache, f)
 
-# === Convert to numpy + FAISS ===
-faiss_indexes = {}
-for field in fields:
+# === Convert to numpy + FAISS + KMeans + t-SNE ===
+result_json = {}
+plt.figure(figsize=(12, 10))
+
+for i, field in enumerate(fields, 1):
     vecs = np.array(vector_dbs[field]["vectors"]).astype("float32")
-    index = faiss.IndexFlatL2(vecs.shape[1])
-    index.add(vecs)
-    faiss_indexes[field] = index
+    ids = vector_dbs[field]["ids"]
+    n = len(vecs)
+    if n < 2:
+        continue
 
-# === Create text report ===
-with open(REPORT_FILE, "w", encoding="utf-8") as report:
-    report.write("📊 MEME CLUSTER ANALYSIS REPORT\n")
-    report.write("=" * 60 + "\n\n")
+    # --- Reduce for visualization ---
+    perplexity = max(2, min(30, (n - 1) / 3))
+    reduced = TSNE(n_components=2, random_state=42, perplexity=perplexity).fit_transform(vecs)
 
-    plt.figure(figsize=(12, 10))
+    # --- KMeans clustering ---
+    k = min(8, max(2, n // 10))
+    kmeans = KMeans(n_clusters=k, random_state=42, n_init="auto").fit(vecs)
+    labels = kmeans.labels_
+    centroids = kmeans.cluster_centers_
 
-    for i, field in enumerate(fields, 1):
-        vecs = np.array(vector_dbs[field]["vectors"])
-        ids = vector_dbs[field]["ids"]
-        n = len(vecs)
-        if n < 2:
-            continue
+    # --- Find representative meme for each centroid ---
+    closest_ids, _ = pairwise_distances_argmin_min(centroids, vecs)
 
-        perplexity = max(2, min(30, (n - 1) / 3))
-        reduced = TSNE(n_components=2, random_state=42, perplexity=perplexity).fit_transform(vecs)
+    # --- Build JSON structure for this field ---
+    clusters = []
+    for cluster_id in range(k):
+        members = [ids[j] for j in range(n) if labels[j] == cluster_id]
+        centroid_vec = centroids[cluster_id].tolist()
+        representative_id = ids[closest_ids[cluster_id]]
 
-        # ---- Auto choose cluster count ----
-        k = min(8, max(2, n // 10))
-        kmeans = KMeans(n_clusters=k, random_state=42, n_init="auto").fit(vecs)
-        labels = kmeans.labels_
+        clusters.append({
+            "cluster_id": cluster_id + 1,
+            "size": len(members),
+            "centroid_vector": centroid_vec,
+            "representative_meme": {
+                "id": representative_id,
+                "text": memes[representative_id].get(field, "")
+            },
+            "members": [
+                {
+                    "id": meme_id,
+                    "text": memes[meme_id].get(field, "")
+                }
+                for meme_id in members
+            ]
+        })
 
-        # ---- Plot ----
-        plt.subplot(2, 2, i)
-        scatter = plt.scatter(
-            reduced[:, 0],
-            reduced[:, 1],
-            c=labels,
-            cmap="tab10",
-            s=50,
-            alpha=0.8,
-            edgecolor="none"
-        )
-        plt.title(f"{field.capitalize()} (n={n}, clusters={k})")
-        plt.axis("off")
+    result_json[field] = {
+        "total_memes": n,
+        "num_clusters": k,
+        "clusters": clusters
+    }
 
-        # ---- Write cluster summary to file ----
-        report.write(f"=== FIELD: {field.upper()} ===\n")
-        report.write(f"Total memes analyzed: {n}\n")
-        report.write(f"Auto-detected clusters: {k}\n")
-        report.write("-" * 60 + "\n")
+    # --- Visualization ---
+    plt.subplot(2, 2, i)
+    plt.scatter(reduced[:, 0], reduced[:, 1], c=labels, cmap="tab10", s=50, alpha=0.8)
+    plt.scatter(
+        reduced[closest_ids, 0],
+        reduced[closest_ids, 1],
+        color="black",
+        s=150,
+        marker="*",
+        label="centroid"
+    )
+    plt.title(f"{field.capitalize()} (n={n}, clusters={k})")
+    plt.axis("off")
 
-        for cluster_id in range(k):
-            members = [ids[j] for j in range(n) if labels[j] == cluster_id]
-            report.write(f"\n📁 Cluster {cluster_id + 1} — {len(members)} memes\n")
-            report.write("-" * 40 + "\n")
-
-            for meme_id in members:
-                desc = memes[meme_id].get(field, "").replace("\n", " ").strip()
-                report.write(f"• {meme_id}: {desc}\n")
-
-            report.write("\n")
-        report.write("=" * 60 + "\n\n")
+# === Save JSON ===
+with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+    json.dump(result_json, f, indent=2, ensure_ascii=False)
 
 plt.suptitle("Meme Semantic Spaces by Field (t-SNE + KMeans Clustering)", fontsize=14)
 plt.tight_layout()
 plt.savefig("meme_clusters.png", dpi=300)
 plt.show()
 
-print(f"✅ Full report saved to {REPORT_FILE}")
+print(f"✅ Cluster JSON saved to {OUTPUT_JSON}")
 print("✅ Visualization saved to meme_clusters.png")

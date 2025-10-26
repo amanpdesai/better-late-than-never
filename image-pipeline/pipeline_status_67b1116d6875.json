@@ -1,0 +1,90 @@
+{
+  "overall_status": "pending",
+  "updated_at": "2025-10-26T07:37:05Z",
+  "current_step_index": null,
+  "current_step_key": null,
+  "current_step_title": null,
+  "steps": [
+    {
+      "key": "descriptions",
+      "title": "Generate meme descriptions",
+      "status": "skipped",
+      "log_file": "image-pipeline/logs/67b1116d6875/01_descriptions.log",
+      "command": null,
+      "started_at": null,
+      "finished_at": null,
+      "duration_seconds": null,
+      "returncode": null,
+      "error": null
+    },
+    {
+      "key": "vector-db",
+      "title": "Build embedding indexes and clusters",
+      "status": "skipped",
+      "log_file": "image-pipeline/logs/67b1116d6875/02_vector-db.log",
+      "command": null,
+      "started_at": null,
+      "finished_at": null,
+      "duration_seconds": null,
+      "returncode": null,
+      "error": null
+    },
+    {
+      "key": "translate",
+      "title": "Translate cluster report to JSON",
+      "status": "skipped",
+      "log_file": "image-pipeline/logs/67b1116d6875/03_translate.log",
+      "command": null,
+      "started_at": null,
+      "finished_at": null,
+      "duration_seconds": null,
+      "returncode": null,
+      "error": null
+    },
+    {
+      "key": "labels",
+      "title": "Generate cluster labels",
+      "status": "skipped",
+      "log_file": "image-pipeline/logs/67b1116d6875/04_labels.log",
+      "command": null,
+      "started_at": null,
+      "finished_at": null,
+      "duration_seconds": null,
+      "returncode": null,
+      "error": null
+    },
+    {
+      "key": "query",
+      "title": "Query clusters with Gemini",
+      "status": "skipped",
+      "log_file": "image-pipeline/logs/67b1116d6875/05_query.log",
+      "command": null,
+      "started_at": null,
+      "finished_at": null,
+      "duration_seconds": null,
+      "returncode": null,
+      "error": null
+    },
+    {
+      "key": "augment",
+      "title": "Augment query output with centroid data",
+      "status": "pending",
+      "log_file": "image-pipeline/logs/67b1116d6875/06_augment.log",
+      "command": null,
+      "started_at": null,
+      "finished_at": null,
+      "duration_seconds": null,
+      "returncode": null,
+      "error": null
+    }
+  ],
+  "run_id": "20251026T073705Z",
+  "started_at": "2025-10-26T07:37:05Z",
+  "question": "I work for lululemon, what is the next big idea",
+  "status_file": "/Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/pipeline_status_67b1116d6875.json",
+  "logs_dir": "/Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/logs/67b1116d6875",
+  "query_output": "/Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/output.txt",
+  "augmented_output": "/Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/output_with_centroid.json",
+  "start_from_index": 6,
+  "start_from_key": "augment"
+}

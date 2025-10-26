@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Pipeline Runner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Image Pipeline Runner</h1>
+        <p>Kick off the meme pipeline and follow its progress in real time.</p>
+      </header>
+
+      <section class="card">
+        <form id="pipeline-form">
+          <div class="field">
+            <label for="question">Prompt / Question *</label>
+            <textarea id="question" name="question" rows="3" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="start_from">Start From (index or step key)</label>
+            <input id="start_from" name="start_from" placeholder="e.g. 3 or query" />
+            <small>
+              Available keys: descriptions, vector-db, translate, labels, query, augment.
+            </small>
+          </div>
+
+          <div class="field inline">
+            <label for="top_k">Top&nbsp;K</label>
+            <input id="top_k" name="top_k" type="number" min="1" value="3" />
+          </div>
+
+          <div class="field inline">
+            <label for="model">Gemini model</label>
+            <input id="model" name="model" value="gemini-2.5-flash-lite" />
+          </div>
+
+          <div class="field inline">
+            <label for="random_count">Random count</label>
+            <input id="random_count" name="random_count" type="number" min="1" value="2" />
+          </div>
+
+          <div class="field inline">
+            <label for="random_seed">Random seed</label>
+            <input id="random_seed" name="random_seed" type="number" />
+          </div>
+
+          <div class="field checkbox">
+            <label>
+              <input id="no_random_images" type="checkbox" />
+              Skip random image suggestions
+            </label>
+          </div>
+
+          <div class="field checkbox">
+            <label>
+              <input id="dry_run" type="checkbox" />
+              Dry run (do not execute)
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="submit" id="run-button">Run pipeline</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card" id="result-card" hidden>
+        <h2>Run details</h2>
+        <dl>
+          <dt>Run ID</dt>
+          <dd id="run-id">–</dd>
+          <dt>Status file</dt>
+          <dd><code id="status-file">–</code></dd>
+          <dt>Logs directory</dt>
+          <dd><code id="logs-dir">–</code></dd>
+          <dt>Command</dt>
+          <dd><code id="command">–</code></dd>
+        </dl>
+
+        <div id="status-block" hidden>
+          <h3>Live status</h3>
+          <pre id="status-json"></pre>
+        </div>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

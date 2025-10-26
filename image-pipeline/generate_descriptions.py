@@ -8,7 +8,7 @@ OUT_JSON = "meme_descriptions.json"
 MAX_MEMES = 300
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
 # === Load existing data ===
 if os.path.exists(OUT_JSON):
