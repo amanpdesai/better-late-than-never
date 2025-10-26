@@ -1,0 +1,42 @@
+{
+  "DESCRIPTION ===": {
+    "Cluster 1": "\"Societal Commentary Through Humor and",
+    "Cluster 2": "\"Absurdist Humor and Surreal Juxtapositions\"",
+    "Cluster 3": "\"Surreal Reactions to Absurd Scenarios\"",
+    "Cluster 4": "\"Contrasts in Expectations and Realities\"",
+    "Cluster 5": "\"Whimsical Satire on Cultural Icons\"",
+    "Cluster 6": "\"Tech Frustrations and Ironic Observations\"",
+    "Cluster 7": "\"Pop Culture Satire and Parody\"",
+    "Cluster 8": "Absurdity and irony in daily"
+  },
+  "HUMOR ===": {
+    "Cluster 1": "\"Relatable Absurdity in Everyday Struggles\"",
+    "Cluster 2": "Absurd juxtapositions with dark irony.",
+    "Cluster 3": "\"Absurd Juxtaposition and Dark Humor\"",
+    "Cluster 4": "\"Exaggerated fandom humor with absurdity.\"",
+    "Cluster 5": "Absurdity and irony in daily",
+    "Cluster 6": "\"Digital Disillusionment and Absurdity Satire\"",
+    "Cluster 7": "\"Absurd Juxtapositions and Materialistic Dismissals\"",
+    "Cluster 8": "\"Absurdity and Satire in Everyday"
+  },
+  "TOPIC ===": {
+    "Cluster 1": "\"Relatable Everyday Struggles and Humor\"",
+    "Cluster 2": "\"Parodying Lore with Dark Humor\"",
+    "Cluster 3": "\"Musical Discontent and Corporate Critique\"",
+    "Cluster 4": "\"Existential Dread and Social Critique\"",
+    "Cluster 5": "\"Obsessive fandom meets dark humor.\"",
+    "Cluster 6": "\"Visual Illusions and Cultural Critiques\"",
+    "Cluster 7": "\"Whimsical Absurdity Meets Cultural Commentary\"",
+    "Cluster 8": "\"Digital Discourse and Societal Critique\""
+  },
+  "MEME_TEMPLATE ===": {
+    "Cluster 1": "\"Humor through irony and contrast.\"",
+    "Cluster 2": "\"Emotionally Charged Reaction Image Diversity\"",
+    "Cluster 3": "\"Meta-humor, juxtaposition, and relatable absurdity.\"",
+    "Cluster 4": "\"Social Media Satire and Observational",
+    "Cluster 5": "\"Relatable Textual Humor and Self-Reflection\"",
+    "Cluster 6": "\"Contrasting Ideologies and Expectations Explored\"",
+    "Cluster 7": "\"Layered Visuals with Cultural References\"",
+    "Cluster 8": "\"Subtle Commentary with Frog Sarcasm\""
+  }
+}
