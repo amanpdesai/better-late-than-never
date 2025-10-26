@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-GOOGLE TRENDS SCRAPER (PyTrends + Selenium Fallback)
-====================================================
+GOOGLE TRENDS SCRAPER (PyTrends + Selenium CSV Export)
+======================================================
 
 Fetches trending search data for selected countries using PyTrends,
-and falls back to Selenium to download CSV data directly from the
-Google Trends UI when the API returns 404 or empty results.
+and falls back to Selenium automation to export CSV data directly
+from the Google Trends interface when PyTrends fails.
 
 Supported countries:
     USA, UK, INDIA, CANADA, AUSTRALIA
@@ -15,28 +15,21 @@ import argparse
 import csv
 import json
 import logging
-import os
-import re
 import time
 from datetime import datetime, timezone
 from io import StringIO
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
-import pandas as pd
 from pytrends.request import TrendReq
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------
 # CONFIGURATION
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------
 
 COUNTRY_CONFIG = {
     "USA": {"geo": "US", "hl": "en-US", "tz": -300, "pn": "united_states"},
@@ -58,71 +51,52 @@ CATEGORY_KEYWORDS = {
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
 
 
-# ---------------------------------------------------------------------
-# UTILITIES
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------
+# HELPERS
+# ------------------------------------------------------------
 
 def categorize_query(query: str) -> str:
-    q = query.lower()
+    query_lower = query.lower()
     for cat, kws in CATEGORY_KEYWORDS.items():
-        if any(kw in q for kw in kws):
+        if any(kw in query_lower for kw in kws):
             return cat
     return "general"
 
 
-def parse_csv_text(csv_text: str, geo: str) -> List[Dict[str, Any]]:
-    """Parse Google Trends CSV export into structured list."""
-    reader = csv.DictReader(StringIO(csv_text))
-    results = []
-    for row in reader:
-        title = row.get("Title") or row.get("title")
-        if not title:
-            continue
-        traffic = row.get("Traffic", "")
-        related = row.get("Related queries", "")
-        snippet = row.get("Articles", "")
-        results.append({
-            "query": title,
-            "traffic_label": traffic,
-            "related_queries": [r.strip() for r in related.split(",") if r.strip()],
-            "snippet": snippet,
-            "category": categorize_query(title),
-            "share_url": f"https://trends.google.com/trends/explore?q={title.replace(' ', '+')}&geo={geo}",
-        })
-    return results
-
 def parse_trending_csv(csv_text: str, country_code: str) -> List[Dict[str, Any]]:
-    """
-    Parse the CSV downloaded from Google Trends Export → CSV
-    """
+    """Parse the CSV downloaded from Google Trends Export → CSV"""
     f = StringIO(csv_text)
     reader = csv.DictReader(f)
     results = []
 
     for row in reader:
-        title = row.get("Title") or row.get("title")
-        if not title:
+        query = (row.get("Trends") or "").strip()
+        if not query:
             continue
-        traffic = row.get("Traffic", "")
-        related = row.get("Related queries", "")
-        snippet = row.get("Articles", "")
+
+        traffic_label = (row.get("Search volume") or "").strip()
+        started = (row.get("Started") or "").strip()
+        ended = (row.get("Ended") or "").strip()
+        related_raw = (row.get("Trend breakdown") or "").strip()
+        related = [r.strip() for r in related_raw.split(",") if r.strip()]
+        explore_link = (row.get("Explore link") or "").strip()
 
         results.append({
-            "query": title.strip(),
-            "traffic_label": traffic.strip(),
-            "related_queries": [r.strip() for r in related.split(",") if r.strip()],
-            "snippet": snippet.strip(),
-            "category": categorize_query(title),
-            "share_url": f"https://trends.google.com/trends/explore?q={title.replace(' ', '+')}&geo={country_code}",
+            "query": query,
+            "traffic_label": traffic_label,
+            "start_time": started or None,
+            "end_time": ended or None,
+            "related_queries": related,
+            "category": categorize_query(query),
+            "share_url": explore_link or f"https://trends.google.com/trends/explore?q={query.replace(' ', '+')}&geo={country_code}"
         })
 
     return results
 
 
-
-# ---------------------------------------------------------------------
-# MAIN SCRAPER
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------
+# MAIN SCRAPER CLASS
+# ------------------------------------------------------------
 
 class GoogleTrendsScraper:
     def __init__(self, country: str):
@@ -133,15 +107,12 @@ class GoogleTrendsScraper:
         self.conf = COUNTRY_CONFIG[country]
         self.trends = TrendReq(hl=self.conf["hl"], tz=self.conf["tz"], geo=self.conf["geo"])
 
-    # =====================================================
-    # PRIMARY FETCH (PyTrends)
-    # =====================================================
     def fetch(self) -> Dict[str, Any]:
         logging.info(f"Fetching Google Trends data for {self.country}")
         try:
             df = self.trends.trending_searches(pn=self.conf["pn"])
         except Exception as e:
-            logging.warning(f"PyTrends failed ({e}), switching to Selenium fallback.")
+            logging.warning(f"PyTrends failed ({e}), switching to Selenium export.")
             return self._fetch_via_selenium()
 
         if df.empty:
@@ -151,8 +122,7 @@ class GoogleTrendsScraper:
         queries = df[0].tolist()[:20]
         breakdown = self._category_breakdown(queries)
         summary = self._summary(queries, breakdown)
-
-        data = {
+        return {
             "country": self.country,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "source": "PyTrends",
@@ -160,358 +130,135 @@ class GoogleTrendsScraper:
             "category_breakdown": breakdown,
             "summary": summary,
         }
-        return data
 
-    # =====================================================
-    # FALLBACK (Selenium Automation)
-    # =====================================================
     def _fetch_via_selenium(self) -> Dict[str, Any]:
+        """Automate export via Selenium (Export ▾ → Download CSV)"""
         logging.info(f"Launching Selenium CSV export for {self.country}")
 
         download_dir = str((Path.cwd() / "downloads").resolve())
         Path(download_dir).mkdir(parents=True, exist_ok=True)
 
+        # Clean out stale CSVs before run
+        for old in Path(download_dir).glob("*.csv"):
+            try:
+                old.unlink()
+            except Exception:
+                pass
+
         options = Options()
         options.add_argument("--headless=new")
         options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-<<<<<<< HEAD
         options.add_argument("--disable-gpu")
-        options.add_argument("--window-size=1400,900")
-        options.add_argument(
-            "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
-        )
-
-        driver = None
-        try:
-            service = Service(ChromeDriverManager().install())
-            driver = webdriver.Chrome(service=service, options=options)
-            driver.get(
-                f"https://trends.google.com/trends/trendingsearches/daily?geo={self.config['geo']}"
-            )
-            driver.implicitly_wait(5)
-
-            page_source = driver.page_source
-            soup = BeautifulSoup(page_source, "html.parser")
-            rows = soup.select("tr.enOdEe-wZVHld-xMbwt")
-            parsed_rows: List[Dict[str, Any]] = []
-
-            for row in rows[: self.limit]:
-                query = text_or_none(row.select_one("div.mZ3RIc"))
-                if not query:
-                    continue
-
-                traffic_text = None
-                traffic_el = row.select_one("div.qNpYPd")
-                if traffic_el:
-                    traffic_text = traffic_el.get_text(strip=True).replace(" searches", "")
-
-                percent_text = text_or_none(row.select_one("div.TXt85b"))
-                trend_state = text_or_none(row.select_one("div.QxIiwc div"))
-                trend_icon = text_or_none(row.select_one("div.QxIiwc i"))
-                recency = text_or_none(row.select_one("div.A7jE4")) or text_or_none(
-                    row.select_one("td.WirRge .vdw3Ld")
-                )
-
-                related_terms = []
-                for button in row.select("td.xm9Xec button[data-term]"):
-                    term = button.get("data-term")
-                    if term:
-                        related_terms.append(html_unescape(term))
-
-                metadata = {
-                    "percent_label": percent_text,
-                    "trend_state": trend_state,
-                    "trend_icon": trend_icon,
-                    "last_seen": recency,
-                }
-
-                parsed_rows.append(
-                    {
-                        "title": {"query": html_unescape(query)},
-                        "formattedTraffic": traffic_text,
-                        "articles": [],
-                        "entityNames": [],
-                        "relatedQueries": [{"query": rq} for rq in dedupe_preserve(related_terms)],
-                        "metadata": metadata,
-                    }
-                )
-
-            logger.info(
-                "Selenium fallback captured %d rows for %s",
-                len(parsed_rows),
-                self.country_key,
-            )
-            return parsed_rows
-
-        except Exception as exc:  # noqa: BLE001
-            logger.error("Selenium fallback failed: %s", exc)
-            return []
-        finally:
-            if driver:
-                driver.quit()
-
-    def _build_interest_meta(self, queries: Sequence[str]) -> Dict[str, TrendMeta]:
-        """Fetch hourly interest history per query to infer the trend direction."""
-        meta: Dict[str, TrendMeta] = {}
-        unique_queries = list(dict.fromkeys(queries))
-        logger.info(f"Building interest meta for {len(unique_queries)} queries: {unique_queries[:5]}...")
-        
-        for batch in chunked(unique_queries, MAX_INTEREST_BATCH):
-            if not batch:
-                continue
-            try:
-                logger.debug(f"Fetching interest data for batch: {batch}")
-                self.pytrends.build_payload(
-                    batch, timeframe="now 1-d", geo=self.config["geo"]
-                )
-                df = self.pytrends.interest_over_time()
-                logger.debug(f"Interest data shape: {df.shape}, columns: {list(df.columns)}")
-            except Exception as exc:  # noqa: BLE001
-                logger.warning("interest_over_time failed for %s: %s", batch, exc)
-                continue
-
-            if df.empty:
-                logger.warning(f"Empty interest data for batch: {batch}")
-                continue
-
-            for query in batch:
-                if query not in df.columns:
-                    logger.debug(f"Query '{query}' not found in interest data columns")
-                    continue
-                series = df[query].dropna()
-                if series.empty:
-                    logger.debug(f"Empty series for query: {query}")
-                    continue
-                logger.debug(f"Analyzing series for '{query}': {series.tolist()}")
-                meta[query] = analyze_interest_series(series)
-        
-        logger.info(f"Built interest meta for {len(meta)} queries")
-        return meta
-
-    def _fetch_related_queries(self, queries: Sequence[str]) -> Dict[str, List[str]]:
-        related: Dict[str, List[str]] = {}
-        seed = list(dict.fromkeys(queries))[:MAX_INTEREST_BATCH]
-        if not seed:
-            return related
-
-        try:
-            self.pytrends.build_payload(seed, timeframe="now 7-d", geo=self.config["geo"])
-            response = self.pytrends.related_queries()
-        except Exception as exc:  # noqa: BLE001
-            logger.debug("related_queries failed: %s", exc)
-            return related
-
-        for query, payload in response.items():
-            queries_df = payload.get("top")
-            rising_df = payload.get("rising")
-            combined = []
-            if isinstance(queries_df, pd.DataFrame):
-                combined.extend(queries_df["query"].tolist())
-            if isinstance(rising_df, pd.DataFrame):
-                combined.extend(rising_df["query"].tolist())
-            if combined:
-                related[query] = list(dict.fromkeys(combined))
-        return related
-
-    def _build_breakout_list(
-        self, related_query_map: Dict[str, List[str]]
-    ) -> List[Dict[str, Any]]:
-        breakouts: List[Dict[str, Any]] = []
-        for query, related_list in related_query_map.items():
-            for related in related_list[:3]:
-                if related.lower() == query.lower():
-                    continue
-                breakouts.append(
-                    {
-                        "query": related,
-                        "parent_query": query,
-                        "growth": "5000%+",
-                        "category": categorize_query(related),
-                    }
-                )
-        # Deduplicate while preserving order
-        seen = set()
-        deduped: List[Dict[str, Any]] = []
-        for item in breakouts:
-            key = item["query"].lower()
-            if key in seen:
-                continue
-            deduped.append(item)
-            seen.add(key)
-        return deduped[:15]
-
-    def _build_geographic_distribution(self, queries: Sequence[str]) -> Dict[str, float]:
-        seed = list(dict.fromkeys(queries))[:MAX_INTEREST_BATCH]
-        if not seed:
-            return {}
-
-        try:
-            self.pytrends.build_payload(seed, timeframe="now 7-d", geo=self.config["geo"])
-            df = self.pytrends.interest_by_region(resolution="REGION", inc_low_vol=True)
-        except Exception as exc:  # noqa: BLE001
-            logger.debug("interest_by_region failed: %s", exc)
-            return {}
-
-        if df.empty:
-            return {}
-
-        df["total"] = df.sum(axis=1)
-        df = df[df["total"] > 0]
-        if df.empty:
-            return {}
-
-        top_regions = df["total"].nlargest(8)
-        total_sum = float(top_regions.sum()) or 1.0
-        return {
-            region: round((value / total_sum) * 100, 1)
-            for region, value in top_regions.to_dict().items()
-        }
-
-    def _build_trending_items(
-        self,
-        raw_trends: List[Dict[str, Any]],
-        interest_meta: Dict[str, TrendMeta],
-        related_query_map: Dict[str, List[str]],
-    ) -> List[Dict[str, Any]]:
-        items: List[Dict[str, Any]] = []
-        for idx, entry in enumerate(raw_trends[: self.limit], start=1):
-            title_info = entry.get("title", {})
-            query = title_info.get("query")
-            if not query and entry.get("entityNames"):
-                query = entry["entityNames"][0]
-            if not query:
-                continue
-
-            meta = interest_meta.get(query, TrendMeta())
-            fallback_related: List[str] = []
-            raw_related = entry.get("relatedQueries") or []
-            for related in raw_related:
-                if isinstance(related, dict) and related.get("query"):
-                    fallback_related.append(related["query"])
-                elif isinstance(related, str):
-                    fallback_related.append(related)
-            related_queries = related_query_map.get(query, fallback_related)
-
-            item = {
-                "rank": idx,
-                "query": query,
-                "search_volume": entry.get("formattedTraffic"),
-                "traffic": parse_traffic(entry.get("formattedTraffic")),
-                "category": categorize_query(query),
-                "trend": meta.trend,
-                "trend_duration_hours": meta.trend_duration_hours,
-                "percent_change": round(meta.percent_change, 2),
-                "trend_sparkline": meta.sparkline or [],
-                "related_queries": related_queries[:5],
-                "related_news": build_related_news(entry.get("articles", [])),
-                "share_url": entry.get("shareUrl"),
-                "snippet": (entry.get("articles") or [{}])[0].get("snippet"),
-            }
-            items.append(item)
-        return items
-
-    def _build_category_breakdown(self, items: Sequence[Dict[str, Any]]) -> Dict[str, int]:
-        counts = Counter(item["category"] for item in items if item.get("category"))
-        total = sum(counts.values()) or 1
-        return {category: int(round((value / total) * 100)) for category, value in counts.items()}
-
-    def _build_summary(
-        self,
-        trending: Sequence[Dict[str, Any]],
-        breakout: Sequence[Dict[str, Any]],
-        breakdown: Dict[str, int],
-    ) -> Dict[str, Any]:
-        top_category = max(breakdown, key=breakdown.get) if breakdown else None
-        notable_topics = [item["query"] for item in trending[:5]]
-        summary = {
-            "total_trending_searches": len(trending),
-            "total_breakout_searches": len(breakout),
-            "top_category": top_category,
-            "most_searched_term": trending[0]["query"] if trending else None,
-            "notable_topics": notable_topics,
-        }
-        return summary
-
-
-def build_related_news(articles: Optional[List[Dict[str, Any]]]) -> List[Dict[str, Any]]:
-    news_items: List[Dict[str, Any]] = []
-    if not articles:
-        return news_items
-    for article in articles[:3]:
-        news_items.append(
-=======
+        options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--window-size=1600,1000")
-        options.add_experimental_option(
-            "prefs",
->>>>>>> b081fd5 (merging to main)
-            {
-                "download.default_directory": download_dir,
-                "download.prompt_for_download": False,
-                "download.directory_upgrade": True,
-                "safebrowsing.enabled": True,
-            },
-        )
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--disable-background-networking")
+        options.add_argument("--disable-features=NetworkService,NetworkServiceInProcess")
+        prefs = {
+            "download.default_directory": download_dir,
+            "download.prompt_for_download": False,
+            "download.directory_upgrade": True,
+            "safebrowsing.enabled": True,
+        }
+        options.add_experimental_option("prefs", prefs)
 
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        url = f"https://trends.google.com/trending?geo={self.conf['geo']}"
-        driver.get(url)
-        logging.info("Waiting for Export button...")
-        time.sleep(6)
 
+        url = f"https://trends.google.com/trends/trendingsearches/daily?geo={self.conf['geo']}"
+        logging.info(f"Opening {url}")
+
+        # --- HARD RELOAD SEQUENCE ---
+        driver.get("https://trends.google.com")
+        time.sleep(2)
+        driver.delete_all_cookies()
+        driver.execute_cdp_cmd("Network.clearBrowserCache", {})
+        driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
+        driver.execute_cdp_cmd("ServiceWorker.disable", {})
+        driver.get(url)
+        time.sleep(8)
+
+        # Verify region text actually matches target
         try:
-            # The Export button lives inside a shadow DOM component.
-            # We'll query all buttons and look for one that includes "Export".
+            region_text = driver.execute_script("""
+                const btn = document.querySelector('button[jsname="E2vDFb"]');
+                return btn ? btn.innerText : null;
+            """)
+            logging.info(f"Region selector currently shows: {region_text}")
+            if region_text and self.country.lower() not in region_text.lower():
+                logging.info("Reselecting region manually...")
+                driver.execute_script(f"""
+                    const dropdown = document.querySelector('button[jsname="E2vDFb"]');
+                    if (dropdown) {{
+                        dropdown.click();
+                        const items = Array.from(document.querySelectorAll('div[role="menuitem"], span'));
+                        const target = items.find(el => el.innerText && el.innerText.toLowerCase().includes("{self.country.lower()}"));
+                        if (target) target.click();
+                    }}
+                """)
+                time.sleep(5)
+        except Exception as e:
+            logging.warning(f"Region reselect check failed: {e}")
+
+        # Scroll to ensure content loads
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+        time.sleep(3)
+
+        # --- EXPORT ---
+        try:
             export_btn = driver.execute_script("""
                 const btns = Array.from(document.querySelectorAll('button, div[role="button"]'));
                 return btns.find(b => b.innerText && b.innerText.includes('Export'));
             """)
             if not export_btn:
                 raise RuntimeError("Export button not found")
-
             driver.execute_script("arguments[0].click();", export_btn)
             time.sleep(1)
 
-            # Click the "Download CSV" menu item
             csv_btn = driver.execute_script("""
                 const items = Array.from(document.querySelectorAll('li, div[role="menuitem"]'));
                 return items.find(i => i.innerText && i.innerText.includes('Download CSV'));
             """)
             if not csv_btn:
                 raise RuntimeError("CSV option not found")
-
             driver.execute_script("arguments[0].click();", csv_btn)
             logging.info("Clicked CSV export option, waiting for download...")
 
-            # Wait for the file to appear
-            timeout = time.time() + 20
+            timeout = time.time() + 25
             csv_file = None
             while time.time() < timeout:
                 files = list(Path(download_dir).glob("*.csv"))
                 if files:
-                    csv_file = files[0]
+                    csv_file = max(files, key=lambda f: f.stat().st_mtime)
                     break
                 time.sleep(1)
 
             if not csv_file:
                 raise RuntimeError("No CSV file downloaded")
 
-            # Read and parse CSV
-            with open(csv_file, "r", encoding="utf-8") as f:
-                text = f.read()
+            # Rename to prevent confusion
+            renamed = csv_file.parent / f"trending_{self.conf['geo']}_{datetime.now().strftime('%Y%m%d-%H%M')}.csv"
+            csv_file.rename(renamed)
+            logging.info(f"Downloaded {renamed.name}")
+
+            with open(renamed, "r", encoding="utf-8") as f:
+                csv_text = f.read()
 
             driver.quit()
-            logging.info(f"Successfully downloaded {csv_file.name}")
 
-            trends = parse_trending_csv(text, self.conf["geo"])
-            breakdown = self._category_breakdown(trends)
-            summary = self._summary(trends, breakdown)
+            trends = parse_trending_csv(csv_text, self.conf["geo"])
+            breakdown = self._category_breakdown([t["query"] for t in trends])
+            summary = self._summary([t["query"] for t in trends], breakdown)
+
+            # Clean up
+            try:
+                renamed.unlink()
+            except Exception:
+                pass
 
             return {
                 "country": self.country,
                 "timestamp": datetime.now(timezone.utc).isoformat(),
-                "source": "Selenium Export (Downloaded CSV)",
+                "source": "Selenium Export (Localized Reloaded CSV)",
                 "trending_searches": trends,
                 "category_breakdown": breakdown,
                 "summary": summary,
@@ -522,9 +269,9 @@ def build_related_news(articles: Optional[List[Dict[str, Any]]]) -> List[Dict[st
             driver.quit()
             return {}
 
-    # =====================================================
+    # ------------------------------------------------------------
     # HELPERS
-    # =====================================================
+    # ------------------------------------------------------------
     def _category_breakdown(self, queries: List[str]) -> Dict[str, int]:
         from collections import Counter
         c = Counter(categorize_query(q) for q in queries)
@@ -541,78 +288,28 @@ def build_related_news(articles: Optional[List[Dict[str, Any]]]) -> List[Dict[st
         }
 
 
-# ---------------------------------------------------------------------
-# SAVE + CLI
-# ---------------------------------------------------------------------
+# ------------------------------------------------------------
+# CLI + SAVE
+# ------------------------------------------------------------
 
-<<<<<<< HEAD
-    # Calculate percent change from first to last value
-    first, last = values[0], values[-1]
-    percent_change = ((last - first) / max(first, 1)) * 100 if first > 0 else 0.0
-
-    # Determine trend based on percent change
-    trend = "steady"
-    if percent_change > 15:
-        trend = "rising"
-    elif percent_change < -15:
-        trend = "falling"
-
-    # Calculate consecutive growth hours (looking at recent trend)
-    duration = consecutive_growth_hours(values)
-
-    # Debug logging to see what's happening
-    logger.debug(f"Interest series analysis: first={first}, last={last}, change={percent_change:.2f}%, trend={trend}")
-
-    return TrendMeta(
-        trend=trend,
-        percent_change=percent_change,
-        trend_duration_hours=duration,
-        sparkline=values[-12:],
-    )
-
-
-def consecutive_growth_hours(values: List[float]) -> int:
-    """Calculate consecutive hours of growth/decline from the end of the series."""
-    if len(values) < 2:
-        return 0
-    
-    duration = 0
-    # Look backwards from the most recent value
-    for idx in range(len(values) - 1, 0, -1):
-        if values[idx] > values[idx - 1]:
-            duration += 1
-        else:
-            break
-    
-    # Also check for consecutive decline
-    decline_duration = 0
-    for idx in range(len(values) - 1, 0, -1):
-        if values[idx] < values[idx - 1]:
-            decline_duration += 1
-        else:
-            break
-    
-    # Return the longer duration (growth or decline)
-    return max(duration, decline_duration)
-=======
 def save_output(country: str, data: Dict[str, Any], outdir: str = "./output"):
     if not data:
         logging.warning(f"No data to save for {country}")
         return
-    path = Path(outdir) / country / f"{datetime.now().strftime('%Y-%m-%d')}.json"
-    path.parent.mkdir(parents=True, exist_ok=True)
+    directory = Path(outdir) / country
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{datetime.now().strftime('%Y-%m-%d')}.json"
     with path.open("w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     logging.info(f"Saved: {path}")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scrape Google Trends (PyTrends + Selenium Fallback)")
-    parser.add_argument("--country", required=True, help="Country name (e.g., USA, UK, India, Canada, Australia)")
-    parser.add_argument("--output", default="./output", help="Output directory")
+    parser = argparse.ArgumentParser(description="Scrape Google Trends (PyTrends + Selenium Export)")
+    parser.add_argument("--country", required=True, help="Country name (e.g., USA, UK, India)")
+    parser.add_argument("--output", default="../output", help="Output directory")
     parser.add_argument("--print", action="store_true", help="Print JSON output")
     args = parser.parse_args()
->>>>>>> b081fd5 (merging to main)
 
     scraper = GoogleTrendsScraper(args.country)
     data = scraper.fetch()
