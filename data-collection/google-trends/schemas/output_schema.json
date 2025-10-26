@@ -1,0 +1,91 @@
+{
+  "title": "Google Trends Scraper Output",
+  "description": "Shape of the JSON emitted by data-collection/google-trends/scripts/scraper.py",
+  "type": "object",
+  "properties": {
+    "country": { "type": "string" },
+    "category": { "type": "string", "enum": ["google_trends"] },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "last_updated": { "type": "string", "format": "date-time" },
+    "trending_searches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rank": { "type": "integer" },
+          "query": { "type": "string" },
+          "search_volume": { "type": ["string", "null"] },
+          "traffic": { "type": ["integer", "null"] },
+          "category": { "type": "string" },
+          "trend": { "type": "string", "enum": ["rising", "falling", "steady", "unknown"] },
+          "trend_duration_hours": { "type": "integer" },
+          "percent_change": { "type": "number" },
+          "trend_sparkline": { "type": "array", "items": { "type": "integer" } },
+          "related_queries": { "type": "array", "items": { "type": "string" } },
+          "related_news": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": ["string", "null"] },
+                "source": { "type": ["string", "null"] },
+                "url": { "type": ["string", "null"] },
+                "published_at": { "type": ["string", "null"] }
+              },
+              "additionalProperties": false
+            }
+          },
+          "share_url": { "type": ["string", "null"] },
+          "snippet": { "type": ["string", "null"] }
+        },
+        "required": ["rank", "query"]
+      }
+    },
+    "breakout_searches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "parent_query": { "type": "string" },
+          "growth": { "type": "string" },
+          "category": { "type": "string" }
+        },
+        "required": ["query", "growth"]
+      }
+    },
+    "category_breakdown": {
+      "type": "object",
+      "additionalProperties": { "type": "integer" }
+    },
+    "geographic_distribution": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "total_trending_searches": { "type": "integer" },
+        "total_breakout_searches": { "type": "integer" },
+        "top_category": { "type": ["string", "null"] },
+        "most_searched_term": { "type": ["string", "null"] },
+        "notable_topics": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": [
+    "country",
+    "category",
+    "timestamp",
+    "trending_searches",
+    "breakout_searches",
+    "summary"
+  ]
+}
