@@ -19,6 +19,7 @@ import json
 import os
 import re
 import sys
+import random
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -29,6 +30,12 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
 from gemini_pipeline import GeminiPipeline, PromptTemplate  # type: ignore
+from query_get_matching_image_rand import (
+    CATEGORY_KEYS,
+    load_meme_clusters,
+    parse_matches,
+    pick_random_items,
+)
 
 
 DATA_DIR = Path(__file__).resolve().parent
@@ -173,8 +180,9 @@ CLUSTER_ANALYST_TEMPLATE = PromptTemplate(
         "Use bullet points when listing clusters or recommendations.",
         "Call out missing information if the context does not contain an answer.",
         "Output only the cluster match numbers, categories, and best image matches in the specified format.",
+        "Specify the cluster category. The options are: DESCRIPTION, HUMOR, TOPIC, MEME_TEMPLATE.",
     ],
-    output_schema_hint="- Top Cluster Match Number: <cluster number> \n Cluster Category: <category> \n Best image match: <image URL> \n Second Match Number: <cluster number> \n Second Cluster Category: <category> \n Best image match: <image URL> \n Third Match Number: <cluster number> \n Third Cluster Category: <category> \n Best image match: <image URL>",
+    output_schema_hint="Best Match DESCRIPTION: Cluster X\nBest Match HUMOR: Cluster Y\nBest Match TOPIC: Cluster Z\nBest Match MEME_TEMPLATE: Cluster W",
 )
 
 
@@ -207,13 +215,85 @@ def parse_args() -> argparse.Namespace:
         default=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
         help="Gemini model name (default: gemini-2.5-flash or GEMINI_MODEL env var).",
     )
+    parser.add_argument(
+        "--with-random-images",
+        action="store_true",
+        help="After printing the Gemini response, also sample random meme files for each matched cluster.",
+    )
+    parser.add_argument(
+        "--random-count",
+        type=int,
+        default=2,
+        help="Number of random images to sample per category when using --with-random-images (default: 2).",
+    )
+    parser.add_argument(
+        "--random-seed",
+        type=int,
+        help="Optional RNG seed to make the sampled images reproducible.",
+    )
+    parser.add_argument(
+        "--output-file",
+        default="output.txt",
+        help="Write the combined output to this path (default: output.txt). Use '-' to skip writing.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    if args.with_random_images and args.random_count < 1:
+        raise SystemExit("--random-count must be at least 1 when using --with-random-images.")
     answer = run_query(args.question, top_k=args.top_k, model=args.model)
+    outputs = [answer]
     print(answer)
+    if args.with_random_images:
+        cluster_matches = parse_matches(answer)
+        if not cluster_matches:
+            msg = "[Random images] No cluster ids detected in the Gemini response."
+            print(f"\n{msg}")
+            outputs.append(f"\n{msg}")
+        else:
+            data = load_meme_clusters()
+            rng = random.Random(args.random_seed)
+            lines = ["", "Random image suggestions:"]
+            for category in CATEGORY_KEYS:
+                cluster_id = cluster_matches.get(category)
+                heading = category
+                if cluster_id:
+                    heading = f"{heading} (Cluster {cluster_id})"
+                lines.append(heading)
+                if not cluster_id:
+                    lines.append("  (cluster missing from response)")
+                    continue
+                entries = pick_random_items(
+                    data,
+                    category,
+                    cluster_id,
+                    count=args.random_count,
+                    rng=rng,
+                )
+                if not entries:
+                    lines.append("  (cluster not found or contains no items)")
+                    continue
+                for item in entries:
+                    file_name = item.get("file", "<unknown file>")
+                    detail = (
+                        item.get("description")
+                        or item.get("humor")
+                        or item.get("topic")
+                        or item.get("template")
+                    )
+                    if detail:
+                        lines.append(f"  - {file_name}: {detail}")
+                    else:
+                        lines.append(f"  - {file_name}")
+            random_output = "\n".join(lines)
+            print(random_output)
+            outputs.append(random_output)
+
+    output_text = "\n".join(outputs)
+    if args.output_file and args.output_file != "-":
+        Path(args.output_file).write_text(output_text + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
