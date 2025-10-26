@@ -148,6 +148,35 @@ def load_videos_from_csv(csv_path: str, limit: Optional[int] = None) -> List[str
     return urls
 
 
+def load_api_keys() -> List[str]:
+    """
+    Load multiple API keys from environment.
+    Supports GEMINI_API_KEY_1, GEMINI_API_KEY_2, etc.
+
+    Returns:
+        List of API keys
+    """
+    keys = []
+
+    # Try numbered keys first
+    i = 1
+    while True:
+        key = os.getenv(f"GEMINI_API_KEY_{i}")
+        if key:
+            keys.append(key)
+            i += 1
+        else:
+            break
+
+    # If no numbered keys, try single key
+    if not keys:
+        single_key = os.getenv("GEMINI_API_KEY")
+        if single_key:
+            keys.append(single_key)
+
+    return keys
+
+
 def main():
     """
     Main function to run the pipeline on the first video from the CSV.
@@ -155,13 +184,31 @@ def main():
     # Load environment variables from .env file
     load_dotenv()
 
-    # Get API key from environment
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        print("ERROR: Please set GEMINI_API_KEY in .env file")
+    # Get API keys from environment
+    api_keys = load_api_keys()
+    if not api_keys:
+        print("ERROR: Please set GEMINI_API_KEY or GEMINI_API_KEY_1, GEMINI_API_KEY_2, etc. in .env file")
         print("\nCreate a .env file with:")
         print('GEMINI_API_KEY=your-api-key-here')
+        print('\nOr for multiple keys:')
+        print('GEMINI_API_KEY_1=first-key')
+        print('GEMINI_API_KEY_2=second-key')
+        print('GEMINI_API_KEY_3=third-key')
         return
+
+    print(f"Loaded {len(api_keys)} API key(s)")
+
+    # Rate limit tracking: 10 calls per minute per key
+    # Each video makes ~3-4 API calls (transcript upload, audio upload, analysis, maybe retries)
+    # So we can process ~2-3 videos per key per minute
+    CALLS_PER_MINUTE_PER_KEY = 10
+    CALLS_PER_VIDEO = 4  # Conservative estimate (transcript, audio, analysis, potential retry)
+
+    current_key_index = 0
+    calls_this_minute = {i: 0 for i in range(len(api_keys))}
+    minute_start_time = {}
+
+    import time
 
     # Load first video from CSV
     csv_path = "massive_global_shorts.csv"
@@ -170,25 +217,143 @@ def main():
         return
 
     print("Loading videos from CSV...")
-    urls = load_videos_from_csv(csv_path, limit=1)
+    urls = load_videos_from_csv(csv_path)
 
     if not urls:
         print("No videos found in CSV")
         return
 
     print(f"Found {len(urls)} video(s) to process")
+    print(f"Estimated time: ~{len(urls) * 60 / (len(api_keys) * 2):.0f} seconds ({len(urls) * 60 / (len(api_keys) * 2) / 60:.1f} minutes)")
+    print("\n" + "="*60)
 
-    # Process the first video
-    result = process_video(urls[0], api_key)
-
-    # Save result
-    output_file = "output/analysis_result.json"
+    # Create output directory
     os.makedirs("output", exist_ok=True)
+    results_file = "output/all_results.jsonl"  # JSONL format for incremental saves
 
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
+    # Track progress
+    successful = 0
+    failed = 0
+    start_time = time.time()
 
-    print(f"\n\nResult saved to: {output_file}")
+    # Process all videos
+    for idx, url in enumerate(urls):
+        print(f"\n{'='*60}")
+        print(f"Video {idx + 1}/{len(urls)}")
+        print(f"Progress: {idx / len(urls) * 100:.1f}% | Success: {successful} | Failed: {failed}")
+        print(f"Elapsed: {time.time() - start_time:.1f}s")
+        print(f"{'='*60}")
+
+        # Check if we need to wait for rate limit
+        if current_key_index in minute_start_time:
+            elapsed = time.time() - minute_start_time[current_key_index]
+            if elapsed < 60 and calls_this_minute[current_key_index] + CALLS_PER_VIDEO > CALLS_PER_MINUTE_PER_KEY:
+                # Try to rotate to another key that has capacity
+                found_available_key = False
+                for i in range(len(api_keys)):
+                    check_key_index = (current_key_index + i + 1) % len(api_keys)
+                    if check_key_index not in minute_start_time:
+                        # Fresh key
+                        current_key_index = check_key_index
+                        found_available_key = True
+                        break
+                    else:
+                        elapsed_check = time.time() - minute_start_time[check_key_index]
+                        if elapsed_check >= 60:
+                            # Reset this key's counter
+                            calls_this_minute[check_key_index] = 0
+                            minute_start_time[check_key_index] = time.time()
+                            current_key_index = check_key_index
+                            found_available_key = True
+                            break
+                        elif calls_this_minute[check_key_index] + CALLS_PER_VIDEO <= CALLS_PER_MINUTE_PER_KEY:
+                            # This key has capacity
+                            current_key_index = check_key_index
+                            found_available_key = True
+                            break
+
+                if not found_available_key:
+                    # All keys are rate limited, wait for the current one to reset
+                    wait_time = 60 - elapsed
+                    print(f"\n⏳ All API keys are rate limited. Waiting {wait_time:.1f}s for key {current_key_index + 1} to reset...")
+                    time.sleep(wait_time)
+                    calls_this_minute[current_key_index] = 0
+                    minute_start_time[current_key_index] = time.time()
+
+        # Initialize tracking for this key if needed
+        if current_key_index not in minute_start_time:
+            minute_start_time[current_key_index] = time.time()
+            calls_this_minute[current_key_index] = 0
+
+        api_key = api_keys[current_key_index]
+        print(f"Using API key {current_key_index + 1}/{len(api_keys)} (calls this minute: {calls_this_minute[current_key_index]}/{CALLS_PER_MINUTE_PER_KEY})")
+
+        try:
+            result = process_video(url, api_key)
+            calls_this_minute[current_key_index] += CALLS_PER_VIDEO
+
+            if result['success']:
+                successful += 1
+            else:
+                failed += 1
+
+            # Save result incrementally (append to JSONL file)
+            with open(results_file, 'a', encoding='utf-8') as f:
+                f.write(json.dumps(result, ensure_ascii=False) + '\n')
+
+        except Exception as e:
+            # If rate limited, try next key
+            if "429" in str(e) or "quota" in str(e).lower() or "rate" in str(e).lower():
+                print(f"\n⚠ Rate limit hit on key {current_key_index + 1}, rotating to next key...")
+                current_key_index = (current_key_index + 1) % len(api_keys)
+                api_key = api_keys[current_key_index]
+
+                # Initialize tracking for new key if needed
+                if current_key_index not in minute_start_time:
+                    minute_start_time[current_key_index] = time.time()
+                    calls_this_minute[current_key_index] = 0
+
+                print(f"Retrying with API key {current_key_index + 1}/{len(api_keys)}")
+                try:
+                    result = process_video(url, api_key)
+                    calls_this_minute[current_key_index] += CALLS_PER_VIDEO
+
+                    if result['success']:
+                        successful += 1
+                    else:
+                        failed += 1
+
+                    # Save result incrementally
+                    with open(results_file, 'a', encoding='utf-8') as f:
+                        f.write(json.dumps(result, ensure_ascii=False) + '\n')
+                except Exception as retry_error:
+                    print(f"✗ Failed after retry: {retry_error}")
+                    failed += 1
+                    # Save error result
+                    error_result = {'url': url, 'success': False, 'error': str(retry_error)}
+                    with open(results_file, 'a', encoding='utf-8') as f:
+                        f.write(json.dumps(error_result, ensure_ascii=False) + '\n')
+            else:
+                print(f"✗ Error: {e}")
+                failed += 1
+                # Save error result
+                error_result = {'url': url, 'success': False, 'error': str(e)}
+                with open(results_file, 'a', encoding='utf-8') as f:
+                    f.write(json.dumps(error_result, ensure_ascii=False) + '\n')
+
+    # Final summary
+    elapsed_total = time.time() - start_time
+    print(f"\n\n{'='*60}")
+    print("BATCH PROCESSING COMPLETE")
+    print(f"{'='*60}")
+    print(f"Total videos: {len(urls)}")
+    print(f"Successful: {successful}")
+    print(f"Failed: {failed}")
+    print(f"Total time: {elapsed_total:.1f}s ({elapsed_total / 60:.1f} minutes)")
+    print(f"Average time per video: {elapsed_total / len(urls):.1f}s")
+    print(f"\nResults saved to: {results_file}")
+    print(f"(Each line is a JSON object)")
+    print(f"{'='*60}")
 
 
 if __name__ == "__main__":
