@@ -10,6 +10,7 @@ webdriver-manager>=4.0.0  # Auto-downloads chromedriver
 
 # Google Trends (FREE - No API Key!)
 pytrends>=4.9.2
+pygooglenews>=0.1.2
 
 # Web Scraping Tools
 lxml>=4.9.0
