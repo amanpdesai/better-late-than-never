@@ -1,0 +1,153 @@
+{
+  "country": "Canada",
+  "category": "economics",
+  "timestamp": "2025-10-26T05:14:56.106361+00:00",
+  "last_updated": "2025-10-26T05:14:56.106363+00:00",
+  "economic_indicators": {
+    "gdp_growth": {
+      "value": 1.53,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "inflation_rate": {
+      "value": 2.38,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "unemployment_rate": {
+      "value": 6.45,
+      "year": "2024",
+      "trend": "up",
+      "unit": "%"
+    },
+    "stock_index": {
+      "name": "S&P/TSX Composite",
+      "value": 47207.12,
+      "change_pct": 0.0,
+      "trend": "stable"
+    }
+  },
+  "market_data": {
+    "top_gainers": [
+      {
+        "symbol": "SHOP.TO",
+        "name": "Shopify Inc.",
+        "price": "242.12",
+        "change_pct": 4.66
+      },
+      {
+        "symbol": "CNQ.TO",
+        "name": "Canadian Natural Resources Limited",
+        "price": "43.78",
+        "change_pct": 3.67
+      },
+      {
+        "symbol": "TD.TO",
+        "name": "The Toronto-Dominion Bank",
+        "price": "113.35",
+        "change_pct": 1.14
+      },
+      {
+        "symbol": "BNS.TO",
+        "name": "The Bank of Nova Scotia",
+        "price": "90.68",
+        "change_pct": 0.9
+      },
+      {
+        "symbol": "RY.TO",
+        "name": "Royal Bank of Canada",
+        "price": "206.89",
+        "change_pct": 0.33
+      }
+    ]
+  },
+  "news_headlines": [
+    {
+      "headline": "Trump announces additional 10 percent Canada tariff over Reagan ad brouhaha",
+      "source": "Al Jazeera",
+      "url": "https://www.google.com/url?q=https://www.aljazeera.com/news/2025/10/25/trump-announces-additional-10-percent-canada-tariff-over-reagan-ad-brouhaha&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIAhAC&usg=AOvVaw0teqbWjwhLtr9zmDiKz-Gm",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:14:55.957061+00:00"
+    },
+    {
+      "headline": "Trump threatens Canada with 10% extra import tax over anti-tariffs ad",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.npr.org/2025/10/25/g-s1-95116/trump-canada-anti-tariffs-ad-import-tax&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIAxAC&usg=AOvVaw149F5c3uzVl7FSDK1jCLs-",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:14:55.976883+00:00"
+    },
+    {
+      "headline": "Prime Minister Mark Carney says Canada will double its non-US exports as Canadians can't rely on US",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://abcnews.go.com/Business/wireStory/prime-minister-mark-carney-canada-double-us-exports-126780000&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIChAC&usg=AOvVaw1DPIQcspEdUTsOPXDiEIyW",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:14:55.996162+00:00"
+    },
+    {
+      "headline": "E&E News: Canada will double its non-US exports in a decade, PM Carney says",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://subscriber.politicopro.com/article/eenews/2025/10/23/canada-will-double-its-non-us-exports-in-a-decade-pm-carney-says-00619958&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIARAC&usg=AOvVaw1qSNASL0w3VukkdFAFuNMA",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:14:56.015258+00:00"
+    },
+    {
+      "headline": "Trump terminates Canada trade talks again after Ontario runs ad featuring Reagan",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.nbcnews.com/business/economy/trump-canada-trade-ronald-reagan-rcna239508&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIBxAC&usg=AOvVaw0mPySLz5qvo-w1hQ8KdMh-",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:14:56.034278+00:00"
+    },
+    {
+      "headline": "Canada\u2019s economy is in serious trouble. Now Mark Carney is coming to Washington to talk tariffs",
+      "source": "CNN",
+      "url": "https://www.google.com/url?q=https://www.cnn.com/2025/10/07/business/carney-trump-tariff-meeting&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIBRAC&usg=AOvVaw0WbWZWWOMb7j0UpwF0gtED",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:14:56.052482+00:00"
+    },
+    {
+      "headline": "Bank of Canada to cut interest rate once more on October 29, say economists",
+      "source": "Reuters",
+      "url": "https://www.google.com/url?q=https://www.reuters.com/world/americas/bank-canada-cut-interest-rate-once-more-october-29-say-economists-2025-10-24/&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIBhAC&usg=AOvVaw2UuwJULJO_h60q8Y-_g195",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:14:56.070531+00:00"
+    },
+    {
+      "headline": "Ontario premier says he\u2019ll pull ad that upset Trump so U.S.-Canada trade talks can resume",
+      "source": "PBS",
+      "url": "https://www.google.com/url?q=https://www.pbs.org/newshour/world/ontario-premier-says-hell-pull-ad-that-upset-trump-so-u-s-canada-trade-talks-can-resume&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQICRAC&usg=AOvVaw2R-_ZK5tKapyFY2-hu674U",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:14:56.088613+00:00"
+    },
+    {
+      "headline": "Carney: Canada is ready to pick up trade talks when US is ready",
+      "source": "BBC",
+      "url": "https://www.google.com/url?q=https://www.bbc.com/news/articles/cdjrlmd4pmeo&sa=U&ved=2ahUKEwidy-LmjcGQAxVLle4BHUXQKB0QxfQBegQIBBAC&usg=AOvVaw1Rag5p8ZzTg59ac0Lmd9Uq",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:14:56.106333+00:00"
+    }
+  ],
+  "sentiment": {
+    "overall": "optimistic",
+    "score": 66,
+    "breakdown": {
+      "positive": 3,
+      "neutral": 6,
+      "negative": 0
+    }
+  },
+  "summary": {
+    "economic_health": "moderate",
+    "key_indicators": {
+      "gdp": 1.53,
+      "inflation": 2.38,
+      "unemployment": 6.45
+    },
+    "data_sources": [
+      "World Bank API",
+      "Google Finance",
+      "Google News"
+    ]
+  }
+}
