@@ -1,0 +1,153 @@
+{
+  "country": "UK",
+  "category": "economics",
+  "timestamp": "2025-10-26T05:11:48.171117+00:00",
+  "last_updated": "2025-10-26T05:11:48.171118+00:00",
+  "economic_indicators": {
+    "gdp_growth": {
+      "value": 1.1,
+      "year": "2024",
+      "trend": "up",
+      "unit": "%"
+    },
+    "inflation_rate": {
+      "value": 3.27,
+      "year": "2024",
+      "trend": "down",
+      "unit": "%"
+    },
+    "unemployment_rate": {
+      "value": 4.11,
+      "year": "2024",
+      "trend": "up",
+      "unit": "%"
+    },
+    "stock_index": {
+      "name": "FTSE 100",
+      "value": 47207.12,
+      "change_pct": 0.0,
+      "trend": "stable"
+    }
+  },
+  "market_data": {
+    "top_gainers": [
+      {
+        "symbol": "LSEG.L",
+        "name": "London Stock Exchange Group plc",
+        "price": "9796.00",
+        "change_pct": 13.54
+      },
+      {
+        "symbol": "BARC.L",
+        "name": "Barclays PLC",
+        "price": "388.30",
+        "change_pct": 7.32
+      },
+      {
+        "symbol": "BP.L",
+        "name": "BP p.l.c.",
+        "price": "434.95",
+        "change_pct": 5.97
+      },
+      {
+        "symbol": "SHEL.L",
+        "name": "Shell plc",
+        "price": "2851.00",
+        "change_pct": 5.16
+      },
+      {
+        "symbol": "RIO.L",
+        "name": "Rio Tinto Group",
+        "price": "5325.00",
+        "change_pct": 3.8
+      }
+    ]
+  },
+  "news_headlines": [
+    {
+      "headline": "US tariffs to slow UK economy, lower inflation, BoE's Dhingra says",
+      "source": "Reuters",
+      "url": "https://www.google.com/url?q=https://www.reuters.com/business/us-tariffs-slow-uk-economy-lower-inflation-boes-dhingra-says-2025-10-23/&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIBRAC&usg=AOvVaw1XP2QlwSiilyFpimnZA8a3",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:11:48.018975+00:00"
+    },
+    {
+      "headline": "The UK Is Crying Out for Growth-Friendly Policy",
+      "source": "Bloomberg",
+      "url": "https://www.google.com/url?q=https://www.bloomberg.com/news/newsletters/2025-10-24/uk-economy-needs-growth-friendly-policy-money-distilled&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIAxAC&usg=AOvVaw0R9cGUaAkcBEibEIRUGg_r",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:11:48.037508+00:00"
+    },
+    {
+      "headline": "Wall Street and FTSE 100 hit record highs after US inflation report fuels interest rate cut hopes \u2013 as it happened",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.theguardian.com/business/live/2025/oct/24/retail-sales-gold-demand-trump-canada-trade-us-inflation-ftse-stock-markets-business-live-news&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIChAC&usg=AOvVaw1RSrmroMpO_0XyhfIALk21",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:11:48.057544+00:00"
+    },
+    {
+      "headline": "UK economy shows signs of resilience ahead of expected tax-hike budget",
+      "source": "Reuters",
+      "url": "https://www.google.com/url?q=https://www.reuters.com/world/uk/uk-businesses-show-tentative-signs-turnaround-pmi-survey-suggests-2025-10-24/&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIBBAC&usg=AOvVaw1s6IsUjHvqSo9rdVxNiHRu",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:11:48.078437+00:00"
+    },
+    {
+      "headline": "UK inflation: What is the rate and why are prices still rising?",
+      "source": "BBC",
+      "url": "https://www.google.com/url?q=https://www.bbc.com/news/articles/c17rgd8e9gjo&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIAhAC&usg=AOvVaw1USY5y7U6IkePfPovyhstV",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:11:48.098678+00:00"
+    },
+    {
+      "headline": "Surprise PMI increase suggests UK economy has turned the corner",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.thetimes.com/business-money/economics/article/surprise-pmi-increase-suggests-uk-economy-has-turned-the-corner-7qlwvskkh&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIARAC&usg=AOvVaw3OmS5lZ0DvksB9C2Br2pmX",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:11:48.117073+00:00"
+    },
+    {
+      "headline": "Economic update: why the Budget is casting a long shadow over the UK economy",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.icaew.com/insights/viewpoints-on-the-news/2025/oct-2025/economic-update-budget-casting-a-long-shadow-over-uk&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIBxAC&usg=AOvVaw15DMS4-pGzkHgarLKp7ZNW",
+      "sentiment": "positive",
+      "timestamp": "2025-10-26T05:11:48.135189+00:00"
+    },
+    {
+      "headline": "Business news live: UK economy grew 0.3% in second quarter but production in damaging decline",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://www.independent.co.uk/news/business/gdp-uk-economy-q2-report-live-updates-b2836246.html&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQIBhAC&usg=AOvVaw0vU7ku8NBCqnwCGJKuTYYv",
+      "sentiment": "negative",
+      "timestamp": "2025-10-26T05:11:48.153337+00:00"
+    },
+    {
+      "headline": "Brexit damage to UK\u2019s economy admitted by Labour\u2019s chancellor at IMF Summit",
+      "source": "News Source",
+      "url": "https://www.google.com/url?q=https://en.mercopress.com/2025/10/25/brexit-damage-to-uk-s-economy-admitted-by-labour-s-chancellor-at-imf-summit&sa=U&ved=2ahUKEwiYnpiNjcGQAxXmIEQIHQpqKsUQxfQBegQICBAC&usg=AOvVaw3udqdwjHyLaicsn8bWvHrq",
+      "sentiment": "neutral",
+      "timestamp": "2025-10-26T05:11:48.171091+00:00"
+    }
+  ],
+  "sentiment": {
+    "overall": "optimistic",
+    "score": 61,
+    "breakdown": {
+      "positive": 3,
+      "neutral": 5,
+      "negative": 1
+    }
+  },
+  "summary": {
+    "economic_health": "moderate",
+    "key_indicators": {
+      "gdp": 1.1,
+      "inflation": 3.27,
+      "unemployment": 4.11
+    },
+    "data_sources": [
+      "World Bank API",
+      "Google Finance",
+      "Google News"
+    ]
+  }
+}
