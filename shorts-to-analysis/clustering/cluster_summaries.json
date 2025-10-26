@@ -1,0 +1,212 @@
+{
+  "DESCRIPTION ===": {
+    "Cluster 1": {
+      "label": "\"Paw-sitive Moments: Dogs & Kids Unite!\"",
+      "count": 55,
+      "description": "Contains 55 memes with distinctive characteristics: \"Paw-sitive Moments: Dogs & Kids Unite!\""
+    },
+    "Cluster 2": {
+      "label": "\"Ranking the Ridiculous: Humor in Lists\"",
+      "count": 29,
+      "description": "Contains 29 memes with distinctive characteristics: \"Ranking the Ridiculous: Humor in Lists\""
+    },
+    "Cluster 3": {
+      "label": "\"Unexpected Twists and Humor\"",
+      "count": 79,
+      "description": "Contains 79 memes with distinctive characteristics: \"Unexpected Twists and Humor\""
+    },
+    "Cluster 4": {
+      "label": "\"Unexpected Encounters in Everyday Life\"",
+      "count": 89,
+      "description": "Contains 89 memes with distinctive characteristics: \"Unexpected Encounters in Everyday Life\""
+    },
+    "Cluster 5": {
+      "label": "\"Feline Follies: Cats in Comedic Chaos\"",
+      "count": 33,
+      "description": "Contains 33 memes with distinctive characteristics: \"Feline Follies: Cats in Comedic Chaos\""
+    },
+    "Cluster 6": {
+      "label": "\"Everyday Moments: Humor in Chaos\"",
+      "count": 87,
+      "description": "Contains 87 memes with distinctive characteristics: \"Everyday Moments: Humor in Chaos\""
+    },
+    "Cluster 7": {
+      "label": "\"Unexpected Revelations and Family Moments\"",
+      "count": 117,
+      "description": "Contains 117 memes with distinctive characteristics: \"Unexpected Revelations and Family Moments\""
+    },
+    "Cluster 8": {
+      "label": "\"Dynamic Moments in Sports and Fitness\"",
+      "count": 70,
+      "description": "Contains 70 memes with distinctive characteristics: \"Dynamic Moments in Sports and Fitness\""
+    }
+  },
+  "HUMOR ===": {
+    "Cluster 1": {
+      "label": "\"Twisted Laughs: Embracing the Dark Side\"",
+      "count": 32,
+      "description": "Contains 32 memes with distinctive characteristics: \"Twisted Laughs: Embracing the Dark Side\""
+    },
+    "Cluster 2": {
+      "label": "\"Ironic Twists of Fate\"",
+      "count": 192,
+      "description": "Contains 192 memes with distinctive characteristics: \"Ironic Twists of Fate\""
+    },
+    "Cluster 3": {
+      "label": "\"Ironic Absurdity Unleashed\"",
+      "count": 132,
+      "description": "Contains 132 memes with distinctive characteristics: \"Ironic Absurdity Unleashed\""
+    },
+    "Cluster 4": {
+      "label": "\"Absurdity Unleashed: Humor Beyond Logic\"",
+      "count": 60,
+      "description": "Contains 60 memes with distinctive characteristics: \"Absurdity Unleashed: Humor Beyond Logic\""
+    },
+    "Cluster 5": {
+      "label": "\"Situational Shenanigans and Whimsical Antics\"",
+      "count": 86,
+      "description": "Contains 86 memes with distinctive characteristics: \"Situational Shenanigans and Whimsical Antics\""
+    },
+    "Cluster 6": {
+      "label": "\"Whimsical Triumphs and Heartfelt Surprises\"",
+      "count": 28,
+      "description": "Contains 28 memes with distinctive characteristics: \"Whimsical Triumphs and Heartfelt Surprises\""
+    },
+    "Cluster 7": {
+      "label": "\"Heartfelt Humor Through Self-Deprecation\"",
+      "count": 15,
+      "description": "Contains 15 memes with distinctive characteristics: \"Heartfelt Humor Through Self-Deprecation\""
+    },
+    "Cluster 8": {
+      "label": "\"Over-the-Top Reactions & Celebrations\"",
+      "count": 14,
+      "description": "Contains 14 memes with distinctive characteristics: \"Over-the-Top Reactions & Celebrations\""
+    }
+  },
+  "TOPIC ===": {
+    "Cluster 1": {
+      "label": "\"Adorable Bonds: Babies & Pets Unite\"",
+      "count": 11,
+      "description": "Contains 11 memes with distinctive characteristics: \"Adorable Bonds: Babies & Pets Unite\""
+    },
+    "Cluster 2": {
+      "label": "\"Expect the Unexpected: Life's Wild Surprises\"",
+      "count": 134,
+      "description": "Contains 134 memes with distinctive characteristics: \"Expect the Unexpected: Life's Wild Surprises\""
+    },
+    "Cluster 3": {
+      "label": "\"Love, Loss, and Life's Connections\"",
+      "count": 32,
+      "description": "Contains 32 memes with distinctive characteristics: \"Love, Loss, and Life's Connections\""
+    },
+    "Cluster 4": {
+      "label": "\"Whimsical Pet Adventures and Parenting\"",
+      "count": 85,
+      "description": "Contains 85 memes with distinctive characteristics: \"Whimsical Pet Adventures and Parenting\""
+    },
+    "Cluster 5": {
+      "label": "\"Driven by Culture: Wheels & Warfare\"",
+      "count": 68,
+      "description": "Contains 68 memes with distinctive characteristics: \"Driven by Culture: Wheels & Warfare\""
+    },
+    "Cluster 6": {
+      "label": "\"Social Media & Family Dynamics\"",
+      "count": 117,
+      "description": "Contains 117 memes with distinctive characteristics: \"Social Media & Family Dynamics\""
+    },
+    "Cluster 7": {
+      "label": "\"Epic Sports Moments & Mishaps\"",
+      "count": 65,
+      "description": "Contains 65 memes with distinctive characteristics: \"Epic Sports Moments & Mishaps\""
+    },
+    "Cluster 8": {
+      "label": "\"Creative Chaos: DIY and Culinary Adventures\"",
+      "count": 47,
+      "description": "Contains 47 memes with distinctive characteristics: \"Creative Chaos: DIY and Culinary Adventures\""
+    }
+  },
+  "TEMPLATE ===": {
+    "Cluster 1": {
+      "label": "\"Progression & Juxtaposition Chronicles\"",
+      "count": 80,
+      "description": "Contains 80 memes with distinctive characteristics: \"Progression & Juxtaposition Chronicles\""
+    },
+    "Cluster 2": {
+      "label": "\"Text-Driven Visual Narratives\"",
+      "count": 134,
+      "description": "Contains 134 memes with distinctive characteristics: \"Text-Driven Visual Narratives\""
+    },
+    "Cluster 3": {
+      "label": "\"Dual Perspectives: The Split-Screen Saga\"",
+      "count": 43,
+      "description": "Contains 43 memes with distinctive characteristics: \"Dual Perspectives: The Split-Screen Saga\""
+    },
+    "Cluster 4": {
+      "label": "\"Text-Driven Narratives: Humor Meets Observation\"",
+      "count": 125,
+      "description": "Contains 125 memes with distinctive characteristics: \"Text-Driven Narratives: Humor Meets Observation\""
+    },
+    "Cluster 5": {
+      "label": "\"Dynamic Duality: Reactions & Reveals\"",
+      "count": 43,
+      "description": "Contains 43 memes with distinctive characteristics: \"Dynamic Duality: Reactions & Reveals\""
+    },
+    "Cluster 6": {
+      "label": "\"Ranked Clips: Humor in Motion\"",
+      "count": 47,
+      "description": "Contains 47 memes with distinctive characteristics: \"Ranked Clips: Humor in Motion\""
+    },
+    "Cluster 7": {
+      "label": "\"Unexpected Twists in Narrative Comedy\"",
+      "count": 69,
+      "description": "Contains 69 memes with distinctive characteristics: \"Unexpected Twists in Narrative Comedy\""
+    },
+    "Cluster 8": {
+      "label": "\"Unexpected Twists in Everyday Scenarios\"",
+      "count": 18,
+      "description": "Contains 18 memes with distinctive characteristics: \"Unexpected Twists in Everyday Scenarios\""
+    }
+  },
+  "SOUND_DESCRIPTION ===": {
+    "Cluster 1": {
+      "label": "\"Chaotic Comedy: Sounds of Life & Laughter\"",
+      "count": 89,
+      "description": "Contains 89 memes with distinctive characteristics: \"Chaotic Comedy: Sounds of Life & Laughter\""
+    },
+    "Cluster 2": {
+      "label": "\"Dynamic Sports Commentary & Unexpected Twists\"",
+      "count": 85,
+      "description": "Contains 85 memes with distinctive characteristics: \"Dynamic Sports Commentary & Unexpected Twists\""
+    },
+    "Cluster 3": {
+      "label": "\"Connection Fail: Audio Analysis Frustration\"",
+      "count": 63,
+      "description": "Contains 63 memes with distinctive characteristics: \"Connection Fail: Audio Analysis Frustration\""
+    },
+    "Cluster 4": {
+      "label": "\"Comedic Chaos: Voices in Hilarity\"",
+      "count": 110,
+      "description": "Contains 110 memes with distinctive characteristics: \"Comedic Chaos: Voices in Hilarity\""
+    },
+    "Cluster 5": {
+      "label": "\"Chaotic Crisis: Sounds of Distress\"",
+      "count": 78,
+      "description": "Contains 78 memes with distinctive characteristics: \"Chaotic Crisis: Sounds of Distress\""
+    },
+    "Cluster 6": {
+      "label": "\"Mechanical Mayhem: Sounds of Speed and Chaos\"",
+      "count": 52,
+      "description": "Contains 52 memes with distinctive characteristics: \"Mechanical Mayhem: Sounds of Speed and Chaos\""
+    },
+    "Cluster 7": {
+      "label": "\"Emotional Melodies: Heartfelt Soundscapes\"",
+      "count": 30,
+      "description": "Contains 30 memes with distinctive characteristics: \"Emotional Melodies: Heartfelt Soundscapes\""
+    },
+    "Cluster 8": {
+      "label": "\"High-Energy Soundscapes: Dance & Drama\"",
+      "count": 52,
+      "description": "Contains 52 memes with distinctive characteristics: \"High-Energy Soundscapes: Dance & Drama\""
+    }
+  }
+}

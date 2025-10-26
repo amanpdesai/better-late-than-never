@@ -69,6 +69,8 @@ class RunContext:
     logs_dir: Path
     query_output: Path
     augmented_output: Path
+    meme_image_output: Path
+    meme_image_output: Path
 
 
 StepBuilder = Callable[[argparse.Namespace, RunContext], List[str]]
@@ -129,6 +131,28 @@ def build_augment_command(_: argparse.Namespace, ctx: RunContext) -> List[str]:
     ]
 
 
+def build_generate_meme_command(args: argparse.Namespace, ctx: RunContext) -> List[str]:
+    command = [
+        sys.executable,
+        str(ctx.root_dir / "generate_meme_image_from_refs.py"),
+        "--input",
+        str(ctx.augmented_output),
+        "--output",
+        str(ctx.meme_image_output),
+        "--brand",
+        args.meme_brand,
+        "--tone",
+        args.meme_tone,
+        "--model",
+        args.meme_model,
+    ]
+    if args.meme_product:
+        command.extend(["--product", args.meme_product])
+    if args.meme_extra:
+        command.extend(["--extra", args.meme_extra])
+    return command
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run the image pipeline end-to-end with progress tracking.",
@@ -166,6 +190,10 @@ def parse_args() -> argparse.Namespace:
         help="File path for the centroid-augmented output (default: image-pipeline/output_with_centroid.json).",
     )
     parser.add_argument(
+        "--meme-image-output",
+        help="File path for the generated meme image (default: image-pipeline/meme.png).",
+    )
+    parser.add_argument(
         "--random-count",
         type=int,
         default=2,
@@ -193,6 +221,29 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Print the planned steps without executing them.",
     )
+    parser.add_argument(
+        "--meme-brand",
+        default="Lululemon",
+        help="Brand name passed to generate_meme_image_from_refs.py (default: Lululemon).",
+    )
+    parser.add_argument(
+        "--meme-product",
+        help="Optional product name for meme generation.",
+    )
+    parser.add_argument(
+        "--meme-tone",
+        default="playfully aspirational with dry humor",
+        help="Tone description for meme generation.",
+    )
+    parser.add_argument(
+        "--meme-extra",
+        help="Extra instructions for meme generation.",
+    )
+    parser.add_argument(
+        "--meme-model",
+        default="gpt-image-1",
+        help="OpenAI image model to use when generating the meme (default: gpt-image-1).",
+    )
     return parser.parse_args()
 
 
@@ -213,11 +264,13 @@ def main() -> int:
     logs_dir = Path(args.logs_dir) if args.logs_dir else pipeline_dir / "logs"
     query_output = Path(args.query_output) if args.query_output else pipeline_dir / "output.txt"
     augmented_output = Path(args.augmented_output) if args.augmented_output else pipeline_dir / "output_with_centroid.json"
+    meme_image_output = Path(args.meme_image_output) if args.meme_image_output else pipeline_dir / "meme.png"
 
     ensure_directory(status_path.parent)
     ensure_directory(logs_dir)
     ensure_directory(query_output.parent)
     ensure_directory(augmented_output.parent)
+    ensure_directory(meme_image_output.parent)
 
     ctx = RunContext(
         root_dir=root_dir,
@@ -226,6 +279,7 @@ def main() -> int:
         logs_dir=logs_dir,
         query_output=query_output,
         augmented_output=augmented_output,
+        meme_image_output=meme_image_output,
     )
 
     steps: List[StepConfig] = [
@@ -264,6 +318,12 @@ def main() -> int:
             title="Augment query output with centroid data",
             command_builder=build_augment_command,
             workdir=pipeline_dir,
+        ),
+        StepConfig(
+            key="generate-meme",
+            title="Generate final meme image",
+            command_builder=build_generate_meme_command,
+            workdir=root_dir,
         ),
     ]
 
@@ -331,6 +391,7 @@ def main() -> int:
         "augmented_output": str(augmented_output),
         "start_from_index": start_index + 1,
         "start_from_key": steps[start_index].key,
+        "meme_image_output": str(meme_image_output),
     }
 
     write_status(

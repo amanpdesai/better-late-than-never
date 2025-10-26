@@ -1,0 +1,10 @@
+# Step: Generate meme descriptions
+# Command: /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 /Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/generate_descriptions.py
+# Started: 2025-10-26T08:18:39Z
+
+Traceback (most recent call last):
+  File "/Users/stanleyguo/Downloads/unwrapathon/better-late-than-never/image-pipeline/generate_descriptions.py", line 9, in <module>
+    genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+                            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'GOOGLE_API_KEY'
