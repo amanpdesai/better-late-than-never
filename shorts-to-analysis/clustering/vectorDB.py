@@ -16,7 +16,7 @@ OUTPUT_JSON = "meme_clusters.json"
 EMBED_MODEL = "text-embedding-3-small"
 
 # Initialize OpenAI client
-client = OpenAI(api_key="OPENAI_API_KEY_REMOVED")
+client = OpenAI(api_key="")
 
 # === Load memes from JSONL ===
 memes = {}
