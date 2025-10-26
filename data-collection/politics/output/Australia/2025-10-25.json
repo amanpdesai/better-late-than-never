@@ -1,0 +1,137 @@
+{
+  "country": "Australia",
+  "category": "politics",
+  "timestamp": "2025-10-26T06:43:51.154854+00:00",
+  "leadership_and_government": {
+    "government_type": "Federal parliamentary constitutional monarchy",
+    "monarch": "Charles III",
+    "prime_minister": "Anthony Albanese",
+    "legislature": "Parliament",
+    "president": "King – Charles III [ II ] Governor-General – Sam Mostyn"
+  },
+  "recent_and_upcoming": {
+    "recent_policies": [
+      {
+        "title": "Historic critical minerals framework signed by President Trump and Prime Minister Albanese - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORFlOcUpLWUUzUXcxcl81NTIyU3o0MUNvTzFwWC0zQlVzNENNZ21JSkt1dURhQ0x0M1pkQXByc3FIbFV6SGxRRk82VTNyaXhPbWVUZ0RNMnQ4SW1iRnVOVlNEeFp1Znk1bnBfbHRvajJHQ2tWaEZSaTZYRXdSUHY1TVFhaWZzUWNFOXhfLXg2R0R4eVBrWmwwZFdsdDJtOURXUkw5ZklHTk5qRUxHd1RlbGp3RzBkZw?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Mon, 20 Oct 2025 19:22:24 GMT"
+      },
+      {
+        "title": "Media - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5yNGI2ZmVpWk5IaDNtdm9VZ1MydEpCOTZQNGtsS2o1NG5TNkdUcHRaX0JlY1JOckJtZExGZHp6ZHE?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Mon, 23 Sep 2013 22:17:56 GMT"
+      },
+      {
+        "title": "Joint Leaders Statement On AUKUS - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5EMW1uZVNlc3dJYzFtSzdOcjdHWkVJcjRtN1JWM05HWmhabDBTSUlYdllKWDdaUHBmZWhNQkxYWnJOTUhyZjlOOWpSc2RFRDE5RFJmdmJ6bjdaRVI4MlNnU1JDS01vVEpj?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Tue, 14 Mar 2023 07:00:00 GMT"
+      },
+      {
+        "title": "Australia-Spain joint statement on the occasion of the visit to Spain by the Prime Minister of Australia - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUzQxZUZuU0ZVZk5la2gtczNHX3Z5ZldzdS1QVUZFc1hOVGhveDY0TkVmUHptdHlocFp4S1BjWXhqMGxrd3lOUmU5R3JMT2xHWm1uT2FpNlVScXVaMFZodXdua28wZ0tFU3J1YnhCWG5sVlBjN1dPRkJqamU5eTk5dERrMG1vaXpkVmNWSmZJWloxVTVUZnZFWVdTTVFMNlZTVEp4eGVDcWM?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Tue, 28 Jun 2022 07:00:00 GMT"
+      },
+      {
+        "title": "Question and answer - National Press Club - Canberra - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUm1GV3RlM2J6eE9nSHBJUEVrS3NuM0hQdnRwY0s0TG40VF9kRHhERllERW9uQkg4NDE0QkFYaEpvejYtcE1pUHN0a2ItOVM1WldES0hxTHk5SnV1eGhuTzJkM25nU3VnUThzdFZMWWRNT19NM2kxYXgzNWQ3dU5NazlNUnE?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Fri, 24 Jan 2025 08:00:00 GMT"
+      },
+      {
+        "title": "Press conference - Parliament House, Canberra - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoNl8yb1YyazlobldPUFR6WDhodlB5QlY5QS1JemFzUHFreWlpZC0yTHFsV1J3a2pWWFZRcnZENklpSUVMTmhnZTJoLVh3Tkt6SFZXbWswOTdtUXVYZjdOTnNUZFZfcTJ5VXI1WENMYUZ2R012TW50Q2xRckxpZw?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Wed, 30 Jul 2025 07:00:00 GMT"
+      },
+      {
+        "title": "Press conference - Sydney - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9qa0JrV0ZJX1FiZWlvblZ6RXRGczNCaDNoQ1FRUW8yMXE0dnBwVFNwbnl5WEVqYlNtT1p1bVZDNWJaczFuanJSTS10MU5yZ2Jjb2pfaVN6Y1dXRE82QTNVM1lrbHNNSnZzcmhCUzZZOXcyVFZZYkE?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Thu, 18 Sep 2025 07:00:00 GMT"
+      },
+      {
+        "title": "Special envoy to combat Antisemitism - pm.gov.au",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qTU9WZmU2OUhxOERBdC1HZ0ZFUXBFX1FnZVhsMHlBMDlBaWZjTlo4ek84ckE0SGdSdHdKc0lQZzlhRkYzRE54TlZHN1JlaE5uaHY0SXpPMG13U2lEMFVaWWhiT2EtQ0h5VElEb3Zn?oc=5",
+        "source": "pm.gov.au",
+        "published_at": "Tue, 09 Jul 2024 07:00:00 GMT"
+      }
+    ]
+  },
+  "political_climate": {
+    "key_issues": [
+      "Solomon Islands’ defence force dream: an Australia-China flashpoint? - South China Morning Post",
+      "Australian politics - The Guardian",
+      "U.S. hits $38 trillion in debt, after the fastest accumulation of $1 trillion outside of the pandemic - PBS",
+      "Australian Prime Minister Anthony Albanese wins re-election amid concerns over \"American-style politics\" - CBS News",
+      "Anthony Albanese - Britannica"
+    ],
+    "controversies": [],
+    "recent_headlines": [
+      {
+        "headline": "Solomon Islands’ defence force dream: an Australia-China flashpoint? - South China Morning Post",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQ0JPN3lpbmtkZ3ctYlNDM0RhR1F2Q3BNNmZ0T3FITG9WSzlMaGNZMDFOVENjbF82NDRSVDkzVXNNTGhTdnhIc3BNSnVXbTNRLXktbEtwOVBwSlFCcFJJUndVaTVpTHRRajNUOGtsU2pod3pIeUJYczFoSVN3LVF2Q0NSN1VZUV9DLXZpcnVpdVoySEZNX1pNdWgtdDJ0X1FoYi0xUVo2TXRiajQ0UDNYTTh4NG5kSWZpOGfSAboBQVVfeXFMTTNMQTliOFBBY2VWM2lSQUxfN2VxTkVtdEc4aWN3aG1zZ1ZLQlJCZnRkbGt2LVd0RmU2ZFpTY3hPQjJQZ0V6NEZzOFFBdE5feFVqYjduNjlmMGdJMzZHcnpPcE9kbHdEenk2VGZVeWFnUGdnT1RyT2tFMmxoV25QNEtXZWpBR1l5WFlDMjd1ZEpIUG1rOXRSQm5adUpVY3hqZzNERFo0d0I0ZlAxNnplY3I2MWFJMkZJNU5B?oc=5",
+        "published": "Sun, 26 Oct 2025 01:30:15 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Australian politics - The Guardian",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS3dfdHVYZGh1S3B2cnZCbTBLc3NVQlg2a3lTRVJxZHZiazFLNXpfM2dEOTF3dm5yN0hGXy1ZNDFNT01DelZYMGcyMXFFMlZHa3Z1VG52RkNLcnBKUGZWV2d2MmIyY19iQklJeEdLZ3BVaU9WVmtkdTdEeE9ybzZ5TkZLdVc?oc=5",
+        "published": "Sun, 26 Oct 2025 04:16:46 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "U.S. hits $38 trillion in debt, after the fastest accumulation of $1 trillion outside of the pandemic - PBS",
+        "source": "PBS",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdmIzR210aThpVVlPOE05dVlrZTFQSXQyNG45M29wc3VybEJ3MEU4bkZpWEdwZUhXRXJ2MkdTZHBtQXZuRGpNRjFlbTAzQUc1bzZ3R0lRLTZUdm9FWkp2d1dKb252ZllMbmNoSDJ5Z3VKVk9zMHd6aFJJNEVVUWJLbjFqYXNPN1c0RE93ZTluQmMxWkRoMFlDbnQ1WnJmV2hIcmRPQV96V2FabXktb3pHVzY1WHRydFVTaWtDWE4zTUd6emxLZTV1ZmxHb0Nzdm1L?oc=5",
+        "published": "Thu, 23 Oct 2025 14:20:00 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Australian Prime Minister Anthony Albanese wins re-election amid concerns over \"American-style politics\" - CBS News",
+        "source": "CBS News",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaVQ0a3c3MHVQTkZBaEFIcUdQZk1Db2VraEJyckNDQ05jRC1TSzhEME9CdW1OaGV0V0F4WTFiSS1zTGZtS0xUU3pWNVdWWFBSOFBDM1NNSzhWQzVpUG9mdFJ3ZUxWclRRWmNGeE9zYkpnYW1xQjQ0WldPNUpZUVJZcnNubUdlWEtPLVhJOHB6LUJLaXdyMnJReE5GUThDZlVITkpWTWQwTdIBrAFBVV95cUxNc1VVV2lRN0VMeTJOYVh1cDFPa0M3REhXcGwzZG02UVZDdGRKSnp2emw2UHpFanE3U2V5WWpvVkVUX0wxRkVHbFpJRmtqYXZpMDFWUzdjZjQ4ek5mZkp6aE1mTm8yTTFLVXJpcWIxVWc4UEFSaHhGcW84SkdHMWRfUUlVUmR3QUNmN1E3MjQtLTY3ZDFqcGNjYjFqUmxHb0ZsVXJkZllDbmxfelBI?oc=5",
+        "published": "Sat, 03 May 2025 07:00:00 GMT",
+        "sentiment": "positive"
+      },
+      {
+        "headline": "Anthony Albanese - Britannica",
+        "source": "Britannica",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBvd0VTclhmMjJwajZoTmlvU3B2S3Y1Z0dsczRDWFRjVlprSENLVU5qajREU21iTXpmLUV2Ukh6d2YtVEkyQ3RVb1paTE1rbVhCVTBEOTM3Y1VlczZxMlFxaC1pcw?oc=5",
+        "published": "Tue, 21 Oct 2025 05:00:00 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Australia’s voters reject right-wing politics - The Economist",
+        "source": "The Economist",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTWtiRVU3VzNtZ0wtUGJfSDVCaUo4ZGlMWFhoN2lHRWllekpuVzltNVpmaFJvVS15Zy1OVXRwSjUxRW9oel9RS2pzcVoxdWV6SC1hcFh4bGhUZGthWlJSSW5PWjZETm4zTmxlZTNKN3Yya0hITS1xeld0OVVJbC1xU1BhSHNCT0ZFc1FxZi10UQ?oc=5",
+        "published": "Sat, 03 May 2025 07:00:00 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Nepal Travel Advice & Safety - Smartraveller",
+        "source": "Smartraveller",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9keldiX1VKQ21zUHJDNHhkeDczWUJzSDk2UEZNM2k1dEd2LTQwUkEyUW0tOGNmelBHZkdvcm5Hc2tFb3dRU1BGTVF5SXZrVXVBWU9wZTNKa002N3lZUVF1WmhScnIzcGs?oc=5",
+        "published": "Tue, 21 Oct 2025 07:00:00 GMT",
+        "sentiment": "neutral"
+      },
+      {
+        "headline": "Politics with Michelle Grattan: Tony Abbott on Australia’s past and the opposition’s future - The Conversation",
+        "source": "The Conversation",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdE16OEREYVFYbHdaejF5WDlRQWxaMmJBQmdObjE2RHNYV3M2MS1KVUswMTM4QjRfS2d4aFJ0OFdDbGtRSXVmYW9rWDNaRU1uWHJNZU1qWjU2T28tMk9pZU43R2g4TDg5eVFWWU5OZTR0RzZMQ20zanN0QkJTVTE3dEFpM0ZSMzltckpBeXpaS0hJV3V2ajNRaUx6RS1iSWtlN19fSVNmdlBGQ1BfNGdreTZic2NjTktPTzl4VVp4YUg?oc=5",
+        "published": "Tue, 21 Oct 2025 06:32:05 GMT",
+        "sentiment": "neutral"
+      }
+    ]
+  },
+  "summary": {
+    "overall_sentiment": "neutral",
+    "sentiment_score": 56,
+    "total_items": 16
+  }
+}
