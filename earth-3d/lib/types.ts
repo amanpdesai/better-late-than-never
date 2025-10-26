@@ -3,7 +3,7 @@
 export type Sentiment = "positive" | "negative" | "neutral"
 export type MoodKey = "joy" | "curiosity" | "anger" | "confusion" | "sadness"
 export type ContentType = "video" | "reddit" | "news" | "twitter" | "article"
-export type Category = "All" | "Memes" | "News" | "Politics" | "Economics" | "Sports"
+export type Category = "All" | "Memes" | "News" | "Politics" | "Economics" | "Sports" | "Google Trends"
 
 // Base engagement metrics
 export interface EngagementMetrics {
@@ -251,7 +251,15 @@ export interface CountryData {
     count: number
     sentiment: string
   }>
-  categoryData?: PoliticsData | EconomicsData | MemesData | NewsData | SportsData
+  categoryData?: PoliticsData | EconomicsData | MemesData | NewsData | SportsData | GoogleTrendsData
+  allCategoryData?: {
+    memes?: MemesData
+    news?: NewsData
+    politics?: PoliticsData
+    economics?: EconomicsData
+    sports?: SportsData
+    googleTrends?: GoogleTrendsData
+  }
 }
 
 // Country metadata

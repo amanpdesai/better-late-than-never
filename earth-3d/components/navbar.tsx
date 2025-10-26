@@ -12,6 +12,7 @@ export function Navbar() {
     { name: "World", href: "/" },
     { name: "About", href: "/about" },
     { name: "Countries", href: "/countries" },
+    { name: "Custom", href: "/custom" },
   ]
 
   return (

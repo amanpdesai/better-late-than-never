@@ -1,0 +1,148 @@
+{
+  "country": "Canada",
+  "category": "sports",
+  "timestamp": "2025-10-26T05:13:59.734789Z",
+  "last_updated": "2025-10-26T05:13:59.734791Z",
+  "items": [
+    {
+      "id": "espn_nhl_Canada_12_1761455633",
+      "title": "John Tavares wins it in OT for Toronto with his 499th goal",
+      "content": "NHL: John Tavares wins it in OT for Toronto with his 499th goal",
+      "source_platform": "espn",
+      "source_name": "ESPN NHL",
+      "source_url": "https://www.espn.com/nhl/",
+      "created_at": "2025-10-26T05:13:53.393650Z",
+      "sport": "NHL",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 59,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_nhl_Canada_13_1761455633",
+      "title": "Dakota Joshua tallies goal vs. Sabres",
+      "content": "NHL: Dakota Joshua tallies goal vs. Sabres",
+      "source_platform": "espn",
+      "source_name": "ESPN NHL",
+      "source_url": "https://www.espn.com/nhl/",
+      "created_at": "2025-10-26T05:13:53.393682Z",
+      "sport": "NHL",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 53,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_nhl_Canada_14_1761455633",
+      "title": "Tage Thompson scores power-play goal vs. Maple Leafs",
+      "content": "NHL: Tage Thompson scores power-play goal vs. Maple Leafs",
+      "source_platform": "espn",
+      "source_name": "ESPN NHL",
+      "source_url": "https://www.espn.com/nhl/",
+      "created_at": "2025-10-26T05:13:53.393700Z",
+      "sport": "NHL",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 81,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_nba_Canada_13_1761455639",
+      "title": "X-ray tables, marked cards and the Mafia: How the FBI says poker games were rigged",
+      "content": "NBA: X-ray tables, marked cards and the Mafia: How the FBI says poker games were rigged",
+      "source_platform": "espn",
+      "source_name": "ESPN NBA",
+      "source_url": "https://www.espn.com/espn/betting/story/_/id/46714179/explaining-federal-indictments-involving-rigged-poker-games",
+      "created_at": "2025-10-26T05:13:59.734680Z",
+      "sport": "NBA",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 82,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
+      "id": "espn_nba_Canada_14_1761455639",
+      "title": "Adam Silver 'deeply disturbed' by indictments",
+      "content": "NBA: Adam Silver 'deeply disturbed' by indictments",
+      "source_platform": "espn",
+      "source_name": "ESPN NBA",
+      "source_url": "https://www.espn.com/nba/",
+      "created_at": "2025-10-26T05:13:59.734712Z",
+      "sport": "NBA",
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "sentiment": "neutral",
+      "virality_score": 82,
+      "media": {
+        "thumbnail": null,
+        "images": [],
+        "videos": []
+      }
+    }
+  ],
+  "sports_by_source": {
+    "ESPN NHL": 3,
+    "ESPN NBA": 2
+  },
+  "summary": {
+    "total_items": 5,
+    "overall_sentiment": "neutral",
+    "top_sports": [
+      "NHL",
+      "NBA"
+    ],
+    "top_topics": [
+      "goal",
+      "john",
+      "tavares",
+      "toronto",
+      "dakota"
+    ],
+    "sources_count": 2,
+    "sports_breakdown": {
+      "NHL": 3,
+      "NBA": 2
+    },
+    "avg_virality_score": 71.4
+  }
+}

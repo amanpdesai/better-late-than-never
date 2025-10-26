@@ -44,9 +44,11 @@ import { EconomicsView } from "@/components/category-views/EconomicsView"
 import { MemesView } from "@/components/category-views/MemesView"
 import { NewsView } from "@/components/category-views/NewsView"
 import { SportsView } from "@/components/category-views/SportsView"
+import { GoogleTrendsView } from "@/components/category-views/GoogleTrendsView"
+import { ComprehensiveDataView } from "@/components/comprehensive-data-view"
 import { cn } from "@/lib/utils"
 
-const CATEGORIES: Category[] = ["All", "Memes", "News", "Politics", "Economics", "Sports"]
+const CATEGORIES: Category[] = ["All", "Memes", "News", "Politics", "Economics", "Sports", "Google Trends"]
 
 export default function CountryDetailPage({ params }: { params: { slug: string } }) {
   const searchParams = useSearchParams()
@@ -403,221 +405,220 @@ export default function CountryDetailPage({ params }: { params: { slug: string }
             </div>
           </div>
 
-          {/* Enhanced Mood Summary with Stats */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <Card className="lg:col-span-2 bg-white/5 border-white/10 p-6">
-              <h2 className="text-2xl font-semibold text-white mb-4">Current Mood Analysis</h2>
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">{countryData.moodSummary}</p>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-white/5 rounded-lg p-4 text-center">
-                  <p className="text-3xl font-bold text-purple-400">{countryData.categoryMetrics.viralityScore}</p>
-                  <p className="text-sm text-gray-400 mt-1">Virality Score</p>
-                </div>
-                <div className="bg-white/5 rounded-lg p-4 text-center">
-                  <p className="text-3xl font-bold text-blue-400">{countryData.categoryMetrics.totalPosts.toLocaleString()}</p>
-                  <p className="text-sm text-gray-400 mt-1">Total Posts</p>
-                </div>
-                <div className="bg-white/5 rounded-lg p-4 text-center">
-                  <p className="text-3xl font-bold text-green-400">{countryData.categoryMetrics.avgEngagement.toFixed(1)}k</p>
-                  <p className="text-sm text-gray-400 mt-1">Avg Engagement</p>
-                </div>
+          {/* Top-level components - Only show for "All" category */}
+          {category === "All" && (
+            <>
+              {/* Enhanced Mood Summary with Stats */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <Card className="lg:col-span-2 bg-white/5 border-white/10 p-6">
+                  <h2 className="text-2xl font-semibold text-white mb-4">Current Mood Analysis</h2>
+                  <p className="text-gray-300 text-lg leading-relaxed mb-6">{countryData.moodSummary}</p>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="bg-white/5 rounded-lg p-4 text-center">
+                      <p className="text-3xl font-bold text-purple-400">{countryData.categoryMetrics.viralityScore}</p>
+                      <p className="text-sm text-gray-400 mt-1">Virality Score</p>
+                    </div>
+                    <div className="bg-white/5 rounded-lg p-4 text-center">
+                      <p className="text-3xl font-bold text-blue-400">{countryData.categoryMetrics.totalPosts.toLocaleString()}</p>
+                      <p className="text-sm text-gray-400 mt-1">Total Posts</p>
+                    </div>
+                    <div className="bg-white/5 rounded-lg p-4 text-center">
+                      <p className="text-3xl font-bold text-green-400">{countryData.categoryMetrics.avgEngagement.toFixed(1)}k</p>
+                      <p className="text-sm text-gray-400 mt-1">Avg Engagement</p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="bg-white/5 border-white/10 p-6">
+                  <h2 className="text-xl font-semibold text-white mb-4">Quick Stats</h2>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-400">Top Platforms</span>
+                      <span className="text-white font-semibold">{countryData.platformBreakdown.length}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-400">Total Engagement</span>
+                      <span className="text-white font-semibold">
+                        {((countryData.engagementStats.likes + countryData.engagementStats.comments + countryData.engagementStats.shares) / 1000).toFixed(0)}k
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-400">Trending Topics</span>
+                      <span className="text-white font-semibold">{countryData.topTopics.length}</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-gray-400">Content Items</span>
+                      <span className="text-white font-semibold">{countryData.representativeContent.length}</span>
+                    </div>
+                  </div>
+                </Card>
               </div>
-            </Card>
 
-            <Card className="bg-white/5 border-white/10 p-6">
-              <h2 className="text-xl font-semibold text-white mb-4">Quick Stats</h2>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Top Platforms</span>
-                  <span className="text-white font-semibold">{countryData.platformBreakdown.length}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Total Engagement</span>
-                  <span className="text-white font-semibold">
-                    {((countryData.engagementStats.likes + countryData.engagementStats.comments + countryData.engagementStats.shares) / 1000).toFixed(0)}k
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Trending Topics</span>
-                  <span className="text-white font-semibold">{countryData.topTopics.length}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-400">Content Items</span>
-                  <span className="text-white font-semibold">{countryData.representativeContent.length}</span>
-                </div>
+              {/* Added Comprehensive Charts Section */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <Card className="bg-white/5 border-white/10 p-6">
+                  <h2 className="text-2xl font-semibold text-white mb-6">24-Hour Sentiment Trend</h2>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <AreaChart data={historicalSentiment}>
+                      <defs>
+                        <linearGradient id="sentimentGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
+                          <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" />
+                      <XAxis dataKey="time" stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
+                      <YAxis stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
+                      <Tooltip
+                        contentStyle={{ backgroundColor: "#1f2937", border: "1px solid #374151", borderRadius: "8px" }}
+                        labelStyle={{ color: "#fff" }}
+                      />
+                      <Area type="monotone" dataKey="sentiment" stroke="#3b82f6" fill="url(#sentimentGradient)" strokeWidth={2} />
+                    </AreaChart>
+                  </ResponsiveContainer>
+                </Card>
+
+                <Card className="bg-white/5 border-white/10 p-6">
+                  <h2 className="text-2xl font-semibold text-white mb-6">Emotional Profile</h2>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <RadarChart data={emotionalProfile}>
+                      <PolarGrid stroke="#ffffff20" />
+                      <PolarAngleAxis dataKey="emotion" stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
+                      <PolarRadiusAxis stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
+                      <Radar name="Emotion" dataKey="value" stroke="#ec4899" fill="#ec4899" fillOpacity={0.3} />
+                    </RadarChart>
+                  </ResponsiveContainer>
+                </Card>
               </div>
-            </Card>
-          </div>
 
-          {/* Added Comprehensive Charts Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <Card className="bg-white/5 border-white/10 p-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">24-Hour Sentiment Trend</h2>
-              <ResponsiveContainer width="100%" height={300}>
-                <AreaChart data={historicalSentiment}>
-                  <defs>
-                    <linearGradient id="sentimentGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
-                      <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" />
-                  <XAxis dataKey="time" stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
-                  <YAxis stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
-                  <Tooltip
-                    contentStyle={{ backgroundColor: "#1f2937", border: "1px solid #374151", borderRadius: "8px" }}
-                    labelStyle={{ color: "#fff" }}
-                  />
-                  <Area type="monotone" dataKey="sentiment" stroke="#3b82f6" fill="url(#sentimentGradient)" strokeWidth={2} />
-                </AreaChart>
-              </ResponsiveContainer>
-            </Card>
+              {/* Three Column Layout for Detailed Metrics */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {/* Left Column */}
+                <div className="space-y-8">
+                  {/* Mood Meter */}
+                  <Card className="bg-white/5 border-white/10 p-6">
+                    <h2 className="text-2xl font-semibold text-white mb-6">Mood Meter</h2>
+                    <div className="space-y-4">
+                      {Object.entries(countryData.moodMeter).map(([mood, value]) => (
+                        <div key={mood} className="space-y-2">
+                          <div className="flex justify-between text-sm">
+                            <span className="text-gray-400 capitalize text-base">{mood}</span>
+                            <span className="text-white font-medium text-base">{value}%</span>
+                          </div>
+                          <div className="h-3 bg-white/5 rounded-full overflow-hidden">
+                            <div
+                              className={`h-full ${moodColors[mood as keyof typeof moodColors]} transition-all duration-500`}
+                              style={{ width: `${value}%` }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </Card>
 
-            <Card className="bg-white/5 border-white/10 p-6">
-              <h2 className="text-2xl font-semibold text-white mb-6">Emotional Profile</h2>
-              <ResponsiveContainer width="100%" height={300}>
-                <RadarChart data={emotionalProfile}>
-                  <PolarGrid stroke="#ffffff20" />
-                  <PolarAngleAxis dataKey="emotion" stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
-                  <PolarRadiusAxis stroke="#9ca3af" tick={{ fill: "#9ca3af" }} />
-                  <Radar name="Emotion" dataKey="value" stroke="#ec4899" fill="#ec4899" fillOpacity={0.3} />
-                </RadarChart>
-              </ResponsiveContainer>
-            </Card>
-          </div>
+                  {/* Platform Breakdown */}
+                  <Card className="bg-white/5 border-white/10 p-6">
+                    <h2 className="text-2xl font-semibold text-white mb-6">Platform Breakdown</h2>
+                    <div className="space-y-4">
+                      {countryData.platformBreakdown.map((platform, index) => (
+                        <div key={index} className="space-y-2">
+                          <div className="flex justify-between text-sm">
+                            <span className="text-gray-400 text-lg">{platform.platform}</span>
+                            <span className="text-white font-medium text-lg">{platform.percentage}%</span>
+                          </div>
+                          <div className="h-3 bg-white/5 rounded-full overflow-hidden">
+                            <div
+                              className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
+                              style={{ width: `${platform.percentage}%` }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </Card>
+                </div>
 
-          {/* Three Column Layout for Detailed Metrics */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Left Column */}
-            <div className="space-y-8">
-              {/* Mood Meter */}
-              <Card className="bg-white/5 border-white/10 p-6">
-                <h2 className="text-2xl font-semibold text-white mb-6">Mood Meter</h2>
-                <div className="space-y-4">
-                  {Object.entries(countryData.moodMeter).map(([mood, value]) => (
-                    <div key={mood} className="space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-400 capitalize text-base">{mood}</span>
-                        <span className="text-white font-medium text-base">{value}%</span>
+                {/* Middle Column */}
+                <div className="space-y-8">
+                  {/* Top Topics - Expanded */}
+                  <Card className="bg-white/5 border-white/10 p-6">
+                    <h2 className="text-2xl font-semibold text-white mb-6">Top Topics</h2>
+                    <div className="flex flex-wrap gap-3">
+                      {countryData.topTopics.map((topic, index) => (
+                        <Badge
+                          key={index}
+                          variant="outline"
+                          className={`${sentimentColors[topic.sentiment]} cursor-pointer hover:scale-105 transition-transform text-sm py-2 px-3`}
+                        >
+                          #{topic.keyword}
+                          <span className="ml-2 opacity-70">({topic.volume}k)</span>
+                        </Badge>
+                      ))}
+                    </div>
+                  </Card>
+
+                  {/* Engagement Stats */}
+                  <Card className="bg-white/5 border-white/10 p-6">
+                    <h2 className="text-2xl font-semibold text-white mb-6">Engagement Stats</h2>
+                    <div className="grid grid-cols-1 gap-6">
+                      <div className="text-center p-6 bg-white/5 rounded-lg">
+                        <p className="text-4xl font-bold text-white mb-2">
+                          {(countryData.engagementStats.likes / 1000).toFixed(1)}k
+                        </p>
+                        <p className="text-sm text-gray-400">Likes</p>
                       </div>
-                      <div className="h-3 bg-white/5 rounded-full overflow-hidden">
-                        <div
-                          className={`h-full ${moodColors[mood as keyof typeof moodColors]} transition-all duration-500`}
-                          style={{ width: `${value}%` }}
-                        />
+                      <div className="text-center p-6 bg-white/5 rounded-lg">
+                        <p className="text-4xl font-bold text-white mb-2">
+                          {(countryData.engagementStats.shares / 1000).toFixed(1)}k
+                        </p>
+                        <p className="text-sm text-gray-400">Shares</p>
+                      </div>
+                      <div className="text-center p-6 bg-white/5 rounded-lg">
+                        <p className="text-4xl font-bold text-white mb-2">
+                          {(countryData.engagementStats.comments / 1000).toFixed(1)}k
+                        </p>
+                        <p className="text-sm text-gray-400">Comments</p>
                       </div>
                     </div>
-                  ))}
+                  </Card>
                 </div>
-              </Card>
 
-              {/* Platform Breakdown */}
-              <Card className="bg-white/5 border-white/10 p-6">
-                <h2 className="text-2xl font-semibold text-white mb-6">Platform Breakdown</h2>
-                <div className="space-y-4">
-                  {countryData.platformBreakdown.map((platform, index) => (
-                    <div key={index} className="space-y-2">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-400 text-lg">{platform.platform}</span>
-                        <span className="text-white font-medium text-lg">{platform.percentage}%</span>
-                      </div>
-                      <div className="h-3 bg-white/5 rounded-full overflow-hidden">
+                {/* Right Column - Sentiment Trend */}
+                <div className="space-y-8">
+                  <Card className="bg-white/5 border-white/10 p-6">
+                    <h2 className="text-2xl font-semibold text-white mb-6">Sentiment Trend</h2>
+                    <div className="h-32 flex items-end gap-2">
+                      {countryData.sentimentTrend.map((value, index) => (
                         <div
-                          className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
-                          style={{ width: `${platform.percentage}%` }}
+                          key={index}
+                          className="flex-1 bg-blue-500/30 rounded-t transition-all duration-300 hover:bg-blue-500/50"
+                          style={{ height: `${value}%` }}
                         />
-                      </div>
+                      ))}
                     </div>
-                  ))}
+                    <p className="text-sm text-gray-500 mt-4">Past 12 hours</p>
+                  </Card>
                 </div>
-              </Card>
-            </div>
-
-            {/* Middle Column */}
-            <div className="space-y-8">
-              {/* Top Topics - Expanded */}
-              <Card className="bg-white/5 border-white/10 p-6">
-                <h2 className="text-2xl font-semibold text-white mb-6">Top Topics</h2>
-                <div className="flex flex-wrap gap-3">
-                  {countryData.topTopics.map((topic, index) => (
-                    <Badge
-                      key={index}
-                      variant="outline"
-                      className={`${sentimentColors[topic.sentiment]} cursor-pointer hover:scale-105 transition-transform text-sm py-2 px-3`}
-                    >
-                      #{topic.keyword}
-                      <span className="ml-2 opacity-70">({topic.volume}k)</span>
-                    </Badge>
-                  ))}
-                </div>
-              </Card>
-
-              {/* Engagement Stats */}
-              <Card className="bg-white/5 border-white/10 p-6">
-                <h2 className="text-2xl font-semibold text-white mb-6">Engagement Stats</h2>
-                <div className="grid grid-cols-1 gap-6">
-                  <div className="text-center p-6 bg-white/5 rounded-lg">
-                    <p className="text-4xl font-bold text-white mb-2">
-                      {(countryData.engagementStats.likes / 1000).toFixed(1)}k
-                    </p>
-                    <p className="text-sm text-gray-400">Likes</p>
-                  </div>
-                  <div className="text-center p-6 bg-white/5 rounded-lg">
-                    <p className="text-4xl font-bold text-white mb-2">
-                      {(countryData.engagementStats.shares / 1000).toFixed(1)}k
-                    </p>
-                    <p className="text-sm text-gray-400">Shares</p>
-                  </div>
-                  <div className="text-center p-6 bg-white/5 rounded-lg">
-                    <p className="text-4xl font-bold text-white mb-2">
-                      {(countryData.engagementStats.comments / 1000).toFixed(1)}k
-                    </p>
-                    <p className="text-sm text-gray-400">Comments</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
-            {/* Right Column - Sentiment Trend */}
-            <div className="space-y-8">
-              <Card className="bg-white/5 border-white/10 p-6">
-                <h2 className="text-2xl font-semibold text-white mb-6">Sentiment Trend</h2>
-                <div className="h-32 flex items-end gap-2">
-                  {countryData.sentimentTrend.map((value, index) => (
-                    <div
-                      key={index}
-                      className="flex-1 bg-blue-500/30 rounded-t transition-all duration-300 hover:bg-blue-500/50"
-                      style={{ height: `${value}%` }}
-                    />
-                  ))}
-                </div>
-                <p className="text-sm text-gray-500 mt-4">Past 12 hours</p>
-              </Card>
-            </div>
-          </div>
+              </div>
+            </>
+          )}
 
           {/* Category-Specific Content */}
           {category === "Politics" && countryData.categoryData ? (
             <PoliticsView data={countryData.categoryData} />
           ) : category === "Economics" && countryData.categoryData ? (
             <EconomicsView data={countryData.categoryData} />
-          ) : category === "Memes" && countryData.categoryData ? (
-            <MemesView data={countryData.categoryData} />
+          ) : category === "Memes" && (countryData.categoryData || countryData.allCategoryData?.memes) ? (
+            <MemesView data={countryData.categoryData || countryData.allCategoryData?.memes!} />
           ) : category === "News" && countryData.categoryData ? (
             <NewsView data={countryData.categoryData} />
           ) : category === "Sports" && countryData.categoryData ? (
             <SportsView data={countryData.categoryData} />
+          ) : category === "Google Trends" && countryData.categoryData ? (
+            <GoogleTrendsView data={countryData.categoryData} />
           ) : (
-            /* Default view for "All" category - show representative content */
-            <Card className="bg-white/5 border-white/10 p-6">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-semibold text-white">Representative Content</h2>
-                <Badge className="bg-blue-600 text-white">{countryData.representativeContent.length} items</Badge>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {countryData.representativeContent.map((content, index) => renderContentCard(content, index))}
-              </div>
-            </Card>
+            /* Default view for "All" category - show comprehensive data view */
+            <ComprehensiveDataView countryData={countryData} onCategoryChange={setCategory} hideTopMetrics={false} />
           )}
         </div>
       </div>

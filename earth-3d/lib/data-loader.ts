@@ -18,7 +18,7 @@ import type {
 } from "./types"
 
 // Path to the data directory
-const DATA_DIR = path.join(process.cwd(), "..", "data")
+const DATA_DIR = path.join(process.cwd(), "data")
 
 // Country code mapping
 const COUNTRY_CODES: Record<string, { name: string; flag: string }> = {
@@ -39,6 +39,7 @@ const CATEGORY_DIRS: Record<string, string> = {
   Politics: "politics",
   Economics: "economics",
   Sports: "sports",
+  "Google Trends": "google-trends",
 }
 
 /**
@@ -277,20 +278,115 @@ export async function loadCountryData(countryCode: string, category: Category): 
     let items: ContentItem[] = []
     let lastUpdated = new Date().toISOString()
     const categoryBreakdown: Array<{ category: Category; count: number; sentiment: string }> = []
-    let rawCategoryData: PoliticsData | EconomicsData | MemesData | NewsData | SportsData | undefined
+    let rawCategoryData: PoliticsData | EconomicsData | MemesData | NewsData | SportsData | GoogleTrendsData | undefined
+    let allCategoryData: {
+      memes?: MemesData
+      news?: NewsData
+      politics?: PoliticsData
+      economics?: EconomicsData
+      sports?: SportsData
+      googleTrends?: GoogleTrendsData
+    } = {}
 
     // Special case: Load ALL categories
     if (category === "All") {
-      const categories: Category[] = ["Memes", "News", "Politics", "Economics", "Sports"]
+      const categories: Category[] = ["Memes", "News", "Politics", "Economics", "Sports", "Google Trends"]
 
       for (const cat of categories) {
-        const catData = await loadCountryData(countryCode, cat)
-        if (catData) {
-          items.push(...catData.representativeContent)
+        // Load raw category data directly instead of recursive call
+        let catItems: ContentItem[] = []
+        
+        switch (cat) {
+        case "Memes": {
+          const data = loadCategoryData<MemesData>(cat, countryCode)
+          if (data) {
+            catItems = data.items
+            allCategoryData.memes = data
+          }
+          break
+        }
+        case "News": {
+          const data = loadCategoryData<NewsData>(cat, countryCode)
+          if (data) {
+            catItems = data.items
+          }
+          break
+        }
+        case "Politics": {
+          const data = loadCategoryData<PoliticsData>(cat, countryCode)
+          if (data) {
+            // Convert politics data to content items
+            catItems = data.political_climate?.recent_headlines?.map((headline, idx) => ({
+              id: `politics_${idx}`,
+              title: headline.headline,
+              excerpt: "",
+              source_platform: "news",
+              source_name: headline.source,
+              source_url: headline.url || "",
+              created_at: data.timestamp,
+              engagement: {},
+              sentiment: (headline.sentiment as Sentiment) || "neutral",
+              virality_score: 50,
+              tags: [],
+            })) || []
+          }
+          break
+        }
+        case "Economics": {
+          const data = loadCategoryData<EconomicsData>(cat, countryCode)
+          if (data) {
+            // Convert economics data to content items
+            catItems = data.news_headlines?.map((headline, idx) => ({
+              id: `economics_${idx}`,
+              title: headline.title,
+              excerpt: "",
+              source_platform: "news",
+              source_name: headline.source,
+              source_url: headline.url || "",
+              created_at: data.timestamp,
+              engagement: {},
+              sentiment: "neutral" as Sentiment,
+              virality_score: 50,
+              tags: [],
+            })) || []
+          }
+          break
+        }
+        case "Sports": {
+          const data = loadCategoryData<SportsData>(cat, countryCode)
+          if (data) {
+            catItems = data.items
+          }
+          break
+        }
+        case "Google Trends": {
+          const data = loadCategoryData<GoogleTrendsData>(cat, countryCode)
+          if (data) {
+            // Convert Google Trends data to content items
+            catItems = data.trending_searches?.map((search, idx) => ({
+              id: `trends_${idx}`,
+              title: search.query,
+              excerpt: `Category: ${search.category}`,
+              source_platform: "google_trends",
+              source_name: "Google Trends",
+              source_url: search.share_url,
+              created_at: data.timestamp,
+              engagement: {},
+              sentiment: "neutral" as Sentiment,
+              virality_score: parseInt(search.traffic_label.replace(/[^0-9]/g, "")) || 50,
+              tags: search.related_queries || [],
+            })) || []
+          }
+          break
+        }
+        }
+
+        if (catItems.length > 0) {
+          items.push(...catItems)
 
           // Track category breakdown
           const sentimentCounts = { positive: 0, negative: 0, neutral: 0 }
-          catData.representativeContent.forEach(item => {
+          catItems.forEach(item => {
             sentimentCounts[item.sentiment]++
           })
           const dominantSentiment = Object.entries(sentimentCounts)
@@ -298,7 +394,7 @@ export async function loadCountryData(countryCode: string, category: Category): 
 
           categoryBreakdown.push({
             category: cat,
-            count: catData.representativeContent.length,
+            count: catItems.length,
             sentiment: dominantSentiment,
           })
         }
@@ -323,12 +419,12 @@ export async function loadCountryData(countryCode: string, category: Category): 
           // Convert politics data to content items
           items = data.political_climate?.recent_headlines?.map((headline, idx) => ({
             id: `politics_${idx}`,
-            title: headline.title,
+            title: headline.headline,
             excerpt: "",
             source_platform: "news",
             source_name: headline.source,
             source_url: headline.url,
-            created_at: headline.published_at,
+            created_at: headline.published,
             engagement: {},
             sentiment: "neutral" as Sentiment,
             virality_score: 50,
@@ -368,12 +464,25 @@ export async function loadCountryData(countryCode: string, category: Category): 
         }
         break
       }
-      case "Entertainment":
-      case "Technology": {
-        const data = loadCategoryData<EntertainmentData | TechnologyData>(category, countryCode)
+      case "Google Trends": {
+        const data = loadCategoryData<GoogleTrendsData>(category, countryCode)
         if (data) {
-          items = data.items || []
+          // Convert Google Trends data to content items
+          items = data.trending_searches?.map((search, idx) => ({
+            id: `trends_${idx}`,
+            title: search.query,
+            excerpt: `Category: ${search.category}`,
+            source_platform: "google_trends",
+            source_name: "Google Trends",
+            source_url: search.share_url,
+            created_at: data.timestamp,
+            engagement: {},
+            sentiment: "neutral" as Sentiment,
+            virality_score: parseInt(search.traffic_label.replace(/[^0-9]/g, "")) || 50,
+            tags: search.related_queries || [],
+          })) || []
           lastUpdated = data.timestamp
+          rawCategoryData = data
         }
         break
       }
@@ -393,7 +502,7 @@ export async function loadCountryData(countryCode: string, category: Category): 
     }
 
     // Load Google Trends data for topics
-    const trendsData = loadCategoryData<GoogleTrendsData>("Technology", countryCode) // Using Technology as fallback
+    const trendsData = loadCategoryData<GoogleTrendsData>("Google Trends", countryCode)
 
     // Calculate metrics
     const moodMeter = calculateMoodMeter(items)
@@ -401,14 +510,50 @@ export async function loadCountryData(countryCode: string, category: Category): 
     const topTopics = extractTopTopics(items, trendsData)
     const platformBreakdown = calculatePlatformBreakdown(items)
 
-    // Sort by virality and take top items
-    const representativeContent = items
-      .sort((a, b) => b.virality_score - a.virality_score)
-      .slice(0, 8)
-      .map((item) => ({
-        ...item,
-        type: item.type || (item.source_platform === "reddit" ? "reddit" : "article"),
-      }))
+    // Sort by virality and take top items with better distribution
+    const sortedItems = items.sort((a, b) => b.virality_score - a.virality_score)
+
+    // Prioritize country-specific content over global content
+    const countrySpecificItems = sortedItems.filter(item => {
+      // Prioritize Reddit content from country-specific subreddits
+      if (item.source_platform === 'reddit') {
+        const countrySubreddits: Record<string, string[]> = {
+          'USA': ['murica', 'america', 'unitedstates', 'politicalhumor'],
+          'Australia': ['straya', 'australia', 'ausmemes'],
+          'Canada': ['canada', 'canadian', 'canadapolitics'],
+          'UK': ['unitedkingdom', 'british', 'england', 'britishproblems'],
+          'India': ['india', 'indian', 'indiamemes']
+        }
+        const countrySubs = countrySubreddits[countryCode] || []
+        return countrySubs.some((sub: string) => item.source_name?.toLowerCase().includes(sub))
+      }
+      return false
+    })
+
+    // Get other content (YouTube and non-country-specific Reddit)
+    const otherItems = sortedItems.filter(item => {
+      if (item.source_platform === 'reddit') {
+        const countrySubreddits: Record<string, string[]> = {
+          'USA': ['murica', 'america', 'unitedstates', 'politicalhumor'],
+          'Australia': ['straya', 'australia', 'ausmemes'],
+          'Canada': ['canada', 'canadian', 'canadapolitics'],
+          'UK': ['unitedkingdom', 'british', 'england', 'britishproblems'],
+          'India': ['india', 'indian', 'indiamemes']
+        }
+        const countrySubs = countrySubreddits[countryCode] || []
+        return !countrySubs.some((sub: string) => item.source_name?.toLowerCase().includes(sub))
+      }
+      return true
+    })
+    
+    // Take top 4 country-specific items and top 4 other content
+    const representativeContent = [
+      ...countrySpecificItems.slice(0, 4),
+      ...otherItems.slice(0, 4)
+    ].map((item) => ({
+      ...item,
+      type: item.type || (item.source_platform === "reddit" ? "reddit" : "article"),
+    }))
 
     // Calculate engagement stats
     const engagementStats = items.reduce(
@@ -457,6 +602,7 @@ export async function loadCountryData(countryCode: string, category: Category): 
       engagementStats,
       categoryBreakdown: categoryBreakdown.length > 0 ? categoryBreakdown : undefined,
       categoryData: rawCategoryData,
+      allCategoryData: Object.keys(allCategoryData).length > 0 ? allCategoryData : undefined,
     }
   } catch (error) {
     console.error(`Error loading country data for ${countryCode}:`, error)

@@ -6,11 +6,13 @@ import { X, ArrowRight, BarChart3, TrendingUp, TrendingDown, Eye, ExternalLink, 
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import type { CountryData, Category } from "@/lib/types"
-import { PoliticsView } from "@/components/category-views/PoliticsView"
-import { EconomicsView } from "@/components/category-views/EconomicsView"
-import { MemesView } from "@/components/category-views/MemesView"
-import { NewsView } from "@/components/category-views/NewsView"
-import { SportsView } from "@/components/category-views/SportsView"
+import { PoliticsSummaryView } from "@/components/category-views/summary/PoliticsSummaryView"
+import { EconomicsSummaryView } from "@/components/category-views/summary/EconomicsSummaryView"
+import { MemesSummaryView } from "@/components/category-views/summary/MemesSummaryView"
+import { NewsSummaryView } from "@/components/category-views/summary/NewsSummaryView"
+import { SportsSummaryView } from "@/components/category-views/summary/SportsSummaryView"
+import { GoogleTrendsSummaryView } from "@/components/category-views/summary/GoogleTrendsSummaryView"
+import { DataSummary } from "@/components/data-summary"
 
 interface CountryInfoPanelProps {
   countryData: CountryData | null
@@ -21,7 +23,7 @@ interface CountryInfoPanelProps {
   isOpen?: boolean
 }
 
-const CATEGORIES: Category[] = ["All", "Memes", "News", "Politics", "Economics", "Sports"]
+const CATEGORIES: Category[] = ["All", "Memes", "News", "Politics", "Economics", "Sports", "Google Trends"]
 
 export function CountryInfoPanel({
   countryData,
@@ -76,12 +78,12 @@ export function CountryInfoPanel({
           <div className="flex items-center gap-2">
             {showFullPageLink && (
               <Link href={`/country/${countrySlug}?category=${category}`}>
-                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
+                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10 hover:text-blue-300">
                   <Eye className="w-5 h-5" />
                 </Button>
               </Link>
             )}
-            <Button variant="ghost" size="icon" onClick={onClose} className="text-white hover:bg-white/10">
+            <Button variant="ghost" size="icon" onClick={onClose} className="text-white hover:bg-white/10 hover:text-white">
               <X className="w-5 h-5" />
             </Button>
           </div>
@@ -112,27 +114,29 @@ export function CountryInfoPanel({
           </div>
         )}
 
-        {/* Overview Stats */}
-        <Card className="bg-white/5 border-white/10 p-5">
-          <div className="flex items-center gap-2 mb-4">
-            <BarChart3 className="w-4 h-4 text-blue-400" />
-            <h3 className="text-sm font-semibold text-white uppercase">Overview</h3>
-          </div>
-          <div className="grid grid-cols-3 gap-3">
-            <div className="text-center p-3 bg-white/5 rounded-lg">
-              <p className="text-2xl font-bold text-white">{countryData.categoryMetrics.totalPosts}</p>
-              <p className="text-xs text-gray-400 mt-1">Posts</p>
+        {/* Overview Stats - Only show when "All" is selected */}
+        {category === "All" && (
+          <Card className="bg-white/5 border-white/10 p-5">
+            <div className="flex items-center gap-2 mb-4">
+              <BarChart3 className="w-4 h-4 text-blue-400" />
+              <h3 className="text-sm font-semibold text-white uppercase">Overview</h3>
             </div>
-            <div className="text-center p-3 bg-white/5 rounded-lg">
-              <p className="text-2xl font-bold text-white">{countryData.categoryMetrics.viralityScore}</p>
-              <p className="text-xs text-gray-400 mt-1">Virality</p>
+            <div className="grid grid-cols-3 gap-3">
+              <div className="text-center p-3 bg-white/5 rounded-lg">
+                <p className="text-2xl font-bold text-white">{countryData.categoryMetrics.totalPosts}</p>
+                <p className="text-xs text-gray-400 mt-1">Posts</p>
+              </div>
+              <div className="text-center p-3 bg-white/5 rounded-lg">
+                <p className="text-2xl font-bold text-white">{countryData.categoryMetrics.viralityScore}</p>
+                <p className="text-xs text-gray-400 mt-1">Virality</p>
+              </div>
+              <div className="text-center p-3 bg-white/5 rounded-lg">
+                <p className="text-2xl font-bold text-white">{countryData.categoryMetrics.avgEngagement.toFixed(1)}k</p>
+                <p className="text-xs text-gray-400 mt-1">Engagement</p>
+              </div>
             </div>
-            <div className="text-center p-3 bg-white/5 rounded-lg">
-              <p className="text-2xl font-bold text-white">{countryData.categoryMetrics.avgEngagement.toFixed(1)}k</p>
-              <p className="text-xs text-gray-400 mt-1">Engagement</p>
-            </div>
-          </div>
-        </Card>
+          </Card>
+        )}
 
         {/* Category Breakdown - Only show when "All" is selected */}
         {category === "All" && countryData.categoryBreakdown && countryData.categoryBreakdown.length > 0 && (
@@ -160,169 +164,107 @@ export function CountryInfoPanel({
           </Card>
         )}
 
-        {/* Mood Analysis */}
-        <Card className="bg-white/5 border-white/10 p-5">
-          <h3 className="text-sm font-semibold text-white mb-3 uppercase">Mood Analysis</h3>
-          <p className="text-gray-300 text-sm leading-relaxed mb-4">{countryData.moodSummary}</p>
-          <div className="space-y-3">
-            {Object.entries(countryData.moodMeter).map(([mood, value]) => (
-              <div key={mood} className="space-y-1">
-                <div className="flex justify-between text-xs">
-                  <span className="text-white capitalize">{mood}</span>
-                  <span className="text-gray-400">{value}%</span>
+        {/* Mood Analysis - Only show when "All" is selected */}
+        {category === "All" && (
+          <Card className="bg-white/5 border-white/10 p-5">
+            <h3 className="text-sm font-semibold text-white mb-3 uppercase">Mood Analysis</h3>
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">{countryData.moodSummary}</p>
+            <div className="space-y-3">
+              {Object.entries(countryData.moodMeter).map(([mood, value]) => (
+                <div key={mood} className="space-y-1">
+                  <div className="flex justify-between text-xs">
+                    <span className="text-white capitalize">{mood}</span>
+                    <span className="text-gray-400">{value}%</span>
+                  </div>
+                  <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                    <div
+                      className={cn(
+                        "h-full transition-all duration-500",
+                        mood === "joy" && "bg-yellow-500",
+                        mood === "curiosity" && "bg-blue-500",
+                        mood === "anger" && "bg-red-500",
+                        mood === "confusion" && "bg-purple-500",
+                        mood === "sadness" && "bg-gray-500"
+                      )}
+                      style={{ width: `${value}%` }}
+                    />
+                  </div>
                 </div>
-                <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                  <div
-                    className={cn(
-                      "h-full transition-all duration-500",
-                      mood === "joy" && "bg-yellow-500",
-                      mood === "curiosity" && "bg-blue-500",
-                      mood === "anger" && "bg-red-500",
-                      mood === "confusion" && "bg-purple-500",
-                      mood === "sadness" && "bg-gray-500"
-                    )}
-                    style={{ width: `${value}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
+              ))}
+            </div>
+          </Card>
+        )}
 
-        {/* Top Topics */}
-        <Card className="bg-white/5 border-white/10 p-5">
-          <h3 className="text-sm font-semibold text-white mb-4 uppercase">Trending Topics</h3>
-          <div className="flex flex-wrap gap-2">
-            {countryData.topTopics.map((topic, index) => (
-              <Badge
-                key={index}
-                variant="outline"
-                className={cn(
-                  "text-xs border-white/20",
-                  topic.sentiment === "positive" && "text-green-400 bg-green-500/10",
-                  topic.sentiment === "negative" && "text-red-400 bg-red-500/10",
-                  topic.sentiment === "neutral" && "text-gray-400 bg-gray-500/10"
-                )}
-              >
-                #{topic.keyword}
-              </Badge>
-            ))}
-          </div>
-        </Card>
+        {/* Top Topics - Only show when "All" is selected */}
+        {category === "All" && (
+          <Card className="bg-white/5 border-white/10 p-5">
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase">Trending Topics</h3>
+            <div className="flex flex-wrap gap-2">
+              {countryData.topTopics.map((topic, index) => (
+                <Badge
+                  key={index}
+                  variant="outline"
+                  className={cn(
+                    "text-xs border-white/20",
+                    topic.sentiment === "positive" && "text-green-400 bg-green-500/10",
+                    topic.sentiment === "negative" && "text-red-400 bg-red-500/10",
+                    topic.sentiment === "neutral" && "text-gray-400 bg-gray-500/10"
+                  )}
+                >
+                  #{topic.keyword}
+                </Badge>
+              ))}
+            </div>
+          </Card>
+        )}
 
-        {/* Platform Distribution */}
-        <Card className="bg-white/5 border-white/10 p-5">
-          <h3 className="text-sm font-semibold text-white mb-4 uppercase">Platform Distribution</h3>
-          <div className="space-y-3">
-            {countryData.platformBreakdown.map((platform, index) => (
-              <div key={index} className="space-y-1">
-                <div className="flex justify-between text-xs">
-                  <span className="text-white">{platform.platform}</span>
-                  <span className="text-gray-400">{platform.percentage}%</span>
+        {/* Platform Distribution - Only show when "All" is selected */}
+        {category === "All" && (
+          <Card className="bg-white/5 border-white/10 p-5">
+            <h3 className="text-sm font-semibold text-white mb-4 uppercase">Platform Distribution</h3>
+            <div className="space-y-3">
+              {countryData.platformBreakdown.map((platform, index) => (
+                <div key={index} className="space-y-1">
+                  <div className="flex justify-between text-xs">
+                    <span className="text-white">{platform.platform}</span>
+                    <span className="text-gray-400">{platform.percentage}%</span>
+                  </div>
+                  <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
+                      style={{ width: `${platform.percentage}%` }}
+                    />
+                  </div>
                 </div>
-                <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
-                    style={{ width: `${platform.percentage}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </Card>
+              ))}
+            </div>
+          </Card>
+        )}
 
         {/* Category-Specific Content */}
         {category === "Politics" && countryData.categoryData ? (
-          <PoliticsView data={countryData.categoryData} />
+          <PoliticsSummaryView data={countryData.categoryData as any} />
         ) : category === "Economics" && countryData.categoryData ? (
-          <EconomicsView data={countryData.categoryData} />
+          <EconomicsSummaryView data={countryData.categoryData as any} />
         ) : category === "Memes" && countryData.categoryData ? (
-          <MemesView data={countryData.categoryData} />
+          <MemesSummaryView data={countryData.categoryData as any} />
         ) : category === "News" && countryData.categoryData ? (
-          <NewsView data={countryData.categoryData} />
+          <NewsSummaryView data={countryData.categoryData as any} />
         ) : category === "Sports" && countryData.categoryData ? (
-          <SportsView data={countryData.categoryData} />
+          <SportsSummaryView data={countryData.categoryData as any} />
+        ) : category === "Google Trends" && countryData.categoryData ? (
+          <GoogleTrendsSummaryView data={countryData.categoryData as any} />
         ) : (
-          /* Default view for "All" category - show trending content */
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h3 className="text-sm font-semibold text-white uppercase">Trending Content</h3>
-              <Badge className="bg-blue-600/20 text-blue-300 border-blue-500/30 text-xs">
-                {countryData.representativeContent.length} items
-              </Badge>
-            </div>
-            <div className="space-y-3">
-              {countryData.representativeContent.slice(0, 8).map((content, index) => (
-                <Card key={index} className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors group">
-                  <div className="p-4 space-y-2">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <Badge
-                        variant="outline"
-                        className={cn(
-                          "text-xs border-white/20",
-                          content.source_platform === "reddit" && "bg-orange-500/10 text-orange-400 border-orange-500/30",
-                          content.source_platform === "youtube" && "bg-red-500/10 text-red-400 border-red-500/30",
-                          content.source_platform === "espn" && "bg-green-500/10 text-green-400 border-green-500/30",
-                          !["reddit", "youtube", "espn"].includes(content.source_platform || "") && "text-gray-300"
-                        )}
-                      >
-                        {content.source_platform === "reddit" ? "Reddit" :
-                         content.source_platform === "youtube" ? "YouTube" :
-                         content.source_platform === "espn" ? "ESPN" :
-                         content.source_platform || content.source_name || "Article"}
-                      </Badge>
-
-                      {content.sport && (
-                        <Badge variant="outline" className="text-xs bg-blue-500/10 text-blue-400 border-blue-500/30">
-                          {content.sport}
-                        </Badge>
-                      )}
-
-                      <Badge variant="outline" className={cn(
-                        "text-xs border-white/20",
-                        content.sentiment === "positive" && "text-green-400 bg-green-500/10",
-                        content.sentiment === "negative" && "text-red-400 bg-red-500/10",
-                        content.sentiment === "neutral" && "text-gray-400 bg-gray-500/10"
-                      )}>
-                        {content.sentiment}
-                      </Badge>
-                      <span className="text-xs text-gray-500 ml-auto">★ {content.virality_score}</span>
-                    </div>
-                    <h4 className="text-white text-sm font-medium line-clamp-2 leading-snug group-hover:text-blue-400 transition-colors">
-                      {content.title}
-                    </h4>
-                    {(content.engagement?.likes || content.engagement?.comments) && (
-                      <div className="flex items-center gap-3 text-xs text-gray-500">
-                        {(content.engagement?.likes || 0) > 0 && (
-                          <span className="flex items-center gap-1">
-                            <span className="text-gray-400">{(content.engagement?.likes || 0).toLocaleString()}</span> likes
-                          </span>
-                        )}
-                        {(content.engagement?.comments || 0) > 0 && (
-                          <span className="flex items-center gap-1">
-                            <span className="text-gray-400">{(content.engagement?.comments || 0).toLocaleString()}</span> comments
-                          </span>
-                        )}
-                      </div>
-                    )}
-                    {content.source_url && (
-                      <div className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-400 transition-colors">
-                        <ExternalLink className="w-3 h-3" />
-                        <span className="truncate">{content.source_name || "View source"}</span>
-                      </div>
-                    )}
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
+          /* Default view for "All" category - show data summary */
+          <DataSummary countryData={countryData} onCategoryChange={onCategoryChange} />
         )}
+
+        <div></div>
 
         {/* View Full Analysis Button */}
         {showFullPageLink && (
           <Link href={`/country/${countrySlug}?category=${category}`}>
             <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg group">
-              <Eye className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
               View Full Analysis
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
